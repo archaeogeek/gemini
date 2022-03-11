@@ -1,6 +1,6 @@
 # Gemini documentation
 
-Simple readme
+Simple readme for testing purposes
 
 
 * [Services](services.html) 
