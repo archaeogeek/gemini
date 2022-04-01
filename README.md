@@ -1,36 +1,42 @@
-# gemini
-Resources relating to the UK Gemini metadata profile
+# Gemini documentation
 
-The published version of GEMINI 2.2 lives at https://www.agi.org.uk/gemini/1037-uk-gemini-standard-and-inspire-implementing-rules/
+Gemini web pages, converted from html to asciidoc, and back again!
 
-This is the place to raise and manage issues
+* [Services](services.html) 
+* [Datasets](datasets.html)
 
-This repository does not contain the GEMINI Schematron and sample files, which are at https://github.com/agiorguk/gemini-schematron
+The files below have been converted but have not been altered to work using the new workflow. Consequently internal links will go to the agi website and there may be other errors.
+* [1037-uk-gemini-standard-and-inspire-implementing-rules](1037-uk-gemini-standard-and-inspire-implementing-rules.html)
+* [1048-uk-gemini-encoding-guidance](1048-uk-gemini-encoding-guidance.html)
+* [1049-metadata-guidelines-for-geospatial-data-resources-part-2](1049-metadata-guidelines-for-geospatial-data-resources-part-2.html)
+* [1051-uk-gemini-v2-2-specification-for-discovery-metadata-for-geospatial-resources](1051-uk-gemini-v2-2-specification-for-discovery-metadata-for-geospatial-resources.html)
+* [1052-metadata-guidelines-for-geospatial-data-resources-part-1](1052-metadata-guidelines-for-geospatial-data-resources-part-1.html)
+* [1053-common-metadata-errors-uk-location-discovery-metadata-service](1053-common-metadata-errors-uk-location-discovery-metadata-service.html)
+* [1054-operational-guide](1054-operational-guide.html)
+* [1055-uk-gemini-major-changes-since-1-0](1055-uk-gemini-major-changes-since-1-0.html)
+* [1056-glossary](1056-glossary.html)
 
-Contact gemini@agi.org.uk, or just raise an issue here.
+## Services and Datasets workflow
 
-Meeting notes & actions - on https://github.com/agiorguk/gemini/wiki
+* These files are generated from [include files](https://docs.asciidoctor.org/asciidoc/latest/directives/include/), one per element, in the [docs/partials](https://github.com/archaeogeek/gemini/tree/main/docs/partials) folder. 
+* The xml snippets are in the docs/snippets folder.
+* The naming convention for the element files is {element name in lower case without spaces}.asciidoc
+* The naming convention for the xml snippets is {optional dataset or service prefix}-{element name in lower case without spaces}-{optional specific example}.xml
 
-# guide to our labels
-This is how we use the labels:
+Where content differs between datasets and services, an [asciidoctor conditional pre-processor](https://docs.asciidoctor.org/asciidoc/latest/directives/ifdef-ifndef/) is used to determine which content to use, based on the command-line attribute `-a variant-dataset` or `-a variant-service`. 
 
-| Label | Meaning |
-| ----- | ------- |
-|Guidance|We reckon this issue only affects informative parts of GEMINI|
-|Breaking|We expect the solution to this issue to mean that previously valid instances will no longer be valid|
-|documentation|We reckon this issue only affects documentation around GEMINI, not the actual elements|
-|enhancement|We see this issue as a request for something extra|
-|discussion|Probably a status - intended to mean 'the suggested solution requires more discussion'|
-|Elements|This issue refers to one or more specific GEMINI elements|
-|bug|it looks like somethings definitely broken; we're advising people to do something that is invalid|
-|help wanted|whoever raised this issue is asking for help, not (yet) specifically saying something is wrong|
-|Encoding|This issue primarily refers to the (XML) encoding of a GEMINI record|
-|invalid|something that's wrong but probably not causing people to create invalid records|
-|samples|This issue relates to the XML sample files (in the GEMINI-schematron repository)|
+To generate using the asciidoctor docker container, use the `-a` parameter, from the docs folder:
 
-Note: overlaps between "Guidance" and "documentation", "bug" and "invalid"
+```
+docker run --rm -v $(pwd):/documents/ asciidoctor/docker-asciidoctor asciidoctor -a variant-dataset *.adoc
+```
 
-Note: we have not firmly defined which parts of GEMINI are normative & which are informative. Roughly, the normative parts are:
-- for each element: the GEMINI id, name, definition, "purpose and meaning", obligation, occurence, data type, and domain
-- the general Encoding Guidance page: sections 2.2, 2.3, 2.4 
-The rest are informative
+Then repeat for services:
+
+```
+docker run --rm -v $(pwd):/documents/ asciidoctor/docker-asciidoctor asciidoctor -a variant-service *.adoc
+```
+
+## Styling
+
+All files share a common attributes file, which indicates the basic attributes to be used when processing. This includes a linked reference to the asciidoc html stylesheet rather than the default embedding. Work has begun to integrate the styling from [Gemini.css](https://github.com/archaeogeek/gemini/blob/main/docs/Gemini.css) into [asciidoctor.css](https://github.com/archaeogeek/gemini/blob/main/docs/assets/asciidoctor.css) but this is far from complete.
