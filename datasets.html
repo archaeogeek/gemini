@@ -6166,24 +6166,25 @@ either Distance or Equivalent scale.</p></td>
 </tr>
 </tbody>
 </table>
-<div class="paragraph">
-<p>===</p>
 </div>
+</details>
 <div class="paragraph">
 <p>Change history&#8230;&#8203;</p>
+</div>
+<details>
+<summary class="title">Details</summary>
+<div class="content">
+<div class="paragraph">
+<p>GEMINI 1 to 2.0: made conditional</p>
 </div>
 </div>
 </details>
 <div class="paragraph">
-<p>GEMINI 1 to 2.0: made conditional</p>
-</div>
-<div class="exampleblock">
-<div class="content">
-<div class="paragraph">
 <p>Encoding guidelines&#8230;&#8203;</p>
 </div>
-</div>
-</div>
+<details>
+<summary class="title">Details</summary>
+<div class="content">
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 50%;">
@@ -6208,104 +6209,133 @@ equivalent scale as integer valued scale denominator or a resolution
 distance using a numerical length value and with a unit of length.</p>
 </li>
 </ol>
-</div>
-<div class="exampleblock">
-<div class="content">
-<div class="paragraph">
-<p>Metadata errors observed&#8230;&#8203;</p>
-</div>
-</div>
-</div>
-<div class="paragraph">
-<p>No error information available</p>
-</div>
-<div class="exampleblock">
-<div class="content">
-<div class="paragraph">
-<p>= Name : Resource locator
-:assetdir: ../assets
-:stylesdir: ../assets
-:figure-caption: Figure
-:toc: left
-:docinfo: shared
-:docinfodir: ../assets
-:docinfosubs: attributes
-:safe-mode-unsafe:
-:iconfont-remote!:
-:stylesheet: ../assets/asciidoctor.css
-:scriptsdir: ../assets
-:linkcss:
-:data-uri:
-:iconfont-name: font-awesome.min
-:imagesdir: media
-:icons: font
-:nofooter:
-:sectnumlevels: 3
-:sectlinks:
-:sectanchors:
-:experimental:
-:stem:</p>
-</div>
-</div>
 </div></div></td>
 </tr>
 </tbody>
 </table>
-<div class="paragraph">
-<p>|UK GEMINI id |19</p>
 </div>
+</details>
 <div class="paragraph">
-<p>|Definition |Location (address) for online access using a Uniform
-Resource Locator (URL) address or similar addressing scheme</p>
+<p>Metadata errors observed&#8230;&#8203;</p>
 </div>
+<details>
+<summary class="title">Details</summary>
+<div class="content">
 <div class="paragraph">
-<p>|Purpose and meaning |The purpose of this element is to point to where
+<p>No error information available</p>
+</div>
+</div>
+</details>
+<h1 id="_name_resource_locator" class="sect0"><a class="anchor" href="#_name_resource_locator"></a><a class="link" href="#_name_resource_locator">Name : Resource locator</a></h1>
+<table id="19" class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">UK GEMINI id</th>
+<th class="tableblock halign-left valign-top">19</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Definition</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Location (address) for online access using a Uniform
+Resource Locator (URL) address or similar addressing scheme</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Purpose and meaning</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The purpose of this element is to point to where
 the dataset, or dataset series may be directly accessed online<br>
 OR, if no direct access is available, to an online resource providing
-more information about accessing the dataset or dataset series.</p>
-</div>
-<div class="paragraph">
-<p>|Obligation |Conditional - Must be supplied when online access is
-available</p>
-</div>
-<div class="paragraph">
-<p>|Occurrence |Multiple</p>
-</div>
-<div class="paragraph">
-<p>|Data type |CharacterString</p>
-</div>
-<div class="paragraph">
-<p>|Domain |Valid URL</p>
-</div>
-<div class="paragraph">
-<p>|Guidance a|
-. Specify a valid URL to the service.
-. If no online access for the service is available, but there is a
+more information about accessing the dataset or dataset series.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Obligation</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Conditional - Must be supplied when online access is
+available</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Occurrence</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Multiple</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Data type</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">CharacterString</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Domain</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Valid URL</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Guidance</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Specify a valid URL to the service.</p>
+</li>
+<li>
+<p>If no online access for the service is available, but there is a
 publicly available online resource providing additional information
 about accessing the described service, the URL pointing to this resource
-shall be given instead.
-. Conditionally (required for invocable spatial data services otherwise
-optional) a description should be provided
-* For an invocable spatial data service, the gmd:linkage/gmd:description
+shall be given instead.</p>
+</li>
+<li>
+<p>Conditionally (required for invocable spatial data services otherwise
+optional) a description should be provided</p>
+<div class="ulist">
+<ul>
+<li>
+<p>For an invocable spatial data service, the gmd:linkage/gmd:description
 child element gmd:CI_OnlineResource shall contain a gmx:Anchor element
 pointing to the value "accessPoint" of the code list
-OnLineDescriptionCode in the INSPIRE Registry
-. Although not mandatory, the following ISO 19115 sub-elements should be
-included, for best results with data.gov.uk:
-.. function
-.. name (this appears on the data.gov.uk site)
-. In relation to online INSPIRE network services, special guidance
+OnLineDescriptionCode in the INSPIRE Registry</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Although not mandatory, the following ISO 19115 sub-elements should be
+included, for best results with data.gov.uk:</p>
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a">
+<li>
+<p>function</p>
+</li>
+<li>
+<p>name (this appears on the data.gov.uk site)</p>
+</li>
+</ol>
+</div>
+</li>
+<li>
+<p>In relation to online INSPIRE network services, special guidance
 applies (see
 <a href="component/content/article?id=1054#data_servce_linking">'Data and
-Service Linking'</a>).
-* Identify whether the resource may be accessed.
-* Determine the location of the resource (may be a URL).
-. For an invocable spatial data service the gmd:CI_OnLineFunctionCode
-element should point to value "information"</p>
+Service Linking'</a>).</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Identify whether the resource may be accessed.</p>
+</li>
+<li>
+<p>Determine the location of the resource (may be a URL).</p>
+</li>
+</ul>
 </div>
-<div class="paragraph">
-<p>|Comment a|
-The URL provided as the value of the gmd:linkage element should point to
+</li>
+<li>
+<p>For an invocable spatial data service the gmd:CI_OnLineFunctionCode
+element should point to value "information"</p>
+</li>
+</ol>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Comment</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>The URL provided as the value of the gmd:linkage element should point to
 one of following type of resources:</p>
 </div>
 <div class="ulist">
@@ -6322,68 +6352,99 @@ Data Service</p>
 service</p>
 </li>
 </ul>
-</div>
-<div class="paragraph">
-<p>|Examples |A Web Map Service (WMS) capabilities document would be given
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Examples</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">A Web Map Service (WMS) capabilities document would be given
 like:<br>
-<a href="http://myserver/INSPIREWM/MapServer/WMSServer?service=WMS&amp;request=GetCapabilities&amp" class="bare">http://myserver/INSPIREWM/MapServer/WMSServer?service=WMS&amp;request=GetCapabilities&amp</a>;</p>
-</div>
-<div class="paragraph">
-<p>|Revision date |July 2009</p>
-</div>
-<table class="tableblock frame-all grid-all stretch">
-<colgroup>
-<col style="width: 100%;">
-</colgroup>
-<tbody>
+<a href="http://myserver/INSPIREWM/MapServer/WMSServer?service=WMS&amp;request=GetCapabilities&amp" class="bare">http://myserver/INSPIREWM/MapServer/WMSServer?service=WMS&amp;request=GetCapabilities&amp</a>;</p></td>
+</tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Corresponding element in other standards&#8230;&#8203;</p>
-<p class="tableblock">[%collapsible]
-====</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Revision date</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">July 2009</p></td>
 </tr>
 </tbody>
 </table>
 <div class="paragraph">
-<p>|Standard |Name |Comparison</p>
+<p>Corresponding element in other standards&#8230;&#8203;</p>
 </div>
-<div class="paragraph">
-<p>|INSPIRE Metadata |Resource locator |Equivalent</p>
-</div>
-<div class="paragraph">
-<p>|ISO 19115:2003 |MD_Distribution &gt; MD_DigitalTransferOptions.online &gt;
-CI_OnlineResource.linkage |Equivalent</p>
-</div>
-<div class="paragraph">
-<p>|ISO 19139:2007
-|/gmd:MD_Metadata/gmd:distributionInfo/gmd:MD_Distribution/gmd:transferOptions/gmd:MD_DigitalTransferOptions/gmd:onLine/gmd:CI_OnlineResource/gmd:linkage
-|Equivalent</p>
-</div>
+<details>
+<summary class="title">Details</summary>
+<div class="content">
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
-<col style="width: 100%;">
+<col style="width: 33.3333%;">
+<col style="width: 33.3333%;">
+<col style="width: 33.3334%;">
 </colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Standard</th>
+<th class="tableblock halign-left valign-top">Name</th>
+<th class="tableblock halign-left valign-top">Comparison</th>
+</tr>
+</thead>
 <tbody>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">====</p>
-<p class="tableblock">Change history&#8230;&#8203;</p>
-<p class="tableblock">[%collapsible]
-====
-GEMINI 1 to 2.0: Modification of Online resource
-====</p>
-<p class="tableblock">Encoding guidelines&#8230;&#8203;</p>
-<p class="tableblock">[%collapsible]
-====</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">INSPIRE Metadata</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Resource locator</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Equivalent</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ISO 19115:2003</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">MD_Distribution &gt; MD_DigitalTransferOptions.online &gt;
+CI_OnlineResource.linkage</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Equivalent</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ISO 19139:2007</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">/gmd:MD_Metadata/gmd:distributionInfo/gmd:MD_Distribution/gmd:transferOptions/gmd:MD_DigitalTransferOptions/gmd:onLine/gmd:CI_OnlineResource/gmd:linkage</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Equivalent</p></td>
 </tr>
 </tbody>
 </table>
-<div class="paragraph">
-<p>|Guidelines a|</p>
 </div>
+</details>
 <div class="paragraph">
-<p>|Guidelines a|
-. In the examples, the URLs provided are for OGC GetCapabilities
-requests.
-. The gmd:transferOptions XML element of gmd:MD_Distribution is used to
+<p>Change history&#8230;&#8203;</p>
+</div>
+<details>
+<summary class="title">Details</summary>
+<div class="content">
+<div class="paragraph">
+<p>GEMINI 1 to 2.0: Modification of Online resource</p>
+</div>
+</div>
+</details>
+<div class="paragraph">
+<p>Encoding guidelines&#8230;&#8203;</p>
+</div>
+<details>
+<summary class="title">Details</summary>
+<div class="content">
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Guidelines</th>
+<th class="tableblock halign-left valign-top"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Guidelines</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>In the examples, the URLs provided are for OGC GetCapabilities
+requests.</p>
+</li>
+<li>
+<p>The gmd:transferOptions XML element of gmd:MD_Distribution is used to
 encode a URL. Note that it is necessary to encode distribution format
 information in all cases. If the URL that is provided is the location of
 a point of contact then the distribution format is moot. However, the
@@ -6397,36 +6458,62 @@ used, following the
 <a href="https://inspire.ec.europa.eu/documents/inspire-metadata-implementing-rules-technical-guidelines-based-en-iso-19115-and-en-iso-1">INSPIRE
 guidance</a> <a href="component/content/article?id=1047">[9</a>]. If the format and
 version values are known, then they should be given (see <a href="#21">Data
-format</a>).
-. GEMINI2 allows for a URL which is a link to a point of contact where
-more information is available or where the dataset can be downloaded.
-. ISO 19115 and the ISO 19139 encoding provides a means of indicating
+format</a>).</p>
+</li>
+<li>
+<p>GEMINI2 allows for a URL which is a link to a point of contact where
+more information is available or where the dataset can be downloaded.</p>
+</li>
+<li>
+<p>ISO 19115 and the ISO 19139 encoding provides a means of indicating
 the function of the online resource by means of the
 CI_OnLineFunctionCode code list. Two values from this code list provide
 a means of discriminating between a URL that is provided for information
 (code list value of 'information') and a URL that is the address used
-for downloading (code list value of 'download') the data.
-. The INSPIRE
+for downloading (code list value of 'download') the data.</p>
+</li>
+<li>
+<p>The INSPIRE
 <a href="inspire.ec.europa.eu/metadata-codelist/OnLineDescriptionCode">OnLineDescriptionCode</a>
 provides a way of further distinguishing between access point URLs and
 end point URLs. Access points call an operation directly; end points
-list operations and their access points.
-. Note that the GetCapabilities URL contains an entity reference
+list operations and their access points.</p>
+</li>
+<li>
+<p>Note that the GetCapabilities URL contains an entity reference
 (sometimes known as an escape sequence) for the ampersand character.
 When an XML parser reads &amp; it replaces the sequence with &amp;. When
 writing XML, XML aware software will escape characters automatically but
 text editing software will not. The ampersand character alone in XML is
 interpreted as beginning an entity or character reference. XML defines
-five entity references:
-* &lt; - The character &lt;
-* &amp; - The character &amp;
-* &gt; - The character &gt;
-* &quot; - The character "
-* &apos; - The character '</p>
+five entity references:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>&lt; - The character &lt;</p>
+</li>
+<li>
+<p>&amp; - The character &amp;</p>
+</li>
+<li>
+<p>&gt; - The character &gt;</p>
+</li>
+<li>
+<p>&quot; - The character "</p>
+</li>
+<li>
+<p>&apos; - The character '</p>
+</li>
+</ul>
 </div>
-<div class="paragraph">
-<p>|Example a|
-`Example one, showing only required linkage content (for a WMS)                   `</p>
+</li>
+</ol>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Example</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>`Example one, showing only required linkage content (for a WMS)                   `</p>
 </div>
 <div class="literalblock">
 <div class="content">
@@ -6596,23 +6683,28 @@ five entity references:
   ...
 &lt;/gmd:MD_Metadata&gt;</pre>
 </div>
-</div>
-<table class="tableblock frame-all grid-all stretch">
-<colgroup>
-<col style="width: 100%;">
-</colgroup>
-<tbody>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">====</p>
-<p class="tableblock">Metadata errors observed&#8230;&#8203;</p>
-<p class="tableblock">[%collapsible]
-====</p></td>
+</div></div></td>
 </tr>
 </tbody>
 </table>
+</div>
+</details>
 <div class="paragraph">
-<p>|Errors observed a|
-In a Resource Locator, a WMS service that does not end in an ampersand
+<p>Metadata errors observed&#8230;&#8203;</p>
+</div>
+<details>
+<summary class="title">Details</summary>
+<div class="content">
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Errors observed</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>In a Resource Locator, a WMS service that does not end in an ampersand
 or question mark is incorrect, for example:<br></p>
 </div>
 <div class="literalblock">
@@ -6648,64 +6740,50 @@ or question mark is incorrect, for example:<br></p>
 Defra metadata audit, October 2015: Very few records included direct
 links to WMS end points.</pre>
 </div>
-</div>
-<table class="tableblock frame-all grid-all stretch">
-<colgroup>
-<col style="width: 100%;">
-</colgroup>
-<tbody>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">====</p>
-<p class="tableblock">= Name : Data format
-:assetdir: ../assets
-:stylesdir: ../assets
-:figure-caption: Figure
-:toc: left
-:docinfo: shared
-:docinfodir: ../assets
-:docinfosubs: attributes
-:safe-mode-unsafe:
-:iconfont-remote!:
-:stylesheet: ../assets/asciidoctor.css
-:scriptsdir: ../assets
-:linkcss:
-:data-uri:
-:iconfont-name: font-awesome.min
-:imagesdir: media
-:icons: font
-:nofooter:
-:sectnumlevels: 3
-:sectlinks:
-:sectanchors:
-:experimental:
-:stem:
-[#21]</p>
-<p class="tableblock">[width="100%",cols="50%,50%",]</p></td>
+</div></div></td>
 </tr>
 </tbody>
 </table>
-<div class="paragraph">
-<p>|UK GEMINI id |21</p>
 </div>
-<div class="paragraph">
-<p>|Definition |Format in which the digital data is provided</p>
-</div>
-<div class="paragraph">
-<p>|Purpose and meaning |The purpose of this element is to identify the
-various options for data formats that may be provided.</p>
-</div>
-<div class="paragraph">
-<p>|Obligation |Mandatory</p>
-</div>
-<div class="paragraph">
-<p>|Occurrence |Multiple</p>
-</div>
-<div class="paragraph">
-<p>|Data type |Class MD_Format from ISO 19115</p>
-</div>
-<div class="paragraph">
-<p>|Domain a|
-The following properties are expected:</p>
+</details>
+<h1 id="_name_data_format" class="sect0"><a class="anchor" href="#_name_data_format"></a><a class="link" href="#_name_data_format">Name : Data format</a></h1>
+<table id="21" class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">UK GEMINI id</th>
+<th class="tableblock halign-left valign-top">21</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Definition</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Format in which the digital data is provided</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Purpose and meaning</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The purpose of this element is to identify the
+various options for data formats that may be provided.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Obligation</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Mandatory</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Occurrence</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Multiple</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Data type</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Class MD_Format from ISO 19115</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Domain</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>The following properties are expected:</p>
 </div>
 <div class="ulist">
 <ul>
@@ -6716,80 +6794,131 @@ The following properties are expected:</p>
 <p>version of format (date, number etc)</p>
 </li>
 </ul>
-</div>
-<div class="paragraph">
-<p>|Guidance a|
-. Entries should be recognised formats for data transfer, either
-standard or proprietary.
-. Recommended best practice is to use a human readable term from a
-controlled vocabulary.
-. If the data resource is not downloadable (e.g. is view only), then
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Guidance</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Entries should be recognised formats for data transfer, either
+standard or proprietary.</p>
+</li>
+<li>
+<p>Recommended best practice is to use a human readable term from a
+controlled vocabulary.</p>
+</li>
+<li>
+<p>If the data resource is not downloadable (e.g. is view only), then
 this should be stated.</p>
-</div>
-<div class="paragraph">
-<p>|Comment |If the version of the data encoding is unknown or not
+</li>
+</ol>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Comment</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">If the version of the data encoding is unknown or not
 versioned, a nil reason attribute shall be specified with either
-"unknown" or "inapplicable" values used correspondingly.</p>
-</div>
-<div class="paragraph">
-<p>|Examples a|
-* GML, 3.2.1
-* DTF, 6.3</p>
-</div>
-<div class="paragraph">
-<p>|Revision date |March 2019</p>
-</div>
-<table class="tableblock frame-all grid-all stretch">
-<colgroup>
-<col style="width: 100%;">
-</colgroup>
-<tbody>
+"unknown" or "inapplicable" values used correspondingly.</p></td>
+</tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Corresponding element in other standards&#8230;&#8203;</p>
-<p class="tableblock">[%collapsible]
-====</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Examples</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="ulist">
+<ul>
+<li>
+<p>GML, 3.2.1</p>
+</li>
+<li>
+<p>DTF, 6.3</p>
+</li>
+</ul>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Revision date</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">March 2019</p></td>
 </tr>
 </tbody>
 </table>
 <div class="paragraph">
-<p>|Standard |Name |Comparison</p>
+<p>Corresponding element in other standards&#8230;&#8203;</p>
 </div>
-<div class="paragraph">
-<p>|INSPIRE Metadata |Data encoding |Equivalent</p>
-</div>
-<div class="paragraph">
-<p>|ISO 19115:2003 |MD_Distribution.distributionFormat &gt; MD_Format |ISO
-19115 has this element single valued</p>
-</div>
-<div class="paragraph">
-<p>|ISO 19139:2007 |gmd:distributionFormat/gmd:MD_Format |</p>
-</div>
+<details>
+<summary class="title">Details</summary>
+<div class="content">
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
-<col style="width: 100%;">
+<col style="width: 33.3333%;">
+<col style="width: 33.3333%;">
+<col style="width: 33.3334%;">
 </colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Standard</th>
+<th class="tableblock halign-left valign-top">Name</th>
+<th class="tableblock halign-left valign-top">Comparison</th>
+</tr>
+</thead>
 <tbody>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">====</p>
-<p class="tableblock">Change history&#8230;&#8203;</p>
-<p class="tableblock">[%collapsible]
-====
-. GEMINI 1 to 2.0: made optional
-. GEMINI 2.2 to 2.3: made mandatory, but removed from services
-====</p>
-<p class="tableblock">Encoding guidelines&#8230;&#8203;</p>
-<p class="tableblock">[%collapsible]
-====</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">INSPIRE Metadata</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Data encoding</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Equivalent</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ISO 19115:2003</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">MD_Distribution.distributionFormat &gt; MD_Format</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ISO
+19115 has this element single valued</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ISO 19139:2007</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">gmd:distributionFormat/gmd:MD_Format</p></td>
+<td class="tableblock halign-left valign-top"></td>
 </tr>
 </tbody>
 </table>
-<div class="paragraph">
-<p>|Guidelines |Both a gmd:name and gmd:version shall be provided for the
-format</p>
 </div>
+</details>
 <div class="paragraph">
-<p>|Example a|
-Example One</p>
+<p>Change history&#8230;&#8203;</p>
+</div>
+<details>
+<summary class="title">Details</summary>
+<div class="content">
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>GEMINI 1 to 2.0: made optional</p>
+</li>
+<li>
+<p>GEMINI 2.2 to 2.3: made mandatory, but removed from services</p>
+</li>
+</ol>
+</div>
+</div>
+</details>
+<div class="paragraph">
+<p>Encoding guidelines&#8230;&#8203;</p>
+</div>
+<details>
+<summary class="title">Details</summary>
+<div class="content">
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Guidelines</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Both a gmd:name and gmd:version shall be provided for the
+format</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Example</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>Example One</p>
 </div>
 <div class="literalblock">
 <div class="content">
@@ -6830,188 +6959,388 @@ Example One</p>
       &lt;/gmd:distributionFormat&gt;
       ...</pre>
 </div>
-</div>
-<table class="tableblock frame-all grid-all stretch">
-<colgroup>
-<col style="width: 100%;">
-</colgroup>
-<tbody>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">====</p>
-<p class="tableblock">Metadata errors observed&#8230;&#8203;</p>
-<p class="tableblock">[%collapsible]
-====</p></td>
+</div></div></td>
 </tr>
 </tbody>
 </table>
+</div>
+</details>
 <div class="paragraph">
-<p>|Errors observed |<strong>No Format provided</strong> -<br>
+<p>Metadata errors observed&#8230;&#8203;</p>
+</div>
+<details>
+<summary class="title">Details</summary>
+<div class="content">
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Errors observed</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>No Format provided</strong> -<br>
 ISO 19139 requires that a format is given, either within the
 'distribution' section or the 'distributor' section.<br>
 INSPIRE &amp; UK GEMINI encoding guidance only expects the distribution
 section, as the place to encode the Resource locator,<br>
-which effectively renders distribution format mandatory.</p>
-</div>
-<table class="tableblock frame-all grid-all stretch">
-<colgroup>
-<col style="width: 100%;">
-</colgroup>
-<tbody>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">====</p>
-<p class="tableblock">= Name : Responsible organisation
-:assetdir: ../assets
-:stylesdir: ../assets
-:figure-caption: Figure
-:toc: left
-:docinfo: shared
-:docinfodir: ../assets
-:docinfosubs: attributes
-:safe-mode-unsafe:
-:iconfont-remote!:
-:stylesheet: ../assets/asciidoctor.css
-:scriptsdir: ../assets
-:linkcss:
-:data-uri:
-:iconfont-name: font-awesome.min
-:imagesdir: media
-:icons: font
-:nofooter:
-:sectnumlevels: 3
-:sectlinks:
-:sectanchors:
-:experimental:
-:stem:
-[#23]</p>
-<p class="tableblock">[width="100%",cols="50%,50%",]</p></td>
+which effectively renders distribution format mandatory.</p></td>
 </tr>
 </tbody>
 </table>
-<div class="paragraph">
-<p>|UK GEMINI id |23</p>
 </div>
-<div class="paragraph">
-<p>|Definition |Details of the organisation(s) responsible for the
+</details>
+<h1 id="_name_responsible_organisation" class="sect0"><a class="anchor" href="#_name_responsible_organisation"></a><a class="link" href="#_name_responsible_organisation">Name : Responsible organisation</a></h1>
+<table id="23" class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">UK GEMINI id</th>
+<th class="tableblock halign-left valign-top">23</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Definition</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Details of the organisation(s) responsible for the
 establishment, management, maintenance and distribution of the data
-resource</p>
-</div>
-<div class="paragraph">
-<p>|Purpose and meaning |This informs the user about who is responsible for
-the data resource</p>
-</div>
-<div class="paragraph">
-<p>|Obligation |Mandatory</p>
-</div>
-<div class="paragraph">
-<p>|Occurrence |Multiple</p>
-</div>
-<div class="paragraph">
-<p>|Data type |Class</p>
-</div>
-<div class="paragraph">
-<p>|Domain a|
-This class comprises eight elements relating to the responsible
+resource</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Purpose and meaning</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">This informs the user about who is responsible for
+the data resource</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Obligation</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Mandatory</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Occurrence</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Multiple</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Data type</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Class</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Domain</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>This class comprises eight elements relating to the responsible
 organisation:</p>
 </div>
 <table class="tableblock frame-all grid-all" style="width: 99%;">
-</table>
-<div class="paragraph">
-<p>|Guidance a|
-. The organisation name, email address and responsible party role are
+<colgroup>
+<col style="width: 16%;">
+<col style="width: 14%;">
+<col style="width: 14%;">
+<col style="width: 14%;">
+<col style="width: 14%;">
+<col style="width: 14%;">
+<col style="width: 14%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Metadata element name</th>
+<th class="tableblock halign-left valign-top">Definition</th>
+<th class="tableblock halign-left valign-top">Obligation</th>
+<th class="tableblock halign-left valign-top">Occurrence</th>
+<th class="tableblock halign-left valign-top">Data type</th>
+<th class="tableblock halign-left valign-top">Domain</th>
+<th class="tableblock halign-left valign-top">Rules for how to fill in the entry</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">contact position</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">role or position of the responsible person</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">optional</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">single</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">CharacterString</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">free text</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">A general job title or generic role
+should be identified for someone in a position of responsibility for the
+data resource.<br>
+Do not identify an individual by name, as this is subject to change
+without warning and the information is impossible to keep up-to-date.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">organisation name</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">name of organisation</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">mandatory</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">single</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">CharacterString</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">free text</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The name of the organisation should be
+given in full, without abbreviations</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">postal address</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">postal address of the organisation</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">optional</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">single</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">CharacterString</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">free text</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The full formal postal address (as defined
+for example by Royal Mail) should be given, including the postcode.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">telephone number</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">telephone number by which individuals can talk to the
+organisation or individual</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">optional</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">single</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">CharacterString</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">free text</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The full telephone number should be given.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">email address</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">internet email address which individuals can use to
+contact the organisation or individual</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">mandatory</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">single</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">CharacterString</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">free text</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">A valid email address should be given. Do
+not provide a personal email address.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">web address</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">World Wide Web address of organisation</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">optional</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">single</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">CharacterString</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">free text</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">A valid World Wide Web address should be
+given.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">responsible party role</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">role of the responsible organisation</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">mandatory</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">multiple</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">CodeList</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">see
+<a href="http://inspire.ec.europa.eu/metadata-codelist/ResponsiblePartyRole">INSPIRE
+registry</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The role of the responsible party should be identified.<br>
+For datasets and dataset series, at least a distributor should be given.</p></td>
+</tr>
+</tbody>
+</table></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Guidance</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>The organisation name, email address and responsible party role are
 mandatory. Other entries should only be given that are relevant and
-known.
-. Where no single individual is responsible, a generic role may be
-given.
-. Where there are multiple Distributors / Responsible Organisations,
-then a separate entry should be given for each.
-. For dataset and dataset series, one of the Responsible Organisations
+known.</p>
+</li>
+<li>
+<p>Where no single individual is responsible, a generic role may be
+given.</p>
+</li>
+<li>
+<p>Where there are multiple Distributors / Responsible Organisations,
+then a separate entry should be given for each.</p>
+</li>
+<li>
+<p>For dataset and dataset series, one of the Responsible Organisations
 must be in the role of Distributor (If there is only one Responsible
-Organisation recorded, then it must be in the role of Distributor.).
-. Where there are several distributors, a separate entry should be given
-for each.
-. For best result with data.gov.uk:
-* Enter 'Owner' for UK Location Data Provider role.
-* Enter 'Publisher' For UK Location Data Publisher role.</p>
-</div>
+Organisation recorded, then it must be in the role of Distributor.).</p>
+</li>
+<li>
+<p>Where there are several distributors, a separate entry should be given
+for each.</p>
+</li>
+<li>
+<p>For best result with data.gov.uk:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Enter 'Owner' for UK Location Data Provider role.</p>
+</li>
+<li>
+<p>Enter 'Publisher' For UK Location Data Publisher role.</p>
 <div class="paragraph">
-<p>+
-These appear in the data.gov.uk search results.
-. If the data was created by someone other than the Data Provider, this
+<p>These appear in the data.gov.uk search results.</p>
+</div>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>If the data was created by someone other than the Data Provider, this
 should also be recorded, using the role value 'Originator'.</p>
-</div>
-<div class="paragraph">
-<p>|Comment |Facsimile number is no longer required</p>
-</div>
-<div class="paragraph">
-<p>|Examples a|
-See individual elements below.<br></p>
-</div>
-<table class="tableblock frame-all grid-all stretch">
-</table>
-<div class="paragraph">
-<p>|Revision date |July 2009</p>
+</li>
+</ol>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Comment</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Facsimile number is no longer required</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Examples</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>See individual elements below.<br></p>
 </div>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
-<col style="width: 100%;">
+<col style="width: 33.3333%;">
+<col style="width: 33.3333%;">
+<col style="width: 33.3334%;">
 </colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Metadata element name</th>
+<th class="tableblock halign-left valign-top">Purpose and Meaning</th>
+<th class="tableblock halign-left valign-top">Examples</th>
+</tr>
+</thead>
 <tbody>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Corresponding element in other standards&#8230;&#8203;</p>
-<p class="tableblock">[%collapsible]
-====</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">contact position</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Role or post of the person to contact in the
+organisation</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The mapping product manager</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">organisation name</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Ordnance Survey, Great Britain</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">postal address</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Adanac Drive, Southampton, United Kingdom, SO16 0AS</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">telephone number</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">+44 8456 050505</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">email address</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="mailto:customerservices@os.uk">customerservices@os.uk</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">web address</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">for further information about the organisation</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="http://os.uk" class="bare">http://os.uk</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">responsible party role</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">indicates whether this responsible party is
+acting as distributor, publisher, author, etc.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">distributor</p></td>
+</tr>
+</tbody>
+</table></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Revision date</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">July 2009</p></td>
 </tr>
 </tbody>
 </table>
 <div class="paragraph">
-<p>|Standard |Name |Comparison</p>
+<p>Corresponding element in other standards&#8230;&#8203;</p>
 </div>
-<div class="paragraph">
-<p>|INSPIRE Metadata |Responsible party |Equivalent</p>
-</div>
-<div class="paragraph">
-<p>|ISO 19115:2003 |MD_Identification.pointOfContact |Similar high-level
-class
-|ISO 19139:2007
-|/gmd:MD_Metadata/gmd:identificationInfo/srv:SV_ServiceIdentification/gmd:pointOfContact/gmd:CI_ResponsibleParty
-|Equivalent</p>
-</div>
+<details>
+<summary class="title">Details</summary>
+<div class="content">
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
-<col style="width: 100%;">
+<col style="width: 33.3333%;">
+<col style="width: 33.3333%;">
+<col style="width: 33.3334%;">
 </colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Standard</th>
+<th class="tableblock halign-left valign-top">Name</th>
+<th class="tableblock halign-left valign-top">Comparison</th>
+</tr>
+</thead>
 <tbody>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">====</p>
-<p class="tableblock">Change history&#8230;&#8203;</p>
-<p class="tableblock">[%collapsible]
-====
-GEMINI 1 to 2.0: This has been generalised from Distributor (and
+<td class="tableblock halign-left valign-top"><p class="tableblock">INSPIRE Metadata</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Responsible party</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Equivalent</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ISO 19115:2003</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">MD_Identification.pointOfContact</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Similar high-level
+class</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ISO 19139:2007</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">/gmd:MD_Metadata/gmd:identificationInfo/srv:SV_ServiceIdentification/gmd:pointOfContact/gmd:CI_ResponsibleParty</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Equivalent</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</details>
+<div class="paragraph">
+<p>Change history&#8230;&#8203;</p>
+</div>
+<details>
+<summary class="title">Details</summary>
+<div class="content">
+<div class="paragraph">
+<p>GEMINI 1 to 2.0: This has been generalised from Distributor (and
 Originator) to cover a range of possible roles, by the addition of
 'responsible party role' and minor errors in the class details have been
-corrected.
-====</p>
-<p class="tableblock">Encoding guidelines&#8230;&#8203;</p>
-<p class="tableblock">[%collapsible]
-====</p></td>
-</tr>
-</tbody>
-</table>
+corrected.</p>
+</div>
+</div>
+</details>
 <div class="paragraph">
-<p>|Guidelines a|
-. The encoding example for responsible organisation is shown below. The
-example shows the minimum required information.
-. The format of address and contact information is described at
+<p>Encoding guidelines&#8230;&#8203;</p>
+</div>
+<details>
+<summary class="title">Details</summary>
+<div class="content">
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Guidelines</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>The encoding example for responsible organisation is shown below. The
+example shows the minimum required information.</p>
+</li>
+<li>
+<p>The format of address and contact information is described at
 <a href="component/content/article?id=1048#2.2.8">Responsible party</a>, with a
-more fully populated example.
-. Note on role code: the UK Location portal (data.gov.uk site)
+more fully populated example.</p>
+</li>
+<li>
+<p>Note on role code: the UK Location portal (data.gov.uk site)
 interprets ISO 'owner' as Data Provider, and ISO 'publisher' as Data
 Publisher.</p>
-</div>
-<div class="paragraph">
-<p>|Example a|</p>
-</div>
-<div class="paragraph">
+</li>
+</ol>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Example</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
 <p>Example One (service)</p>
 </div>
 <div class="literalblock">
@@ -7050,182 +7379,263 @@ Publisher.</p>
   ...
 &lt;/gmd:MD_Metadata&gt;</pre>
 </div>
-</div>
-<table class="tableblock frame-all grid-all stretch">
-<colgroup>
-<col style="width: 100%;">
-</colgroup>
-<tbody>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">====</p>
-<p class="tableblock">Metadata errors observed&#8230;&#8203;</p>
-<p class="tableblock">[%collapsible]
-====
-No error information available
-====</p>
-<p class="tableblock">= Name : Limitations on public access
-:assetdir: ../assets
-:stylesdir: ../assets
-:figure-caption: Figure
-:toc: left
-:docinfo: shared
-:docinfodir: ../assets
-:docinfosubs: attributes
-:safe-mode-unsafe:
-:iconfont-remote!:
-:stylesheet: ../assets/asciidoctor.css
-:scriptsdir: ../assets
-:linkcss:
-:data-uri:
-:iconfont-name: font-awesome.min
-:imagesdir: media
-:icons: font
-:nofooter:
-:sectnumlevels: 3
-:sectlinks:
-:sectanchors:
-:experimental:
-:stem:
-[#25]</p>
-<p class="tableblock">[width="100%",cols="50%,50%",]</p></td>
+</div></div></td>
 </tr>
 </tbody>
 </table>
-<div class="paragraph">
-<p>|UK GEMINI id |25</p>
 </div>
+</details>
 <div class="paragraph">
-<p>|Definition |Restrictions imposed on accessing the data resource for
-security and other reasons</p>
+<p>Metadata errors observed&#8230;&#8203;</p>
 </div>
+<details>
+<summary class="title">Details</summary>
+<div class="content">
 <div class="paragraph">
-<p>|Purpose and meaning |The purpose of this element is to identify any
+<p>No error information available</p>
+</div>
+</div>
+</details>
+<h1 id="_name_limitations_on_public_access" class="sect0"><a class="anchor" href="#_name_limitations_on_public_access"></a><a class="link" href="#_name_limitations_on_public_access">Name : Limitations on public access</a></h1>
+<table id="25" class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">UK GEMINI id</th>
+<th class="tableblock halign-left valign-top">25</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Definition</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Restrictions imposed on accessing the data resource for
+security and other reasons</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Purpose and meaning</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The purpose of this element is to identify any
 external restrictions on access to the data such as licence
-arrangements.</p>
-</div>
+arrangements.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Obligation</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Mandatory</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Occurrence</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Multiple</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Data type</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">CharacterString</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Domain</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Free text</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Guidance</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Provide information on any limitations.</p>
+</li>
+<li>
+<p>The most common access restriction should be identified.</p>
+</li>
+<li>
+<p>Where there are no limitations on public access, this should be
+stated.</p>
+</li>
+<li>
+<p>More than one value may be included.</p>
+</li>
+<li>
+<p>For INSPIRE: If no limitations apply, enter 'No limitations'.</p>
+</li>
+<li>
+<p>INSPIRE recognises the following kinds of reasons for limiting public
+access, listed in Article 13(1):</p>
+<div class="ulist">
+<ul>
+<li>
+<p>(a) confidentiality of the proceedings of public authorities</p>
+</li>
+<li>
+<p>(b) international relations, public security or national defence</p>
+</li>
+<li>
+<p>(c) the course of justice</p>
+</li>
+<li>
+<p>(d) confidentiality of commercial or industrial information</p>
+</li>
+<li>
+<p>(e) intellectual property rights</p>
+</li>
+<li>
+<p>(f) confidentiality of personal data</p>
+</li>
+<li>
+<p>(g) interests of a person who supplied the data on a voluntary basis</p>
+</li>
+<li>
+<p>(h) protection of the environment</p>
 <div class="paragraph">
-<p>|Obligation |Mandatory</p>
+<p>Each has an entry with the full text, in the INSPIRE registry,
+<a href="http://inspire.ec.europa.eu/metadata-codelist/LimitationsOnPublicAccess" class="bare">http://inspire.ec.europa.eu/metadata-codelist/LimitationsOnPublicAccess</a></p>
 </div>
-<div class="paragraph">
-<p>|Occurrence |Multiple</p>
+</li>
+</ul>
 </div>
-<div class="paragraph">
-<p>|Data type |CharacterString</p>
-</div>
-<div class="paragraph">
-<p>|Domain |Free text</p>
-</div>
-<div class="paragraph">
-<p>|Guidance a|
-. Provide information on any limitations.
-. The most common access restriction should be identified.
-. Where there are no limitations on public access, this should be
-stated.
-. More than one value may be included.
-. For INSPIRE: If no limitations apply, enter 'No limitations'.
-. INSPIRE recognises the following kinds of reasons for limiting public
-access, listed in Article 13(1):
-* (a) confidentiality of the proceedings of public authorities
-* (b) international relations, public security or national defence
-* (c) the course of justice
-* (d) confidentiality of commercial or industrial information
-* (e) intellectual property rights
-* (f) confidentiality of personal data
-* (g) interests of a person who supplied the data on a voluntary basis
-* (h) protection of the environment</p>
-</div>
-<div class="paragraph">
-<p>+
-Each has an entry with the full text, in the INSPIRE registry,
-<a href="http://inspire.ec.europa.eu/metadata-codelist/LimitationsOnPublicAccess" class="bare">http://inspire.ec.europa.eu/metadata-codelist/LimitationsOnPublicAccess</a>
-. At least one limitation on public access shall give an INSPIRE reason</p>
-</div>
-<div class="paragraph">
-<p>|Comment |Limitations on public access are different from Use
+</li>
+<li>
+<p>At least one limitation on public access shall give an INSPIRE reason</p>
+</li>
+</ol>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Comment</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Limitations on public access are different from Use
 constraints which are warnings about its suitability for particular
-types of usage, or constraints on the use that can be made of the data.</p>
-</div>
-<div class="paragraph">
-<p>|Examples |No restriction on public access.</p>
-</div>
-<div class="paragraph">
-<p>|Revision date |June 2021</p>
-</div>
-<table class="tableblock frame-all grid-all stretch">
-<colgroup>
-<col style="width: 100%;">
-</colgroup>
-<tbody>
+types of usage, or constraints on the use that can be made of the data.</p></td>
+</tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Corresponding element in other standards&#8230;&#8203;</p>
-<p class="tableblock">[%collapsible]
-====</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Examples</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No restriction on public access.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Revision date</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">June 2021</p></td>
 </tr>
 </tbody>
 </table>
 <div class="paragraph">
-<p>|Standard |Name |Comparison</p>
+<p>Corresponding element in other standards&#8230;&#8203;</p>
 </div>
-<div class="paragraph">
-<p>|INSPIRE Metadata |Limitations on public access |Equivalent</p>
-</div>
-<div class="paragraph">
-<p>|ISO 19115:2003 |MD_Identification.resourceConstraints &gt;
-MD_LegalConstraints.accessConstraints &amp; otherConstraints |Equivalent</p>
-</div>
-<div class="paragraph">
-<p>|ISO 19139:2007
-|/gmd:MD_Metadata/gmd:identificationInfo/srv:SV_ServiceIdentification/gmd:resourceConstraints/gmd:MD_LegalConstraints/gmd:accessConstraints
-&amp; otherConstraints |Equivalent</p>
-</div>
+<details>
+<summary class="title">Details</summary>
+<div class="content">
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
-<col style="width: 100%;">
+<col style="width: 33.3333%;">
+<col style="width: 33.3333%;">
+<col style="width: 33.3334%;">
 </colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Standard</th>
+<th class="tableblock halign-left valign-top">Name</th>
+<th class="tableblock halign-left valign-top">Comparison</th>
+</tr>
+</thead>
 <tbody>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">====</p>
-<p class="tableblock">Change history&#8230;&#8203;</p>
-<p class="tableblock">[%collapsible]
-====
-. GEMINI 1 to 2.0: Change of name from 'access constraint', and
+<td class="tableblock halign-left valign-top"><p class="tableblock">INSPIRE Metadata</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Limitations on public access</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Equivalent</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ISO 19115:2003</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">MD_Identification.resourceConstraints &gt;
+MD_LegalConstraints.accessConstraints &amp; otherConstraints</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Equivalent</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ISO 19139:2007</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">/gmd:MD_Metadata/gmd:identificationInfo/srv:SV_ServiceIdentification/gmd:resourceConstraints/gmd:MD_LegalConstraints/gmd:accessConstraints
+&amp; otherConstraints</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Equivalent</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</details>
+<div class="paragraph">
+<p>Change history&#8230;&#8203;</p>
+</div>
+<details>
+<summary class="title">Details</summary>
+<div class="content">
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>GEMINI 1 to 2.0: Change of name from 'access constraint', and
 modification of definition.<br>
-Made mandatory, to conform to INSPIRE.
-. GEMINI 2.0 to 2.1: Change to equivalent ISO 19115 element from
-accessConstraint making domain free text.
-. GEMINI 2.2 to 2.3: Change of encoding
-. GEMINI 2.3 June 2021 fixed typo in Guidance 6 (a) and (f)
-====</p>
-<p class="tableblock">Encoding guidelines&#8230;&#8203;</p>
-<p class="tableblock">[%collapsible]
-====
-[width="100%",cols="50%,50%",]</p></td>
-</tr>
-</tbody>
-</table>
+Made mandatory, to conform to INSPIRE.</p>
+</li>
+<li>
+<p>GEMINI 2.0 to 2.1: Change to equivalent ISO 19115 element from
+accessConstraint making domain free text.</p>
+</li>
+<li>
+<p>GEMINI 2.2 to 2.3: Change of encoding</p>
+</li>
+<li>
+<p>GEMINI 2.3 June 2021 fixed typo in Guidance 6 (a) and (f)</p>
+</li>
+</ol>
+</div>
+</div>
+</details>
 <div class="paragraph">
-<p>|Guidelines a|
-. This element shall be encoded in a different
+<p>Encoding guidelines&#8230;&#8203;</p>
+</div>
+<details>
+<summary class="title">Details</summary>
+<div class="content">
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Guidelines</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>This element shall be encoded in a different
 resourceConstraints/MD_LegalConstraints XML element to GEMINI element 26
-Use constraints
-. The LegalConstraints element shall contain a
+Use constraints</p>
+</li>
+<li>
+<p>The LegalConstraints element shall contain a
 accessConstraints/MD_RestrictionCode element with code list value
-"otherRestrictions"
-. The LegalConstraints element shall also contain a gmd:otherConstraints
-element, with free text.
-. If there are no limitations the value of gmd:otherConstraints shall be
-'no limitations' (see Example Two).
-. The free text shall be encoded in a gmx:Anchor element, with
+"otherRestrictions"</p>
+</li>
+<li>
+<p>The LegalConstraints element shall also contain a gmd:otherConstraints
+element, with free text.</p>
+</li>
+<li>
+<p>If there are no limitations the value of gmd:otherConstraints shall be
+'no limitations' (see Example Two).</p>
+</li>
+<li>
+<p>The free text shall be encoded in a gmx:Anchor element, with
 xlink:href pointing to the relevant kind of limitation from the INSPIRE
 Metadata registry:
-<a href="http://inspire.ec.europa.eu/metadata-codelist/LimitationsOnPublicAccess" class="bare">http://inspire.ec.europa.eu/metadata-codelist/LimitationsOnPublicAccess</a>
-. Free text content cannot be empty
-. To encode multiple limitations, include more than one
+<a href="http://inspire.ec.europa.eu/metadata-codelist/LimitationsOnPublicAccess" class="bare">http://inspire.ec.europa.eu/metadata-codelist/LimitationsOnPublicAccess</a></p>
+</li>
+<li>
+<p>Free text content cannot be empty</p>
+</li>
+<li>
+<p>To encode multiple limitations, include more than one
 gmd:otherConstraints element</p>
-</div>
-<div class="paragraph">
-<p>|Example a|
-Example One</p>
+</li>
+</ol>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Example</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>Example One</p>
 </div>
 <div class="literalblock">
 <div class="content">
@@ -7293,187 +7703,238 @@ Example One</p>
       &lt;/gmd:resourceConstraints&gt;
 ...          </pre>
 </div>
-</div>
-<table class="tableblock frame-all grid-all stretch">
-<colgroup>
-<col style="width: 100%;">
-</colgroup>
-<tbody>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">====</p>
-<p class="tableblock">Metadata errors observed&#8230;&#8203;</p>
-<p class="tableblock">[%collapsible]
-====</p></td>
+</div></div></td>
 </tr>
 </tbody>
 </table>
+</div>
+</details>
 <div class="paragraph">
-<p>|Errors observed |<strong>Missing or incorrect information</strong><br>
+<p>Metadata errors observed&#8230;&#8203;</p>
+</div>
+<details>
+<summary class="title">Details</summary>
+<div class="content">
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Errors observed</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Missing or incorrect information</strong><br>
 Licence information should be provided, preferably by a URL.<br>
 It is an error to state 'no limitations' in Limitations on Public
 Access, when the resource is not open access.<br>
 Defra metadata audit, October 2015: In many cases either this field has
 been left empty or where the PSMA (or similar) licensing arrangements
 are referenced there is either a lack of detail or no links to the
-appropriate sites.</p>
-</div>
-<table class="tableblock frame-all grid-all stretch">
-<colgroup>
-<col style="width: 100%;">
-</colgroup>
-<tbody>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">====</p>
-<p class="tableblock">= Name : Use constraints
-:assetdir: ../assets
-:stylesdir: ../assets
-:figure-caption: Figure
-:toc: left
-:docinfo: shared
-:docinfodir: ../assets
-:docinfosubs: attributes
-:safe-mode-unsafe:
-:iconfont-remote!:
-:stylesheet: ../assets/asciidoctor.css
-:scriptsdir: ../assets
-:linkcss:
-:data-uri:
-:iconfont-name: font-awesome.min
-:imagesdir: media
-:icons: font
-:nofooter:
-:sectnumlevels: 3
-:sectlinks:
-:sectanchors:
-:experimental:
-:stem:
-[#26]</p>
-<p class="tableblock">[width="100%",cols="50%,50%",]</p></td>
+appropriate sites.</p></td>
 </tr>
 </tbody>
 </table>
-<div class="paragraph">
-<p>|UK GEMINI id |26</p>
 </div>
-<div class="paragraph">
-<p>|Definition |Restrictions and legal restraints on using the data
-resource</p>
-</div>
-<div class="paragraph">
-<p>|Purpose and meaning |The purpose of this element is to describe any
-restrictions on usage of the data (as opposed to access)</p>
-</div>
-<div class="paragraph">
-<p>|Obligation |Mandatory</p>
-</div>
-<div class="paragraph">
-<p>|Occurrence |Multiple</p>
-</div>
-<div class="paragraph">
-<p>|Data type |CharacterString</p>
-</div>
-<div class="paragraph">
-<p>|Domain |Free text</p>
-</div>
-<div class="paragraph">
-<p>|Guidance a|
-. Provide information on any constraints to using the resource, e.g.
+</details>
+<h1 id="_name_use_constraints" class="sect0"><a class="anchor" href="#_name_use_constraints"></a><a class="link" href="#_name_use_constraints">Name : Use constraints</a></h1>
+<table id="26" class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">UK GEMINI id</th>
+<th class="tableblock halign-left valign-top">26</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Definition</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Restrictions and legal restraints on using the data
+resource</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Purpose and meaning</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The purpose of this element is to describe any
+restrictions on usage of the data (as opposed to access)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Obligation</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Mandatory</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Occurrence</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Multiple</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Data type</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">CharacterString</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Domain</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Free text</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Guidance</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Provide information on any constraints to using the resource, e.g.
 licensing, fees, usage restrictions, or refer to a URL where this
 information is available, e.g. a licence document. If entering a URL,
 enter this as a sub-element, not as part of free text. Where relevant,
 Data Provider licence information should be provided in the form of a
 Licence Title, and where possible, a licence URL. If more than one type
 of licence is included then the URL should point to a Data Providers
-page.
-. Any known constraints should be identified. If no conditions apply,
+page.</p>
+</li>
+<li>
+<p>Any known constraints should be identified. If no conditions apply,
 then 'no conditions apply' should be recorded.</p>
-</div>
-<div class="paragraph">
-<p>|Comment |Use constraints are different from Restrictions on public
+</li>
+</ol>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Comment</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Use constraints are different from Restrictions on public
 access which describe limitations on access to the data. A data resource
-can have open access (e.g. to look at it), but restricted use.</p>
-</div>
-<div class="paragraph">
-<p>|Examples |Should not be used for navigation purposes.</p>
-</div>
-<div class="paragraph">
-<p>|Revision date |September 2018</p>
-</div>
-<table class="tableblock frame-all grid-all stretch">
-<colgroup>
-<col style="width: 100%;">
-</colgroup>
-<tbody>
+can have open access (e.g. to look at it), but restricted use.</p></td>
+</tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Corresponding element in other standards&#8230;&#8203;
-[%collapsible]
-====</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Examples</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Should not be used for navigation purposes.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Revision date</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">September 2018</p></td>
 </tr>
 </tbody>
 </table>
 <div class="paragraph">
-<p>|Standard |Name |Comparison</p>
+<p>Corresponding element in other standards&#8230;&#8203;</p>
 </div>
-<div class="paragraph">
-<p>|INSPIRE Metadata |Conditions applying to access and use |Equivalent</p>
-</div>
-<div class="paragraph">
-<p>|ISO 19115:2003 |MD_Identification.resourceConstraints &gt;
-MD_LegalConstraints.useConstraints &amp; otherConstraints |Equivalent</p>
-</div>
-<div class="paragraph">
-<p>|ISO 19139:2007
-|/gmd:MD_Metadata/gmd:identificationInfo/srv:SV_ServiceIdentification/gmd:resourceConstraints/gmd:MD_LegalConstraints/gmd:useConstraints
-&amp; gmd:otherConstraints |Equivalent</p>
-</div>
+<details>
+<summary class="title">Details</summary>
+<div class="content">
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
-<col style="width: 100%;">
+<col style="width: 33.3333%;">
+<col style="width: 33.3333%;">
+<col style="width: 33.3334%;">
 </colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Standard</th>
+<th class="tableblock halign-left valign-top">Name</th>
+<th class="tableblock halign-left valign-top">Comparison</th>
+</tr>
+</thead>
 <tbody>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">====</p>
-<p class="tableblock">Change history&#8230;&#8203;</p>
-<p class="tableblock">[%collapsible]
-====
-* GEMINI 1 to 2.0: Change to free text field from enumerated list, and
-making mandatory to conform with INSPIRE.
-* GEMINI 2.2 to 2.3: Change of encoding
-====</p>
-<p class="tableblock">Encoding guidelines&#8230;&#8203;</p>
-<p class="tableblock">[%collapsible]
-====</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">INSPIRE Metadata</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Conditions applying to access and use</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Equivalent</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ISO 19115:2003</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">MD_Identification.resourceConstraints &gt;
+MD_LegalConstraints.useConstraints &amp; otherConstraints</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Equivalent</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ISO 19139:2007</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">/gmd:MD_Metadata/gmd:identificationInfo/srv:SV_ServiceIdentification/gmd:resourceConstraints/gmd:MD_LegalConstraints/gmd:useConstraints
+&amp; gmd:otherConstraints</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Equivalent</p></td>
 </tr>
 </tbody>
 </table>
+</div>
+</details>
 <div class="paragraph">
-<p>|Guidelines a|
-. This element shall be encoded in a different
+<p>Change history&#8230;&#8203;</p>
+</div>
+<details>
+<summary class="title">Details</summary>
+<div class="content">
+<div class="ulist">
+<ul>
+<li>
+<p>GEMINI 1 to 2.0: Change to free text field from enumerated list, and
+making mandatory to conform with INSPIRE.</p>
+</li>
+<li>
+<p>GEMINI 2.2 to 2.3: Change of encoding</p>
+</li>
+</ul>
+</div>
+</div>
+</details>
+<div class="paragraph">
+<p>Encoding guidelines&#8230;&#8203;</p>
+</div>
+<details>
+<summary class="title">Details</summary>
+<div class="content">
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Guidelines</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>This element shall be encoded in a different
 resourceConstraints/MD_LegalConstraints XML element to GEMINI element 25
-Limitations on public access
-. The MD_LegalConstraints element shall contain a useConstraints element
-. Note: INSPIRE allows an accessConstraints element here; GEMINI
-recommends using Limitations on public access for these
-. The useConstraints element shall contain an MD_RestrictionCode element
-with code list value "otherRestrictions"
-. The LegalConstraints element shall also contain a gmd:otherConstraints
-element, with free text.
-. "No conditions" and "conditions unknown" shall be specified using a
+Limitations on public access</p>
+</li>
+<li>
+<p>The MD_LegalConstraints element shall contain a useConstraints element</p>
+</li>
+<li>
+<p>Note: INSPIRE allows an accessConstraints element here; GEMINI
+recommends using Limitations on public access for these</p>
+</li>
+<li>
+<p>The useConstraints element shall contain an MD_RestrictionCode element
+with code list value "otherRestrictions"</p>
+</li>
+<li>
+<p>The LegalConstraints element shall also contain a gmd:otherConstraints
+element, with free text.</p>
+</li>
+<li>
+<p>"No conditions" and "conditions unknown" shall be specified using a
 gmx:Anchor link to the relevant entry in the INSPIRE metadata registry,
-<a href="http://inspire.ec.europa.eu/metadata-codelist/ConditionsApplyingToAccessAndUse" class="bare">http://inspire.ec.europa.eu/metadata-codelist/ConditionsApplyingToAccessAndUse</a>
-. In certain circumstances it might be appropriate to refer to an
+<a href="http://inspire.ec.europa.eu/metadata-codelist/ConditionsApplyingToAccessAndUse" class="bare">http://inspire.ec.europa.eu/metadata-codelist/ConditionsApplyingToAccessAndUse</a></p>
+</li>
+<li>
+<p>In certain circumstances it might be appropriate to refer to an
 external document describing constraints. In this case the encoding
 shown in Example Two may be used. This is recommended for licenses, even
 the use of ISO 19115 otherRestrictions would not generally include
 license restrictions, as they have their own term in the ISO 19115 code
-list.
-. If there are no limitations the value of gmd:otherConstraints shall be
-'no limitations' (see Example Three).
-. There may be more than one gmd:otherConstraints element</p>
-</div>
-<div class="paragraph">
-<p>|Example a|
-Example One</p>
+list.</p>
+</li>
+<li>
+<p>If there are no limitations the value of gmd:otherConstraints shall be
+'no limitations' (see Example Three).</p>
+</li>
+<li>
+<p>There may be more than one gmd:otherConstraints element</p>
+</li>
+</ol>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Example</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>Example One</p>
 </div>
 <div class="literalblock">
 <div class="content">
@@ -7539,159 +8000,192 @@ Example One</p>
           ...
         &lt;/gmd:MD_LegalConstraints&gt;</pre>
 </div>
-</div>
-<table class="tableblock frame-all grid-all stretch">
-<colgroup>
-<col style="width: 100%;">
-</colgroup>
-<tbody>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">====</p>
-<p class="tableblock">Metadata errors observed&#8230;&#8203;</p>
-<p class="tableblock">[%collapsible]
-====
-[width="100%",cols="50%,50%",]</p></td>
+</div></div></td>
 </tr>
 </tbody>
 </table>
+</div>
+</details>
 <div class="paragraph">
-<p>|Errors observed |<strong>Missing or incorrect constraints information</strong><br>
+<p>Metadata errors observed&#8230;&#8203;</p>
+</div>
+<details>
+<summary class="title">Details</summary>
+<div class="content">
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Errors observed</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Missing or incorrect constraints information</strong><br>
 Licence information should be provided, preferably by a URL.<br>
 It is an error to state 'no conditions apply' in Use Constraints, when
-restrictions do in fact exist.</p>
-</div>
-<table class="tableblock frame-all grid-all stretch">
-<colgroup>
-<col style="width: 100%;">
-</colgroup>
-<tbody>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">====</p>
-<p class="tableblock">= Name : Additional information
-:assetdir: ../assets
-:stylesdir: ../assets
-:figure-caption: Figure
-:toc: left
-:docinfo: shared
-:docinfodir: ../assets
-:docinfosubs: attributes
-:safe-mode-unsafe:
-:iconfont-remote!:
-:stylesheet: ../assets/asciidoctor.css
-:scriptsdir: ../assets
-:linkcss:
-:data-uri:
-:iconfont-name: font-awesome.min
-:imagesdir: media
-:icons: font
-:nofooter:
-:sectnumlevels: 3
-:sectlinks:
-:sectanchors:
-:experimental:
-:stem:
-[#27]</p>
-<p class="tableblock">[width="100%",cols="50%,50%",]</p></td>
+restrictions do in fact exist.</p></td>
 </tr>
 </tbody>
 </table>
-<div class="paragraph">
-<p>|UK GEMINI id |27</p>
 </div>
-<div class="paragraph">
-<p>|Definition |Other descriptive information about the data resource</p>
-</div>
-<div class="paragraph">
-<p>|Purpose and meaning |The purpose of this element is to record relevant
+</details>
+<h1 id="_name_additional_information" class="sect0"><a class="anchor" href="#_name_additional_information"></a><a class="link" href="#_name_additional_information">Name : Additional information</a></h1>
+<table id="27" class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">UK GEMINI id</th>
+<th class="tableblock halign-left valign-top">27</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Definition</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Other descriptive information about the data resource</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Purpose and meaning</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The purpose of this element is to record relevant
 information that does not clearly belong in another element. This may be
-a reference (e.g. a URL).</p>
-</div>
-<div class="paragraph">
-<p>|Obligation |Optional</p>
-</div>
-<div class="paragraph">
-<p>|Occurrence |Single</p>
-</div>
-<div class="paragraph">
-<p>|Data type |CharacterString</p>
-</div>
-<div class="paragraph">
-<p>|Domain |Free text</p>
-</div>
-<div class="paragraph">
-<p>|Guidance a|
-. Information about access to the resource should be in
-&lt;&lt;19[Resource locator].
-. Information about fees should be in &lt;&lt;25[Limitations on public
-access]
-. Other relevant information should be in this element, or provided by a
-link which is given in this element.
-. References to other documents may be by URL, DOI, or other means.</p>
-</div>
-<div class="paragraph">
-<p>|Comment |</p>
-</div>
-<div class="paragraph">
-<p>|Examples |For full details about this dataset, see
-'https://os.uk/business-and-government/products/addressbase.html'</p>
-</div>
-<div class="paragraph">
-<p>|Revision date |June 2021</p>
-</div>
-<table class="tableblock frame-all grid-all stretch">
-<colgroup>
-<col style="width: 100%;">
-</colgroup>
-<tbody>
+a reference (e.g. a URL).</p></td>
+</tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Corresponding element in other standards&#8230;&#8203;</p>
-<p class="tableblock">[%collapsible]
-====</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Obligation</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Optional</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Occurrence</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Single</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Data type</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">CharacterString</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Domain</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Free text</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Guidance</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Information about access to the resource should be in
+&lt;&lt;19[Resource locator].</p>
+</li>
+<li>
+<p>Information about fees should be in &lt;&lt;25[Limitations on public
+access]</p>
+</li>
+<li>
+<p>Other relevant information should be in this element, or provided by a
+link which is given in this element.</p>
+</li>
+<li>
+<p>References to other documents may be by URL, DOI, or other means.</p>
+</li>
+</ol>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Comment</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Examples</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">For full details about this dataset, see
+'https://os.uk/business-and-government/products/addressbase.html'</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Revision date</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">June 2021</p></td>
 </tr>
 </tbody>
 </table>
 <div class="paragraph">
-<p>|Standard |Name |Comparison</p>
+<p>Corresponding element in other standards&#8230;&#8203;</p>
 </div>
-<div class="paragraph">
-<p>|INSPIRE Metadata |supplemental information |</p>
-</div>
-<div class="paragraph">
-<p>|ISO 19115:2003 |MD_Identification &gt;
-MD_DataIdentification.supplementalInformation |Equivalent</p>
-</div>
-<div class="paragraph">
-<p>|ISO 19139:2007
-|/gmd:MD_Metadata/gmd:identificationInfo/gmd:MD_DataIdentification/gmd:supplementalInformation
-|Equivalent</p>
-</div>
+<details>
+<summary class="title">Details</summary>
+<div class="content">
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
-<col style="width: 100%;">
+<col style="width: 33.3333%;">
+<col style="width: 33.3333%;">
+<col style="width: 33.3334%;">
 </colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Standard</th>
+<th class="tableblock halign-left valign-top">Name</th>
+<th class="tableblock halign-left valign-top">Comparison</th>
+</tr>
+</thead>
 <tbody>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">====</p>
-<p class="tableblock">Change history&#8230;&#8203;</p>
-<p class="tableblock">[%collapsible]
-====
-* GEMINI 2.3 20181031 Rename 'Additional information source' to
-'Additional information'
-* GEMINI 2.3 June 2021 fixed typo (XML syntax error) in example 2
-====</p>
-<p class="tableblock">Encoding guidelines&#8230;&#8203;</p>
-<p class="tableblock">[%collapsible]
-====
-[width="100%",cols="50%,50%",]</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">INSPIRE Metadata</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">supplemental information</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ISO 19115:2003</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">MD_Identification &gt;
+MD_DataIdentification.supplementalInformation</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Equivalent</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ISO 19139:2007</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">/gmd:MD_Metadata/gmd:identificationInfo/gmd:MD_DataIdentification/gmd:supplementalInformation</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Equivalent</p></td>
 </tr>
 </tbody>
 </table>
-<div class="paragraph">
-<p>|Guidelines |No specific rules for this metadata element</p>
 </div>
+</details>
 <div class="paragraph">
-<p>|Example a|
-Example one</p>
+<p>Change history&#8230;&#8203;</p>
+</div>
+<details>
+<summary class="title">Details</summary>
+<div class="content">
+<div class="ulist">
+<ul>
+<li>
+<p>GEMINI 2.3 20181031 Rename 'Additional information source' to
+'Additional information'</p>
+</li>
+<li>
+<p>GEMINI 2.3 June 2021 fixed typo (XML syntax error) in example 2</p>
+</li>
+</ul>
+</div>
+</div>
+</details>
+<div class="paragraph">
+<p>Encoding guidelines&#8230;&#8203;</p>
+</div>
+<details>
+<summary class="title">Details</summary>
+<div class="content">
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Guidelines</th>
+<th class="tableblock halign-left valign-top">No specific rules for this metadata element</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Example</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>Example one</p>
 </div>
 <div class="literalblock">
 <div class="content">
@@ -7721,69 +8215,61 @@ Example one</p>
         &lt;gmx:Anchor xlink:href="http://www.bgs.ac.uk/mineralsuk/statistics/worldStatistics.html/"&gt;Background information&lt;/gmx:Anchor&gt;
       &lt;/gmd:supplementalInformation&gt;</pre>
 </div>
-</div>
-<table class="tableblock frame-all grid-all stretch">
-<colgroup>
-<col style="width: 100%;">
-</colgroup>
-<tbody>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">====</p>
-<p class="tableblock">Metadata errors observed&#8230;&#8203;</p>
-<p class="tableblock">[%collapsible]
-====
-No error information available
-====</p>
-<p class="tableblock">= Name : Resource identifier
-:assetdir: ../assets
-:stylesdir: ../assets
-:figure-caption: Figure
-:toc: left
-:docinfo: shared
-:docinfodir: ../assets
-:docinfosubs: attributes
-:safe-mode-unsafe:
-:iconfont-remote!:
-:stylesheet: ../assets/asciidoctor.css
-:scriptsdir: ../assets
-:linkcss:
-:data-uri:
-:iconfont-name: font-awesome.min
-:imagesdir: media
-:icons: font
-:nofooter:
-:sectnumlevels: 3
-:sectlinks:
-:sectanchors:
-:experimental:
-:stem:
-[#36]</p>
-<p class="tableblock">[width="100%",cols="50%,50%",]</p></td>
+</div></div></td>
 </tr>
 </tbody>
 </table>
-<div class="paragraph">
-<p>|UK GEMINI id |36</p>
 </div>
+</details>
 <div class="paragraph">
-<p>|Definition |Value uniquely identifying the data resource</p>
+<p>Metadata errors observed&#8230;&#8203;</p>
 </div>
+<details>
+<summary class="title">Details</summary>
+<div class="content">
 <div class="paragraph">
-<p>|Purpose and meaning |The purpose of this is to uniquely identify the
-data resource.</p>
+<p>No error information available</p>
 </div>
-<div class="paragraph">
-<p>|Obligation |Mandatory for datasets and dataset series</p>
 </div>
-<div class="paragraph">
-<p>|Occurrence |Multiple</p>
-</div>
-<div class="paragraph">
-<p>|Data type |Class</p>
-</div>
-<div class="paragraph">
-<p>|Domain a|
-The class comprises the following elements:</p>
+</details>
+<h1 id="_name_resource_identifier" class="sect0"><a class="anchor" href="#_name_resource_identifier"></a><a class="link" href="#_name_resource_identifier">Name : Resource identifier</a></h1>
+<table id="36" class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">UK GEMINI id</th>
+<th class="tableblock halign-left valign-top">36</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Definition</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Value uniquely identifying the data resource</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Purpose and meaning</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The purpose of this is to uniquely identify the
+data resource.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Obligation</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Mandatory for datasets and dataset series</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Occurrence</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Multiple</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Data type</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Class</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Domain</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>The class comprises the following elements:</p>
 </div>
 <div class="ulist">
 <ul>
@@ -7801,116 +8287,233 @@ are defined.</p>
 <p>These elements are described in the table below</p>
 </div>
 <table class="tableblock frame-all grid-all stretch">
-</table>
-<div class="paragraph">
-<p>|Guidance a|
-. The code is generally assigned by some authority, with a codespace
-uniquely identifying the context of the identifier code.
-. The codespace must be a character string that uniquely identifies the
+<colgroup>
+<col style="width: 33.3333%;">
+<col style="width: 33.3333%;">
+<col style="width: 33.3334%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Metadata element name</th>
+<th class="tableblock halign-left valign-top">code</th>
+<th class="tableblock halign-left valign-top">codeSpace</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Definition</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Identifier code or name, often from a controlled list or
+pattern defined by a code pace</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Identifier of a code space within which
+one or more codes are defined</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Obligation</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">mandatory</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">conditional ~ must be suppled if the code by
+itself does not uniquely identify the resource.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Occurrence</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">single</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">single</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Data type</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">CharacterString</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">CharacterString</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Domain</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">free text</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">free text</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Other comments</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">This code space is often defined by some authority
+organization, were one organization may define multiple code spaces. The
+range and format of each code space identifier is defined by that code
+space authority.</p></td>
+</tr>
+</tbody>
+</table></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Guidance</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>The code is generally assigned by some authority, with a codespace
+uniquely identifying the context of the identifier code.</p>
+</li>
+<li>
+<p>The codespace must be a character string that uniquely identifies the
 namespace for the identifier code. This should be the internet domain of
 the data owner/provider,<br>
-e.g.: data.bgs.ac.uk/id/dataHolding/
-. The resource is identified by a unique identifier code, generally
+e.g.: data.bgs.ac.uk/id/dataHolding/</p>
+</li>
+<li>
+<p>The resource is identified by a unique identifier code, generally
 assigned by the data owner. A character string namespace uniquely
 identifying the context of the identifier code may be added for
 uniqueness. This is usually allocated by an appropriate authority such
-as the manager of the spatial data infrastructure.
-. Where present, a DOI should be recorded as a resource identifier, with
+as the manager of the spatial data infrastructure.</p>
+</li>
+<li>
+<p>Where present, a DOI should be recorded as a resource identifier, with
 the codespace being doi. If a DOI landing page is also available, then
 include this using an Anchor.</p>
-</div>
-<div class="paragraph">
-<p>|Comment |Since INSPIRE metadata technical guidance version 2, it is no
+</li>
+</ol>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Comment</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Since INSPIRE metadata technical guidance version 2, it is no
 longer required to use RS_Identifier if a value for code space value is
 provided.<br>
 In such cases (where there is a code space provided) it is now strongly
 recommended to use MD_Identifier and encode the complete URI in the code
-element.</p>
-</div>
-<div class="paragraph">
-<p>|Examples a|
-* image2000_1_nl2_multi
-* doi:10.5285/1e7d5e08-9e24-471b-ae37-49b477f695e3
-* 527c4cac-070c-4bca-9aaf-92bece7be902</p>
-</div>
-<div class="paragraph">
-<p>|Revision date |May 2018</p>
-</div>
-<table class="tableblock frame-all grid-all stretch">
-<colgroup>
-<col style="width: 100%;">
-</colgroup>
-<tbody>
+element.</p></td>
+</tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Corresponding element in other standards&#8230;&#8203;</p>
-<p class="tableblock">[%collapsible]
-====</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Examples</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="ulist">
+<ul>
+<li>
+<p>image2000_1_nl2_multi</p>
+</li>
+<li>
+<p>doi:10.5285/1e7d5e08-9e24-471b-ae37-49b477f695e3</p>
+</li>
+<li>
+<p>527c4cac-070c-4bca-9aaf-92bece7be902</p>
+</li>
+</ul>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Revision date</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">May 2018</p></td>
 </tr>
 </tbody>
 </table>
 <div class="paragraph">
-<p>|Standard |Name |Comparison</p>
+<p>Corresponding element in other standards&#8230;&#8203;</p>
 </div>
-<div class="paragraph">
-<p>|INSPIRE Metadata |Unique resource identifier |Equivalent</p>
-</div>
-<div class="paragraph">
-<p>|ISO 19115:2003 |MD_Identification.citation &gt; CI_Citation.identifier
-|Equivalent</p>
-</div>
-<div class="paragraph">
-<p>|ISO 19139:2007
-|/gmd:MD_Metadata/gmd:identificationInfo/gmd:MD_DataIdentification/gmd:citation/gmd:CI_Citation/gmd:identifier
-|Equivalent</p>
-</div>
+<details>
+<summary class="title">Details</summary>
+<div class="content">
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
-<col style="width: 100%;">
+<col style="width: 33.3333%;">
+<col style="width: 33.3333%;">
+<col style="width: 33.3334%;">
 </colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Standard</th>
+<th class="tableblock halign-left valign-top">Name</th>
+<th class="tableblock halign-left valign-top">Comparison</th>
+</tr>
+</thead>
 <tbody>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">====</p>
-<p class="tableblock">Change history&#8230;&#8203;</p>
-<p class="tableblock">[%collapsible]
-====
-. GEMINI 1 to 2.0: New item 'Unique resource identifier', required for
-INSPIRE
-. GEMINI 2.2 to 2.3: Name changed from Unique resource identifier, to
-reduce confusion with W3C URI
-====</p>
-<p class="tableblock">Encoding guidelines&#8230;&#8203;</p>
-<p class="tableblock">[%collapsible]
-====</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">INSPIRE Metadata</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Unique resource identifier</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Equivalent</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ISO 19115:2003</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">MD_Identification.citation &gt; CI_Citation.identifier</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Equivalent</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ISO 19139:2007</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">/gmd:MD_Metadata/gmd:identificationInfo/gmd:MD_DataIdentification/gmd:citation/gmd:CI_Citation/gmd:identifier</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Equivalent</p></td>
 </tr>
 </tbody>
 </table>
+</div>
+</details>
 <div class="paragraph">
-<p>|Guidelines a|
-. The resource identifier can be a globally unique identifier such as a
-UUID, in which case it is encoded as shown in Example One.
-. The form used in Example One can also be used if the identifier is
+<p>Change history&#8230;&#8203;</p>
+</div>
+<details>
+<summary class="title">Details</summary>
+<div class="content">
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>GEMINI 1 to 2.0: New item 'Unique resource identifier', required for
+INSPIRE</p>
+</li>
+<li>
+<p>GEMINI 2.2 to 2.3: Name changed from Unique resource identifier, to
+reduce confusion with W3C URI</p>
+</li>
+</ol>
+</div>
+</div>
+</details>
+<div class="paragraph">
+<p>Encoding guidelines&#8230;&#8203;</p>
+</div>
+<details>
+<summary class="title">Details</summary>
+<div class="content">
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Guidelines</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>The resource identifier can be a globally unique identifier such as a
+UUID, in which case it is encoded as shown in Example One.</p>
+</li>
+<li>
+<p>The form used in Example One can also be used if the identifier is
 expressed as a code space and code in URI form like
 <a href="http://image2000.jrc.it#image2000_1_nl2_multi" class="bare">http://image2000.jrc.it#image2000_1_nl2_multi</a> However a better way to do
-this is to use the gmx:Anchor as in Example Two.
-. Note that the identifier is encoded in the citation of the metadata
-instance
-. A resource identifier (which may be the same as the code) should also
+this is to use the gmx:Anchor as in Example Two.</p>
+</li>
+<li>
+<p>Note that the identifier is encoded in the citation of the metadata
+instance</p>
+</li>
+<li>
+<p>A resource identifier (which may be the same as the code) should also
 be added to the 'id' attribute of the gmd:MD_DataIdentification type.
 This follows the examples in the
 <a href="https://inspire.ec.europa.eu/documents/inspire-metadata-implementing-rules-technical-guidelines-based-en-iso-19115-and-en-iso-1">INSPIRE
-guidance</a> <a href="component/content/article?id=1047">[9</a>].
-. Care must be taken with the value of the id attribute code. The
+guidance</a> <a href="component/content/article?id=1047">[9</a>].</p>
+</li>
+<li>
+<p>Care must be taken with the value of the id attribute code. The
 attribute 'id' has the data type xs:ID which must have as its value an
 XML name. This means that it cannot start with a number, and has a
 restricted set of characters it can include. This means that normally it
 cannot be an UUID or an URI. The id must also be unique across all id
-attributes in the metadata document
-. See notes on <a href="component/content/article?id=1048#2.2.12">XML
+attributes in the metadata document</p>
+</li>
+<li>
+<p>See notes on <a href="component/content/article?id=1048#2.2.12">XML
 Identifiers</a>.</p>
-</div>
-<div class="paragraph">
-<p>|Example a|
-Example One</p>
+</li>
+</ol>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Example</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>Example One</p>
 </div>
 <div class="literalblock">
 <div class="content">
@@ -7966,70 +8569,62 @@ Example One</p>
   ...
 &lt;/gmd:MD_Metadata&gt;</pre>
 </div>
-</div>
-<table class="tableblock frame-all grid-all stretch">
-<colgroup>
-<col style="width: 100%;">
-</colgroup>
-<tbody>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">====</p>
-<p class="tableblock">Metadata errors observed&#8230;&#8203;</p>
-<p class="tableblock">[%collapsible]
-====
-No error information available
-====</p>
-<p class="tableblock">= Name : Conformity
-:assetdir: ../assets
-:stylesdir: ../assets
-:figure-caption: Figure
-:toc: left
-:docinfo: shared
-:docinfodir: ../assets
-:docinfosubs: attributes
-:safe-mode-unsafe:
-:iconfont-remote!:
-:stylesheet: ../assets/asciidoctor.css
-:scriptsdir: ../assets
-:linkcss:
-:data-uri:
-:iconfont-name: font-awesome.min
-:imagesdir: media
-:icons: font
-:nofooter:
-:sectnumlevels: 3
-:sectlinks:
-:sectanchors:
-:experimental:
-:stem:
-[#41]</p>
-<p class="tableblock">[width="100%",cols="50%,50%",]</p></td>
+</div></div></td>
 </tr>
 </tbody>
 </table>
-<div class="paragraph">
-<p>|UK GEMINI id |41</p>
 </div>
+</details>
 <div class="paragraph">
-<p>|Definition |Statement of conformity with the product specification or
-user requirement against which the data is being evaluated</p>
+<p>Metadata errors observed&#8230;&#8203;</p>
 </div>
+<details>
+<summary class="title">Details</summary>
+<div class="content">
 <div class="paragraph">
-<p>|Purpose and meaning |The purpose of this is to record the conformity to
-the INSPIRE or other data specification</p>
+<p>No error information available</p>
 </div>
-<div class="paragraph">
-<p>|Obligation |Mandatory</p>
 </div>
-<div class="paragraph">
-<p>|Occurrence |Multiple</p>
-</div>
-<div class="paragraph">
-<p>|Data type |Class</p>
-</div>
-<div class="paragraph">
-<p>|Domain a|
-This class comprises the following elements:</p>
+</details>
+<h1 id="_name_conformity" class="sect0"><a class="anchor" href="#_name_conformity"></a><a class="link" href="#_name_conformity">Name : Conformity</a></h1>
+<table id="41" class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">UK GEMINI id</th>
+<th class="tableblock halign-left valign-top">41</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Definition</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Statement of conformity with the product specification or
+user requirement against which the data is being evaluated</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Purpose and meaning</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The purpose of this is to record the conformity to
+the INSPIRE or other data specification</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Obligation</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Mandatory</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Occurrence</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Multiple</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Data type</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Class</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Domain</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>This class comprises the following elements:</p>
 </div>
 <div class="ulist">
 <ul>
@@ -8048,108 +8643,244 @@ This class comprises the following elements:</p>
 <p>For details see below.<br></p>
 </div>
 <table class="tableblock frame-all grid-all stretch">
-</table>
-<div class="paragraph">
-<p>|Guidance a|
-. At least one conformity statement shall be to an INSPIRE
+<colgroup>
+<col style="width: 25%;">
+<col style="width: 25%;">
+<col style="width: 25%;">
+<col style="width: 25%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Metadata element name</th>
+<th class="tableblock halign-left valign-top">specification</th>
+<th class="tableblock halign-left valign-top">degree</th>
+<th class="tableblock halign-left valign-top">explanation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Definition</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Citation of the product specification or user requirement
+against which data resource is evaluated</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">degree of conformity with the
+specification</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">meaning of conformance for this result</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Meaning</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The purpose of this element is to identify the specification
+against which conformity is evaluated</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The purpose of this element is to
+identify the conformity of the data resource to the cited specification</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The purpose of this element is to explain the meaning of conformity in
+this context</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Obligation</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Mandatory</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Mandatory</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Mandatory</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Occurrence</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">single</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">single</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">single</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Data type</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Class CI_Citation (from ISO19115)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Boolean</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">CharacterString</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Domain</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">true if conformant<br>
+false if not conformant</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">free text</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Rules</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Cite the specification to which the data resource should conform</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The data resource should be evaluated against the specification and the
+result recorded</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Include a statement about which aspects of the
+specification the data resource conforms and any exceptions</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Examples</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">D2.8.I.5 INSPIRE Data Specification on Addresses -
+Guidelines, publication, 2010-04-26</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">true</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Only mandatory items included</p></td>
+</tr>
+</tbody>
+</table></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Guidance</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>At least one conformity statement shall be to an INSPIRE
 specification, even if simply to say that the data set is not conformant
-or not tested
-. Other conformity statements may be added, citing INSPIRE technical
-guidance or other specifications
-. Each conformity statement shall relate to only one specification
-. Assess the conformity of the data resource against its product
-specification or the INSPIRE thematic data specification.
-. State the data specification to which the degree of conformity applied
+or not tested</p>
+</li>
+<li>
+<p>Other conformity statements may be added, citing INSPIRE technical
+guidance or other specifications</p>
+</li>
+<li>
+<p>Each conformity statement shall relate to only one specification</p>
+</li>
+<li>
+<p>Assess the conformity of the data resource against its product
+specification or the INSPIRE thematic data specification.</p>
+</li>
+<li>
+<p>State the data specification to which the degree of conformity applied
 and optionally an 'Explanation', for example to reference the
 conformance criteria in the specification against which conformance is
-being claimed.
-. For INSPIRE, Datasets and dataset series shall declare conformity to
+being claimed.</p>
+</li>
+<li>
+<p>For INSPIRE, Datasets and dataset series shall declare conformity to
 [Regulation 1089/2010].</p>
-</div>
-<div class="paragraph">
-<p>|Comment a|
-. The specification is identified in the element Specification.
-. The conformance of a data resource may be considered with respect to
-more than one specification.
-. For INSPIRE, the citation title shall be the official title of the
-INSPIRE Implementing Rule, specification document or Conformance Class
-. For INSPIRE, the date given will be the date of publication of the
-INSPIRE Implementing Rule, specification document or Conformance Class
-. For INSPIRE Implementing Rule documents, the value of the title
+</li>
+</ol>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Comment</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>The specification is identified in the element Specification.</p>
+</li>
+<li>
+<p>The conformance of a data resource may be considered with respect to
+more than one specification.</p>
+</li>
+<li>
+<p>For INSPIRE, the citation title shall be the official title of the
+INSPIRE Implementing Rule, specification document or Conformance Class</p>
+</li>
+<li>
+<p>For INSPIRE, the date given will be the date of publication of the
+INSPIRE Implementing Rule, specification document or Conformance Class</p>
+</li>
+<li>
+<p>For INSPIRE Implementing Rule documents, the value of the title
 element shall match exactly the official title of the cited document in
 the language of the metadata.</p>
-</div>
-<div class="paragraph">
-<p>|Examples |Conformance of a dataset to Regulation 1089/2010 would have
+</li>
+</ol>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Examples</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Conformance of a dataset to Regulation 1089/2010 would have
 the title:<br>
 Commission Regulation (EU) No 1089/2010 of 23 November 2010 implementing
 Directive 2007/2/EC of the European Parliament and of the Council as
 regards interoperability of spatial data sets and services.,<br>
-and would give a publication date of 2010-12-08</p>
-</div>
-<div class="paragraph">
-<p>|Revision date |April 2020</p>
-</div>
-<table class="tableblock frame-all grid-all stretch">
-<colgroup>
-<col style="width: 100%;">
-</colgroup>
-<tbody>
+and would give a publication date of 2010-12-08</p></td>
+</tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Corresponding element in other standards&#8230;&#8203;</p>
-<p class="tableblock">[%collapsible]
-====</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Revision date</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">April 2020</p></td>
 </tr>
 </tbody>
 </table>
 <div class="paragraph">
-<p>|Standard |Name |Comparison</p>
+<p>Corresponding element in other standards&#8230;&#8203;</p>
 </div>
-<div class="paragraph">
-<p>|INSPIRE Metadata |Conformity |Equivalent</p>
-</div>
-<div class="paragraph">
-<p>|ISO 19115:2003 |DQ_DataQuality &gt; DQ_Element.result &gt;
-DQ_ConformanceResult |Equivalent</p>
-</div>
-<div class="paragraph">
-<p>|ISO 19139:2007
-|/gmd:MD_Metadata/gmd:dataQualityInfo/gmd:DQ_DataQuality/gmd:report/gmd:DQ_DomainConsistency/gmd:result/gmd:DQ_ConformanceResult
-|Equivalent</p>
-</div>
+<details>
+<summary class="title">Details</summary>
+<div class="content">
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
-<col style="width: 100%;">
+<col style="width: 33.3333%;">
+<col style="width: 33.3333%;">
+<col style="width: 33.3334%;">
 </colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Standard</th>
+<th class="tableblock halign-left valign-top">Name</th>
+<th class="tableblock halign-left valign-top">Comparison</th>
+</tr>
+</thead>
 <tbody>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">====</p>
-<p class="tableblock">Change history&#8230;&#8203;</p>
-<p class="tableblock">[%collapsible]
-====
-* GEMINI 1 to 2.0: New element
-* GEMINI 2.2 to 2.3: changed the way to encode that a resource has not
-been tested against the relevant INSPIRE specification
-====</p>
-<p class="tableblock">Encoding guidelines&#8230;&#8203;</p>
-<p class="tableblock">[%collapsible]
-====
-[width="100%",cols="50%,50%",]</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">INSPIRE Metadata</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Conformity</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Equivalent</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ISO 19115:2003</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">DQ_DataQuality &gt; DQ_Element.result &gt;
+DQ_ConformanceResult</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Equivalent</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ISO 19139:2007</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">/gmd:MD_Metadata/gmd:dataQualityInfo/gmd:DQ_DataQuality/gmd:report/gmd:DQ_DomainConsistency/gmd:result/gmd:DQ_ConformanceResult</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Equivalent</p></td>
 </tr>
 </tbody>
 </table>
+</div>
+</details>
 <div class="paragraph">
-<p>|Guidelines a|
-. The encoding for Conformity is shown in the example.
-. Note that the encoding of conformity requires a specification (encoded
-using gmd:CI_Citation), an explanation and a pass.
-. INSPIRE Metadata Implementing Rules state that there are three
+<p>Change history&#8230;&#8203;</p>
+</div>
+<details>
+<summary class="title">Details</summary>
+<div class="content">
+<div class="ulist">
+<ul>
+<li>
+<p>GEMINI 1 to 2.0: New element</p>
+</li>
+<li>
+<p>GEMINI 2.2 to 2.3: changed the way to encode that a resource has not
+been tested against the relevant INSPIRE specification</p>
+</li>
+</ul>
+</div>
+</div>
+</details>
+<div class="paragraph">
+<p>Encoding guidelines&#8230;&#8203;</p>
+</div>
+<details>
+<summary class="title">Details</summary>
+<div class="content">
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Guidelines</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>The encoding for Conformity is shown in the example.</p>
+</li>
+<li>
+<p>Note that the encoding of conformity requires a specification (encoded
+using gmd:CI_Citation), an explanation and a pass.</p>
+</li>
+<li>
+<p>INSPIRE Metadata Implementing Rules state that there are three
 possible conformance results: conformant, not conformant and not
 evaluated. Not evaluated is expressed by a conformity statement with a
 nilReason (unknown) specified in the pass element.</p>
-</div>
-<div class="olist arabic">
-<ol class="arabic">
+</li>
 <li>
 <p>All gmd:dataQualityInfo XML element shall have a gmd:scope XML
 element, set to 'service'.</p>
@@ -8157,12 +8888,14 @@ element, set to 'service'.</p>
 <li>
 <p>It is important to note that if the scope of the data quality
 information is 'service' then the gmd:levelDescription XML element is
-required, as shown below.
-|Example a|</p>
+required, as shown below.</p>
 </li>
 </ol>
-</div>
-<div class="literalblock">
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Example</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="literalblock">
 <div class="content">
 <pre>&lt;gmd:MD_Metadata&gt;
   ...
@@ -8223,22 +8956,27 @@ required, as shown below.
   &lt;/gmd:dataQualityInfo&gt;
 &lt;/gmd:MD_Metadata&gt;</pre>
 </div>
-</div>
-<table class="tableblock frame-all grid-all stretch">
-<colgroup>
-<col style="width: 100%;">
-</colgroup>
-<tbody>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">====</p>
-<p class="tableblock">Metadata errors observed&#8230;&#8203;</p>
-<p class="tableblock">[%collapsible]
-====</p></td>
+</div></div></td>
 </tr>
 </tbody>
 </table>
+</div>
+</details>
 <div class="paragraph">
-<p>|Errors observed |<strong>Conformity statement missing</strong><br>
+<p>Metadata errors observed&#8230;&#8203;</p>
+</div>
+<details>
+<summary class="title">Details</summary>
+<div class="content">
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Errors observed</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Conformity statement missing</strong><br>
 INSPIRE requires a 'conformity' statement, which can say that the
 resource conforms, or does not conform to a specification, or that it
 hasn&#8217;t been tested.<br>
@@ -8248,271 +8986,397 @@ When citing the INSPIRE regulation, the title and publication date need
 to match exactly.<br>
 Any deviation may result in the validation failure message "The gmd:pass
 element is not nillable and shall have a value" - even if the error is
-in the spelling of the title.</p>
-</div>
-<table class="tableblock frame-all grid-all stretch">
-<colgroup>
-<col style="width: 100%;">
-</colgroup>
-<tbody>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">====</p>
-<p class="tableblock">= Name : Equivalent scale
-:assetdir: ../assets
-:stylesdir: ../assets
-:figure-caption: Figure
-:toc: left
-:docinfo: shared
-:docinfodir: ../assets
-:docinfosubs: attributes
-:safe-mode-unsafe:
-:iconfont-remote!:
-:stylesheet: ../assets/asciidoctor.css
-:scriptsdir: ../assets
-:linkcss:
-:data-uri:
-:iconfont-name: font-awesome.min
-:imagesdir: media
-:icons: font
-:nofooter:
-:sectnumlevels: 3
-:sectlinks:
-:sectanchors:
-:experimental:
-:stem:
-[#43]</p>
-<p class="tableblock">[cols=",",]</p></td>
+in the spelling of the title.</p></td>
 </tr>
 </tbody>
 </table>
-<div class="paragraph">
-<p>|UK GEMINI id |43</p>
 </div>
-<div class="paragraph">
-<p>|Definition |Level of detail expressed as the scale denominator of a
-comparable hardcopy map or chart</p>
-</div>
-<div class="paragraph">
-<p>|Purpose and meaning |This is purely to conform to INSPIRE, and has
-little meaning for most digital data</p>
-</div>
-<div class="paragraph">
-<p>|Obligation |Optional</p>
-</div>
-<div class="paragraph">
-<p>|Occurrence |Multiple</p>
-</div>
-<div class="paragraph">
-<p>|Data type |Integer</p>
-</div>
-<div class="paragraph">
-<p>|Domain |Positive integer</p>
-</div>
-<div class="paragraph">
-<p>|Guidance |Where the data is captured from a map, the scale of that map
-should be recorded.</p>
-</div>
-<div class="paragraph">
-<p>|Comment |Expression of spatial resolution by distance is preferred.
+</details>
+<h1 id="_name_equivalent_scale" class="sect0"><a class="anchor" href="#_name_equivalent_scale"></a><a class="link" href="#_name_equivalent_scale">Name : Equivalent scale</a></h1>
+<table id="43" class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">UK GEMINI id</th>
+<th class="tableblock halign-left valign-top">43</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Definition</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Level of detail expressed as the scale denominator of a
+comparable hardcopy map or chart</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Purpose and meaning</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">This is purely to conform to INSPIRE, and has
+little meaning for most digital data</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Obligation</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Optional</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Occurrence</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Multiple</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Data type</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Integer</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Domain</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Positive integer</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Guidance</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Where the data is captured from a map, the scale of that map
+should be recorded.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Comment</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Expression of spatial resolution by distance is preferred.
 Spatial resolution should only be expressed by equivalent scale where a
-distance cannot be determined.</p>
-</div>
-<div class="paragraph">
-<p>|Examples |5,000</p>
-</div>
-<div class="paragraph">
-<p>|Revision date |July 2009</p>
-</div>
-<table class="tableblock frame-all grid-all stretch">
-<colgroup>
-<col style="width: 100%;">
-</colgroup>
-<tbody>
+distance cannot be determined.</p></td>
+</tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Corresponding element in other standards&#8230;&#8203;</p>
-<p class="tableblock">[%collapsible]
-====</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Examples</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">5,000</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Revision date</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">July 2009</p></td>
 </tr>
 </tbody>
 </table>
 <div class="paragraph">
-<p>|Standard |Name |Comparison</p>
+<p>Corresponding element in other standards&#8230;&#8203;</p>
 </div>
-<div class="paragraph">
-<p>|INSPIRE Metadata |Spatial resolution |Spatial resolution may also be
-expressed as distance</p>
-</div>
-<div class="paragraph">
-<p>|ISO 19115:2003 |Describe in the Abstract |no direct equivalent</p>
-</div>
+<details>
+<summary class="title">Details</summary>
+<div class="content">
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
-<col style="width: 100%;">
+<col style="width: 33.3333%;">
+<col style="width: 33.3333%;">
+<col style="width: 33.3334%;">
 </colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Standard</th>
+<th class="tableblock halign-left valign-top">Name</th>
+<th class="tableblock halign-left valign-top">Comparison</th>
+</tr>
+</thead>
 <tbody>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">====</p>
-<p class="tableblock">Change history&#8230;&#8203;</p>
-<p class="tableblock">[%collapsible]
-====
-GEMINI 1 to 2.0: New element
-====</p>
-<p class="tableblock">Encoding guidelines&#8230;&#8203;</p>
-<p class="tableblock">[%collapsible]
-====</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">INSPIRE Metadata</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Spatial resolution</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Spatial resolution may also be
+expressed as distance</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ISO 19115:2003</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Describe in the Abstract</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">no direct equivalent</p></td>
 </tr>
 </tbody>
 </table>
+</div>
+</details>
 <div class="paragraph">
-<p>|Guidelines a|
-* For services, it is not possible to express the restriction of a
+<p>Change history&#8230;&#8203;</p>
+</div>
+<details>
+<summary class="title">Details</summary>
+<div class="content">
+<div class="paragraph">
+<p>GEMINI 1 to 2.0: New element</p>
+</div>
+</div>
+</details>
+<div class="paragraph">
+<p>Encoding guidelines&#8230;&#8203;</p>
+</div>
+<details>
+<summary class="title">Details</summary>
+<div class="content">
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Guidelines</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="ulist">
+<ul>
+<li>
+<p>For services, it is not possible to express the restriction of a
 service concerning the spatial resolution when using the ISO 19139 XML
-Schema.
-* It shall be expressed in the Abstract.
-* The spatial resolution restriction text shall include either an
+Schema.</p>
+</li>
+<li>
+<p>It shall be expressed in the Abstract.</p>
+</li>
+<li>
+<p>The spatial resolution restriction text shall include either an
 equivalent scale as integer valued scale denominator or a resolution
 distance using a numerical length value and with a unit of length.</p>
-</div>
-<table class="tableblock frame-all grid-all stretch">
-<colgroup>
-<col style="width: 100%;">
-</colgroup>
-<tbody>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">====</p>
-<p class="tableblock">Metadata errors observed&#8230;&#8203;</p>
-<p class="tableblock">[%collapsible]
-====
-No error information available
-====</p>
-<p class="tableblock">= Name : Bounding box
-:assetdir: ../assets
-:stylesdir: ../assets
-:figure-caption: Figure
-:toc: left
-:docinfo: shared
-:docinfodir: ../assets
-:docinfosubs: attributes
-:safe-mode-unsafe:
-:iconfont-remote!:
-:stylesheet: ../assets/asciidoctor.css
-:scriptsdir: ../assets
-:linkcss:
-:data-uri:
-:iconfont-name: font-awesome.min
-:imagesdir: media
-:icons: font
-:nofooter:
-:sectnumlevels: 3
-:sectlinks:
-:sectanchors:
-:experimental:
-:stem:
-[#44]</p>
-<p class="tableblock">[width="100%",cols="50%,50%",]</p></td>
+</li>
+</ul>
+</div></div></td>
 </tr>
 </tbody>
 </table>
-<div class="paragraph">
-<p>|UK GEMINI id |44</p>
 </div>
+</details>
 <div class="paragraph">
-<p>|Definition |Rectangle enclosing the extent of the data resource
-described in latitude and longitude</p>
+<p>Metadata errors observed&#8230;&#8203;</p>
 </div>
+<details>
+<summary class="title">Details</summary>
+<div class="content">
 <div class="paragraph">
-<p>|Purpose and meaning |This is to enable the resource to be located
-geographically</p>
+<p>No error information available</p>
 </div>
-<div class="paragraph">
-<p>|Obligation |Mandatory</p>
 </div>
-<div class="paragraph">
-<p>|Occurrence |Multiple</p>
-</div>
-<div class="paragraph">
-<p>|Data type |Class</p>
-</div>
-<div class="paragraph">
-<p>|Domain a|
-EX_GeographicBoundingBox</p>
+</details>
+<h1 id="_name_bounding_box" class="sect0"><a class="anchor" href="#_name_bounding_box"></a><a class="link" href="#_name_bounding_box">Name : Bounding box</a></h1>
+<table id="44" class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">UK GEMINI id</th>
+<th class="tableblock halign-left valign-top">44</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Definition</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Rectangle enclosing the extent of the data resource
+described in latitude and longitude</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Purpose and meaning</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">This is to enable the resource to be located
+geographically</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Obligation</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Mandatory</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Occurrence</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Multiple</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Data type</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Class</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Domain</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>EX_GeographicBoundingBox</p>
 </div>
 <table class="tableblock frame-all grid-all stretch">
-</table>
-<div class="paragraph">
-<p>|Guidance a|
-. Identify a bounding box slightly larger than the extent of the data
+<colgroup>
+<col style="width: 20%;">
+<col style="width: 20%;">
+<col style="width: 20%;">
+<col style="width: 20%;">
+<col style="width: 20%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Metadata element name</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">West bounding longitude</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">East bounding longitude</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">South bounding latitude</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">North bounding latitude</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Definition</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">western-most limit of the data resource extent, expressed
+in longitude in decimal degrees (positive east)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">eastern-most limit of
+the data resource extent, expressed in longitude in decimal degrees
+(positive east)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">southern-most limit of the data resource extent,
+expressed in latitude in decimal degrees (positive north)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">northern-most
+limit of the data resource extent, expressed in latitude in decimal
+degrees (positive north)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Obligation</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">mandatory</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">mandatory</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">mandatory</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">mandatory</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Occurrence</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">single</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">single</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">single</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">single</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Data type</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Decimal, expressed in degrees to at least two decimal places</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Domain</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-180.00 &#8656; west bounding longitude &#8656; 180.00</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-180.00 &#8656; east
+bounding longitude &#8656; 180.00</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-90.00 &#8656; south bounding latitude &#8656; north
+bounding latitude</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">south bounding latitude &#8656; north bounding latitude &#8656;
+90.00</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Other comments</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The West bounding coordinate usually has a value less
+than the value of the East bounding coordinate, except when the extent
+straddles the 180 degree meridian.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The East bounding longitude usually
+has a value greater than the value of the West bounding longitude,
+except when the extent straddles the 180 degree meridian.</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+</tbody>
+</table></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Guidance</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Identify a bounding box slightly larger than the extent of the data
 resource, and determine the coordinates of the boundaries. It may be
 necessary to convert from another coordinate system (e.g. National Grid)
-into lat/long.
-. Only approximate values are required, sufficient to identify the
+into lat/long.</p>
+</li>
+<li>
+<p>Only approximate values are required, sufficient to identify the
 extent on a global basis. The bounding box is implicitly in WGS84.</p>
-</div>
-<div class="paragraph">
-<p>|Comment |The bounding box will often cover areas that are not directly
-related to the area covered by the resource.</p>
-</div>
-<div class="paragraph">
-<p>|Examples |-9.23, 2.69, 49.84, 60.85</p>
-</div>
-<div class="paragraph">
-<p>|Revision date |December 2012</p>
-</div>
-<table class="tableblock frame-all grid-all stretch">
-<colgroup>
-<col style="width: 100%;">
-</colgroup>
-<tbody>
+</li>
+</ol>
+</div></div></td>
+</tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Corresponding element in other standards&#8230;&#8203;</p>
-<p class="tableblock">[%collapsible]
-====</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Comment</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The bounding box will often cover areas that are not directly
+related to the area covered by the resource.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Examples</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-9.23, 2.69, 49.84, 60.85</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Revision date</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">December 2012</p></td>
 </tr>
 </tbody>
 </table>
 <div class="paragraph">
-<p>|Standard |Name |Comparison</p>
+<p>Corresponding element in other standards&#8230;&#8203;</p>
 </div>
-<div class="paragraph">
-<p>|INSPIRE Metadata |Geographic bounding box |Identical</p>
-</div>
-<div class="paragraph">
-<p>|ISO 19115:2003 |SV_ServiceIdentification.extent &gt; EX_Extent &gt;
-EX_GeographicExtent &gt; EX_GeographicBoundingBox |Minor difference in name</p>
-</div>
-<div class="paragraph">
-<p>|ISO 19139:2007
-|/gmd:MD_Metadata/gmd:identificationInfo/srv:SV_ServiceIdentification/srv:extent/gmd:EX_Extent/gmd:geographicElement/gmd:EX_GeographicBoundingBox
-|</p>
-</div>
+<details>
+<summary class="title">Details</summary>
+<div class="content">
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
-<col style="width: 100%;">
+<col style="width: 33.3333%;">
+<col style="width: 33.3333%;">
+<col style="width: 33.3334%;">
 </colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Standard</th>
+<th class="tableblock halign-left valign-top">Name</th>
+<th class="tableblock halign-left valign-top">Comparison</th>
+</tr>
+</thead>
 <tbody>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">====</p>
-<p class="tableblock">Change history&#8230;&#8203;</p>
-<p class="tableblock">[%collapsible]
-====
-* GEMINI 1 to 2.0: Slight change of name of each element
-* GEMINI 2.1 to 2.2: the four separate elements were merged to form
-Bounding box, which was made multiple
-====</p>
-<p class="tableblock">Encoding guidelines&#8230;&#8203;</p>
-<p class="tableblock">[%collapsible]
-====</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">INSPIRE Metadata</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Geographic bounding box</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Identical</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ISO 19115:2003</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">SV_ServiceIdentification.extent &gt; EX_Extent &gt;
+EX_GeographicExtent &gt; EX_GeographicBoundingBox</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Minor difference in name</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ISO 19139:2007</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">/gmd:MD_Metadata/gmd:identificationInfo/srv:SV_ServiceIdentification/srv:extent/gmd:EX_Extent/gmd:geographicElement/gmd:EX_GeographicBoundingBox</p></td>
+<td class="tableblock halign-left valign-top"></td>
 </tr>
 </tbody>
 </table>
+</div>
+</details>
 <div class="paragraph">
-<p>|Guidelines a|
-. The encoding example for geographic bounding box for datasets is shown
-in the example
-. Note that the extent XML element is in the gmd namespace. This differs
+<p>Change history&#8230;&#8203;</p>
+</div>
+<details>
+<summary class="title">Details</summary>
+<div class="content">
+<div class="ulist">
+<ul>
+<li>
+<p>GEMINI 1 to 2.0: Slight change of name of each element</p>
+</li>
+<li>
+<p>GEMINI 2.1 to 2.2: the four separate elements were merged to form
+Bounding box, which was made multiple</p>
+</li>
+</ul>
+</div>
+</div>
+</details>
+<div class="paragraph">
+<p>Encoding guidelines&#8230;&#8203;</p>
+</div>
+<details>
+<summary class="title">Details</summary>
+<div class="content">
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Guidelines</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>The encoding example for geographic bounding box for datasets is shown
+in the example</p>
+</li>
+<li>
+<p>Note that the extent XML element is in the gmd namespace. This differs
 from service metadata instances where the extent XML element will be in
-the srv namespace.
-. The definition of the equivalent ISO 19115 class,
+the srv namespace.</p>
+</li>
+<li>
+<p>The definition of the equivalent ISO 19115 class,
 EX_GeographicBoundingBox, is 'Geographic area of the entire dataset
 referenced to WGS 84'. Consequently, the CRS of the coordinates
 expressed in metadata is always WGS 84 (identified by the EPSG URI
@@ -8520,6 +9384,8 @@ expressed in metadata is always WGS 84 (identified by the EPSG URI
 coordinate values shall be expressed in units of degrees (encoded using
 decimal numbers) with axes orientated north and east. The geodetic datum
 is WGS 84.</p>
+</li>
+</ol>
 </div>
 <div class="paragraph">
 <p>Note that the encoding is very similar to that used in metadata
@@ -8528,11 +9394,11 @@ in the srv namespace instead of gmd. This is because extent is a
 property of MD_DataIdentification (ISO 19115) and
 SV_ServiceIdentification (ISO 19119/Amd 1:2008), not a property of the
 parent MD_Identification.</p>
-</div>
-<div class="paragraph">
-<p>|Example a|</p>
-</div>
-<div class="literalblock">
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Example</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="literalblock">
 <div class="content">
 <pre>&lt;gmd:MD_Metadata&gt;
   ...
@@ -8566,23 +9432,28 @@ parent MD_Identification.</p>
   ...
 &lt;/gmd:MD_Metadata&gt;</pre>
 </div>
-</div>
-<table class="tableblock frame-all grid-all stretch">
-<colgroup>
-<col style="width: 100%;">
-</colgroup>
-<tbody>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">====</p>
-<p class="tableblock">Metadata errors observed&#8230;&#8203;</p>
-<p class="tableblock">[%collapsible]
-====</p></td>
+</div></div></td>
 </tr>
 </tbody>
 </table>
+</div>
+</details>
 <div class="paragraph">
-<p>|Errors observed a|
-<strong>Overly precise bounding box</strong><br>
+<p>Metadata errors observed&#8230;&#8203;</p>
+</div>
+<details>
+<summary class="title">Details</summary>
+<div class="content">
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Errors observed</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><strong>Overly precise bounding box</strong><br>
 GEMINI states that the bounding latitude and longitude should be stated
 to at least two decimal places. The INSPIRE geoportal used to report two
 decimal places as an error; it does not now. However, some software
@@ -8598,126 +9469,136 @@ defaults to values that are unnecessarily "precise". For example:<br></p>
 <div class="paragraph">
 <p>Six decimal places of a degree is something like 1cm, so the longitude
 above is being given to roughly the nearest molecule.</p>
+</div></div></td>
+</tr>
+</tbody>
+</table>
 </div>
-<table class="tableblock frame-all grid-all stretch">
+</details>
+<h1 id="_name_quality_scope" class="sect0"><a class="anchor" href="#_name_quality_scope"></a><a class="link" href="#_name_quality_scope">Name : Quality scope</a></h1>
+<table id="48" class="tableblock frame-all grid-all stretch">
 <colgroup>
-<col style="width: 100%;">
+<col style="width: 50%;">
+<col style="width: 50%;">
 </colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">UK GEMINI id</th>
+<th class="tableblock halign-left valign-top">48</th>
+</tr>
+</thead>
 <tbody>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">====</p>
-<p class="tableblock">= Name : Quality scope
-:assetdir: ../assets
-:stylesdir: ../assets
-:figure-caption: Figure
-:toc: left
-:docinfo: shared
-:docinfodir: ../assets
-:docinfosubs: attributes
-:safe-mode-unsafe:
-:iconfont-remote!:
-:stylesheet: ../assets/asciidoctor.css
-:scriptsdir: ../assets
-:linkcss:
-:data-uri:
-:iconfont-name: font-awesome.min
-:imagesdir: media
-:icons: font
-:nofooter:
-:sectnumlevels: 3
-:sectlinks:
-:sectanchors:
-:experimental:
-:stem:
-[#48]</p>
-<p class="tableblock">[width="100%",cols="50%,50%",]</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Definition</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The specific data to which the data quality information
+applies</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Purpose and meaning</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">To enable data quality to be reported on a subset
+of the data resource</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Obligation</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Mandatory</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Occurrence</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Single</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Data type</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Class</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Domain</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">DQ_Scope from ISO 19115</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Guidance</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Comment</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Examples</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Revision date</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">March 2019</p></td>
 </tr>
 </tbody>
 </table>
 <div class="paragraph">
-<p>|UK GEMINI id |48</p>
+<p>Corresponding element in other standards&#8230;&#8203;</p>
 </div>
-<div class="paragraph">
-<p>|Definition |The specific data to which the data quality information
-applies</p>
-</div>
-<div class="paragraph">
-<p>|Purpose and meaning |To enable data quality to be reported on a subset
-of the data resource</p>
-</div>
-<div class="paragraph">
-<p>|Obligation |Mandatory
-|Occurrence |Single</p>
-</div>
-<div class="paragraph">
-<p>|Data type |Class</p>
-</div>
-<div class="paragraph">
-<p>|Domain |DQ_Scope from ISO 19115</p>
-</div>
-<div class="paragraph">
-<p>|Guidance |</p>
-</div>
-<div class="paragraph">
-<p>|Comment |</p>
-</div>
-<div class="paragraph">
-<p>|Examples |</p>
-</div>
-<div class="paragraph">
-<p>|Revision date |March 2019</p>
-</div>
+<details>
+<summary class="title">Details</summary>
+<div class="content">
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
-<col style="width: 100%;">
+<col style="width: 33.3333%;">
+<col style="width: 33.3333%;">
+<col style="width: 33.3334%;">
 </colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Standard</th>
+<th class="tableblock halign-left valign-top">Name</th>
+<th class="tableblock halign-left valign-top">Comparison</th>
+</tr>
+</thead>
 <tbody>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Corresponding element in other standards&#8230;&#8203;</p>
-<p class="tableblock">[%collapsible]
-====</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">INSPIRE Metadata</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">INSPIRE Metadata</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">metadata/2.0/req/sds/only-one-dq-element</p></td>
 </tr>
-</tbody>
-</table>
-<div class="paragraph">
-<p>|Standard |Name |Comparison</p>
-</div>
-<div class="paragraph">
-<p>|INSPIRE Metadata
-|INSPIRE Metadata |metadata/2.0/req/sds/only-one-dq-element |INSPIRE
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">INSPIRE
 only allows a maximum of one Data quality element, so only one scope -
-the whole resource</p>
-</div>
-<div class="paragraph">
-<p>|ISO 19115:2003 |DQ_DataQuality.scope |Equivalent</p>
-</div>
-<div class="paragraph">
-<p>|ISO 19139:2007
-|/gmd:MD_Metadata/gmd:dataQualityInfo/gmd:DQ_DataQuality/gmd:scope
-|Equivalent</p>
-</div>
-<table class="tableblock frame-all grid-all stretch">
-<colgroup>
-<col style="width: 100%;">
-</colgroup>
-<tbody>
+the whole resource</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ISO 19115:2003</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">DQ_DataQuality.scope</p></td>
+</tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">====</p>
-<p class="tableblock">Change history&#8230;&#8203;</p>
-<p class="tableblock">[%collapsible]
-====
-New element in GEMINI 2.3
-====</p>
-<p class="tableblock">Encoding guidelines&#8230;&#8203;</p>
-<p class="tableblock">[%collapsible]
-====</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Equivalent</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ISO 19139:2007</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">/gmd:MD_Metadata/gmd:dataQualityInfo/gmd:DQ_DataQuality/gmd:scope</p></td>
 </tr>
 </tbody>
 </table>
-<div class="paragraph">
-<p>|Guidelines a|</p>
 </div>
-<div class="ulist">
+</details>
+<div class="paragraph">
+<p>Change history&#8230;&#8203;</p>
+</div>
+<details>
+<summary class="title">Details</summary>
+<div class="content">
+<div class="paragraph">
+<p>New element in GEMINI 2.3</p>
+</div>
+</div>
+</details>
+<div class="paragraph">
+<p>Encoding guidelines&#8230;&#8203;</p>
+</div>
+<details>
+<summary class="title">Details</summary>
+<div class="content">
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Guidelines</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="ulist">
 <ul>
 <li>
 <p>It is important to note that if the scope of the data quality
@@ -8729,11 +9610,11 @@ required</p>
 metadata), as shown below.</p>
 </li>
 </ul>
-</div>
-<div class="paragraph">
-<p>|Example a|</p>
-</div>
-<div class="literalblock">
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Example</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="literalblock">
 <div class="content">
 <pre>&lt;gmd:MD_Metadata&gt;
   ...
@@ -8761,20 +9642,21 @@ metadata), as shown below.</p>
   &lt;/gmd:dataQualityInfo&gt;
 &lt;/gmd:MD_Metadata&gt;</pre>
 </div>
-</div>
-<table class="tableblock frame-all grid-all stretch">
-<colgroup>
-<col style="width: 100%;">
-</colgroup>
-<tbody>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">====</p>
-<p class="tableblock">Metadata errors observed&#8230;&#8203;</p>
-<p class="tableblock">[%collapsible]
-====</p></td>
+</div></div></td>
 </tr>
 </tbody>
 </table>
+</div>
+</details>
+<div class="paragraph">
+<p>Metadata errors observed&#8230;&#8203;</p>
+</div>
+<details>
+<summary class="title">Details</summary>
+<div class="content">
+
+</div>
+</details>
 </div>
 <script type="text/x-mathjax-config">
 MathJax.Hub.Config({
