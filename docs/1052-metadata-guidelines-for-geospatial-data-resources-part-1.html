@@ -1,0 +1,1272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="generator" content="Asciidoctor 2.0.17">
+<meta name="author" content="Unresolved directive in 1052-metadata-guidelines-for-geospatial-data-resources-part-1.asciidoc - include::includes/attributes.adoc[]">
+<title>Introduction to Metadata</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CDroid+Sans+Mono:400,700">
+<style>
+/*! Asciidoctor default stylesheet | MIT License | https://asciidoctor.org */
+/* Uncomment the following line when using as a custom stylesheet */
+/* @import "https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CDroid+Sans+Mono:400,700"; */
+html{font-family:sans-serif;-webkit-text-size-adjust:100%}
+a{background:none}
+a:focus{outline:thin dotted}
+a:active,a:hover{outline:0}
+h1{font-size:2em;margin:.67em 0}
+b,strong{font-weight:bold}
+abbr{font-size:.9em}
+abbr[title]{cursor:help;border-bottom:1px dotted #dddddf;text-decoration:none}
+dfn{font-style:italic}
+hr{height:0}
+mark{background:#ff0;color:#000}
+code,kbd,pre,samp{font-family:monospace;font-size:1em}
+pre{white-space:pre-wrap}
+q{quotes:"\201C" "\201D" "\2018" "\2019"}
+small{font-size:80%}
+sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}
+sup{top:-.5em}
+sub{bottom:-.25em}
+img{border:0}
+svg:not(:root){overflow:hidden}
+figure{margin:0}
+audio,video{display:inline-block}
+audio:not([controls]){display:none;height:0}
+fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}
+legend{border:0;padding:0}
+button,input,select,textarea{font-family:inherit;font-size:100%;margin:0}
+button,input{line-height:normal}
+button,select{text-transform:none}
+button,html input[type=button],input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer}
+button[disabled],html input[disabled]{cursor:default}
+input[type=checkbox],input[type=radio]{padding:0}
+button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}
+textarea{overflow:auto;vertical-align:top}
+table{border-collapse:collapse;border-spacing:0}
+*,::before,::after{box-sizing:border-box}
+html,body{font-size:100%}
+body{background:#fff;color:rgba(0,0,0,.8);padding:0;margin:0;font-family:"Noto Serif","DejaVu Serif",serif;line-height:1;position:relative;cursor:auto;-moz-tab-size:4;-o-tab-size:4;tab-size:4;word-wrap:anywhere;-moz-osx-font-smoothing:grayscale;-webkit-font-smoothing:antialiased}
+a:hover{cursor:pointer}
+img,object,embed{max-width:100%;height:auto}
+object,embed{height:100%}
+img{-ms-interpolation-mode:bicubic}
+.left{float:left!important}
+.right{float:right!important}
+.text-left{text-align:left!important}
+.text-right{text-align:right!important}
+.text-center{text-align:center!important}
+.text-justify{text-align:justify!important}
+.hide{display:none}
+img,object,svg{display:inline-block;vertical-align:middle}
+textarea{height:auto;min-height:50px}
+select{width:100%}
+.subheader,.admonitionblock td.content>.title,.audioblock>.title,.exampleblock>.title,.imageblock>.title,.listingblock>.title,.literalblock>.title,.stemblock>.title,.openblock>.title,.paragraph>.title,.quoteblock>.title,table.tableblock>.title,.verseblock>.title,.videoblock>.title,.dlist>.title,.olist>.title,.ulist>.title,.qlist>.title,.hdlist>.title{line-height:1.45;color:#7a2518;font-weight:400;margin-top:0;margin-bottom:.25em}
+div,dl,dt,dd,ul,ol,li,h1,h2,h3,#toctitle,.sidebarblock>.content>.title,h4,h5,h6,pre,form,p,blockquote,th,td{margin:0;padding:0}
+a{color:#2156a5;text-decoration:underline;line-height:inherit}
+a:hover,a:focus{color:#1d4b8f}
+a img{border:0}
+p{line-height:1.6;margin-bottom:1.25em;text-rendering:optimizeLegibility}
+p aside{font-size:.875em;line-height:1.35;font-style:italic}
+h1,h2,h3,#toctitle,.sidebarblock>.content>.title,h4,h5,h6{font-family:"Open Sans","DejaVu Sans",sans-serif;font-weight:300;font-style:normal;color:#ba3925;text-rendering:optimizeLegibility;margin-top:1em;margin-bottom:.5em;line-height:1.0125em}
+h1 small,h2 small,h3 small,#toctitle small,.sidebarblock>.content>.title small,h4 small,h5 small,h6 small{font-size:60%;color:#e99b8f;line-height:0}
+h1{font-size:2.125em}
+h2{font-size:1.6875em}
+h3,#toctitle,.sidebarblock>.content>.title{font-size:1.375em}
+h4,h5{font-size:1.125em}
+h6{font-size:1em}
+hr{border:solid #dddddf;border-width:1px 0 0;clear:both;margin:1.25em 0 1.1875em}
+em,i{font-style:italic;line-height:inherit}
+strong,b{font-weight:bold;line-height:inherit}
+small{font-size:60%;line-height:inherit}
+code{font-family:"Droid Sans Mono","DejaVu Sans Mono",monospace;font-weight:400;color:rgba(0,0,0,.9)}
+ul,ol,dl{line-height:1.6;margin-bottom:1.25em;list-style-position:outside;font-family:inherit}
+ul,ol{margin-left:1.5em}
+ul li ul,ul li ol{margin-left:1.25em;margin-bottom:0}
+ul.square li ul,ul.circle li ul,ul.disc li ul{list-style:inherit}
+ul.square{list-style-type:square}
+ul.circle{list-style-type:circle}
+ul.disc{list-style-type:disc}
+ol li ul,ol li ol{margin-left:1.25em;margin-bottom:0}
+dl dt{margin-bottom:.3125em;font-weight:bold}
+dl dd{margin-bottom:1.25em}
+blockquote{margin:0 0 1.25em;padding:.5625em 1.25em 0 1.1875em;border-left:1px solid #ddd}
+blockquote,blockquote p{line-height:1.6;color:rgba(0,0,0,.85)}
+@media screen and (min-width:768px){h1,h2,h3,#toctitle,.sidebarblock>.content>.title,h4,h5,h6{line-height:1.2}
+h1{font-size:2.75em}
+h2{font-size:2.3125em}
+h3,#toctitle,.sidebarblock>.content>.title{font-size:1.6875em}
+h4{font-size:1.4375em}}
+table{background:#fff;margin-bottom:1.25em;border:1px solid #dedede;word-wrap:normal}
+table thead,table tfoot{background:#f7f8f7}
+table thead tr th,table thead tr td,table tfoot tr th,table tfoot tr td{padding:.5em .625em .625em;font-size:inherit;color:rgba(0,0,0,.8);text-align:left}
+table tr th,table tr td{padding:.5625em .625em;font-size:inherit;color:rgba(0,0,0,.8)}
+table tr.even,table tr.alt{background:#f8f8f7}
+table thead tr th,table tfoot tr th,table tbody tr td,table tr td,table tfoot tr td{line-height:1.6}
+h1,h2,h3,#toctitle,.sidebarblock>.content>.title,h4,h5,h6{line-height:1.2;word-spacing:-.05em}
+h1 strong,h2 strong,h3 strong,#toctitle strong,.sidebarblock>.content>.title strong,h4 strong,h5 strong,h6 strong{font-weight:400}
+.center{margin-left:auto;margin-right:auto}
+.stretch{width:100%}
+.clearfix::before,.clearfix::after,.float-group::before,.float-group::after{content:" ";display:table}
+.clearfix::after,.float-group::after{clear:both}
+:not(pre).nobreak{word-wrap:normal}
+:not(pre).nowrap{white-space:nowrap}
+:not(pre).pre-wrap{white-space:pre-wrap}
+:not(pre):not([class^=L])>code{font-size:.9375em;font-style:normal!important;letter-spacing:0;padding:.1em .5ex;word-spacing:-.15em;background:#f7f7f8;border-radius:4px;line-height:1.45;text-rendering:optimizeSpeed}
+pre{color:rgba(0,0,0,.9);font-family:"Droid Sans Mono","DejaVu Sans Mono",monospace;line-height:1.45;text-rendering:optimizeSpeed}
+pre code,pre pre{color:inherit;font-size:inherit;line-height:inherit}
+pre>code{display:block}
+pre.nowrap,pre.nowrap pre{white-space:pre;word-wrap:normal}
+em em{font-style:normal}
+strong strong{font-weight:400}
+.keyseq{color:rgba(51,51,51,.8)}
+kbd{font-family:"Droid Sans Mono","DejaVu Sans Mono",monospace;display:inline-block;color:rgba(0,0,0,.8);font-size:.65em;line-height:1.45;background:#f7f7f7;border:1px solid #ccc;border-radius:3px;box-shadow:0 1px 0 rgba(0,0,0,.2),inset 0 0 0 .1em #fff;margin:0 .15em;padding:.2em .5em;vertical-align:middle;position:relative;top:-.1em;white-space:nowrap}
+.keyseq kbd:first-child{margin-left:0}
+.keyseq kbd:last-child{margin-right:0}
+.menuseq,.menuref{color:#000}
+.menuseq b:not(.caret),.menuref{font-weight:inherit}
+.menuseq{word-spacing:-.02em}
+.menuseq b.caret{font-size:1.25em;line-height:.8}
+.menuseq i.caret{font-weight:bold;text-align:center;width:.45em}
+b.button::before,b.button::after{position:relative;top:-1px;font-weight:400}
+b.button::before{content:"[";padding:0 3px 0 2px}
+b.button::after{content:"]";padding:0 2px 0 3px}
+p a>code:hover{color:rgba(0,0,0,.9)}
+#header,#content,#footnotes,#footer{width:100%;margin:0 auto;max-width:62.5em;*zoom:1;position:relative;padding-left:.9375em;padding-right:.9375em}
+#header::before,#header::after,#content::before,#content::after,#footnotes::before,#footnotes::after,#footer::before,#footer::after{content:" ";display:table}
+#header::after,#content::after,#footnotes::after,#footer::after{clear:both}
+#content{margin-top:1.25em}
+#content::before{content:none}
+#header>h1:first-child{color:rgba(0,0,0,.85);margin-top:2.25rem;margin-bottom:0}
+#header>h1:first-child+#toc{margin-top:8px;border-top:1px solid #dddddf}
+#header>h1:only-child,body.toc2 #header>h1:nth-last-child(2){border-bottom:1px solid #dddddf;padding-bottom:8px}
+#header .details{border-bottom:1px solid #dddddf;line-height:1.45;padding-top:.25em;padding-bottom:.25em;padding-left:.25em;color:rgba(0,0,0,.6);display:flex;flex-flow:row wrap}
+#header .details span:first-child{margin-left:-.125em}
+#header .details span.email a{color:rgba(0,0,0,.85)}
+#header .details br{display:none}
+#header .details br+span::before{content:"\00a0\2013\00a0"}
+#header .details br+span.author::before{content:"\00a0\22c5\00a0";color:rgba(0,0,0,.85)}
+#header .details br+span#revremark::before{content:"\00a0|\00a0"}
+#header #revnumber{text-transform:capitalize}
+#header #revnumber::after{content:"\00a0"}
+#content>h1:first-child:not([class]){color:rgba(0,0,0,.85);border-bottom:1px solid #dddddf;padding-bottom:8px;margin-top:0;padding-top:1rem;margin-bottom:1.25rem}
+#toc{border-bottom:1px solid #e7e7e9;padding-bottom:.5em}
+#toc>ul{margin-left:.125em}
+#toc ul.sectlevel0>li>a{font-style:italic}
+#toc ul.sectlevel0 ul.sectlevel1{margin:.5em 0}
+#toc ul{font-family:"Open Sans","DejaVu Sans",sans-serif;list-style-type:none}
+#toc li{line-height:1.3334;margin-top:.3334em}
+#toc a{text-decoration:none}
+#toc a:active{text-decoration:underline}
+#toctitle{color:#7a2518;font-size:1.2em}
+@media screen and (min-width:768px){#toctitle{font-size:1.375em}
+body.toc2{padding-left:15em;padding-right:0}
+#toc.toc2{margin-top:0!important;background:#f8f8f7;position:fixed;width:15em;left:0;top:0;border-right:1px solid #e7e7e9;border-top-width:0!important;border-bottom-width:0!important;z-index:1000;padding:1.25em 1em;height:100%;overflow:auto}
+#toc.toc2 #toctitle{margin-top:0;margin-bottom:.8rem;font-size:1.2em}
+#toc.toc2>ul{font-size:.9em;margin-bottom:0}
+#toc.toc2 ul ul{margin-left:0;padding-left:1em}
+#toc.toc2 ul.sectlevel0 ul.sectlevel1{padding-left:0;margin-top:.5em;margin-bottom:.5em}
+body.toc2.toc-right{padding-left:0;padding-right:15em}
+body.toc2.toc-right #toc.toc2{border-right-width:0;border-left:1px solid #e7e7e9;left:auto;right:0}}
+@media screen and (min-width:1280px){body.toc2{padding-left:20em;padding-right:0}
+#toc.toc2{width:20em}
+#toc.toc2 #toctitle{font-size:1.375em}
+#toc.toc2>ul{font-size:.95em}
+#toc.toc2 ul ul{padding-left:1.25em}
+body.toc2.toc-right{padding-left:0;padding-right:20em}}
+#content #toc{border:1px solid #e0e0dc;margin-bottom:1.25em;padding:1.25em;background:#f8f8f7;border-radius:4px}
+#content #toc>:first-child{margin-top:0}
+#content #toc>:last-child{margin-bottom:0}
+#footer{max-width:none;background:rgba(0,0,0,.8);padding:1.25em}
+#footer-text{color:hsla(0,0%,100%,.8);line-height:1.44}
+#content{margin-bottom:.625em}
+.sect1{padding-bottom:.625em}
+@media screen and (min-width:768px){#content{margin-bottom:1.25em}
+.sect1{padding-bottom:1.25em}}
+.sect1:last-child{padding-bottom:0}
+.sect1+.sect1{border-top:1px solid #e7e7e9}
+#content h1>a.anchor,h2>a.anchor,h3>a.anchor,#toctitle>a.anchor,.sidebarblock>.content>.title>a.anchor,h4>a.anchor,h5>a.anchor,h6>a.anchor{position:absolute;z-index:1001;width:1.5ex;margin-left:-1.5ex;display:block;text-decoration:none!important;visibility:hidden;text-align:center;font-weight:400}
+#content h1>a.anchor::before,h2>a.anchor::before,h3>a.anchor::before,#toctitle>a.anchor::before,.sidebarblock>.content>.title>a.anchor::before,h4>a.anchor::before,h5>a.anchor::before,h6>a.anchor::before{content:"\00A7";font-size:.85em;display:block;padding-top:.1em}
+#content h1:hover>a.anchor,#content h1>a.anchor:hover,h2:hover>a.anchor,h2>a.anchor:hover,h3:hover>a.anchor,#toctitle:hover>a.anchor,.sidebarblock>.content>.title:hover>a.anchor,h3>a.anchor:hover,#toctitle>a.anchor:hover,.sidebarblock>.content>.title>a.anchor:hover,h4:hover>a.anchor,h4>a.anchor:hover,h5:hover>a.anchor,h5>a.anchor:hover,h6:hover>a.anchor,h6>a.anchor:hover{visibility:visible}
+#content h1>a.link,h2>a.link,h3>a.link,#toctitle>a.link,.sidebarblock>.content>.title>a.link,h4>a.link,h5>a.link,h6>a.link{color:#ba3925;text-decoration:none}
+#content h1>a.link:hover,h2>a.link:hover,h3>a.link:hover,#toctitle>a.link:hover,.sidebarblock>.content>.title>a.link:hover,h4>a.link:hover,h5>a.link:hover,h6>a.link:hover{color:#a53221}
+details,.audioblock,.imageblock,.literalblock,.listingblock,.stemblock,.videoblock{margin-bottom:1.25em}
+details{margin-left:1.25rem}
+details>summary{cursor:pointer;display:block;position:relative;line-height:1.6;margin-bottom:.625rem;outline:none;-webkit-tap-highlight-color:transparent}
+details>summary::-webkit-details-marker{display:none}
+details>summary::before{content:"";border:solid transparent;border-left:solid;border-width:.3em 0 .3em .5em;position:absolute;top:.5em;left:-1.25rem;transform:translateX(15%)}
+details[open]>summary::before{border:solid transparent;border-top:solid;border-width:.5em .3em 0;transform:translateY(15%)}
+details>summary::after{content:"";width:1.25rem;height:1em;position:absolute;top:.3em;left:-1.25rem}
+.admonitionblock td.content>.title,.audioblock>.title,.exampleblock>.title,.imageblock>.title,.listingblock>.title,.literalblock>.title,.stemblock>.title,.openblock>.title,.paragraph>.title,.quoteblock>.title,table.tableblock>.title,.verseblock>.title,.videoblock>.title,.dlist>.title,.olist>.title,.ulist>.title,.qlist>.title,.hdlist>.title{text-rendering:optimizeLegibility;text-align:left;font-family:"Noto Serif","DejaVu Serif",serif;font-size:1rem;font-style:italic}
+table.tableblock.fit-content>caption.title{white-space:nowrap;width:0}
+.paragraph.lead>p,#preamble>.sectionbody>[class=paragraph]:first-of-type p{font-size:1.21875em;line-height:1.6;color:rgba(0,0,0,.85)}
+.admonitionblock>table{border-collapse:separate;border:0;background:none;width:100%}
+.admonitionblock>table td.icon{text-align:center;width:80px}
+.admonitionblock>table td.icon img{max-width:none}
+.admonitionblock>table td.icon .title{font-weight:bold;font-family:"Open Sans","DejaVu Sans",sans-serif;text-transform:uppercase}
+.admonitionblock>table td.content{padding-left:1.125em;padding-right:1.25em;border-left:1px solid #dddddf;color:rgba(0,0,0,.6);word-wrap:anywhere}
+.admonitionblock>table td.content>:last-child>:last-child{margin-bottom:0}
+.exampleblock>.content{border:1px solid #e6e6e6;margin-bottom:1.25em;padding:1.25em;background:#fff;border-radius:4px}
+.exampleblock>.content>:first-child{margin-top:0}
+.exampleblock>.content>:last-child{margin-bottom:0}
+.sidebarblock{border:1px solid #dbdbd6;margin-bottom:1.25em;padding:1.25em;background:#f3f3f2;border-radius:4px}
+.sidebarblock>:first-child{margin-top:0}
+.sidebarblock>:last-child{margin-bottom:0}
+.sidebarblock>.content>.title{color:#7a2518;margin-top:0;text-align:center}
+.exampleblock>.content>:last-child>:last-child,.exampleblock>.content .olist>ol>li:last-child>:last-child,.exampleblock>.content .ulist>ul>li:last-child>:last-child,.exampleblock>.content .qlist>ol>li:last-child>:last-child,.sidebarblock>.content>:last-child>:last-child,.sidebarblock>.content .olist>ol>li:last-child>:last-child,.sidebarblock>.content .ulist>ul>li:last-child>:last-child,.sidebarblock>.content .qlist>ol>li:last-child>:last-child{margin-bottom:0}
+.literalblock pre,.listingblock>.content>pre{border-radius:4px;overflow-x:auto;padding:1em;font-size:.8125em}
+@media screen and (min-width:768px){.literalblock pre,.listingblock>.content>pre{font-size:.90625em}}
+@media screen and (min-width:1280px){.literalblock pre,.listingblock>.content>pre{font-size:1em}}
+.literalblock pre,.listingblock>.content>pre:not(.highlight),.listingblock>.content>pre[class=highlight],.listingblock>.content>pre[class^="highlight "]{background:#f7f7f8}
+.literalblock.output pre{color:#f7f7f8;background:rgba(0,0,0,.9)}
+.listingblock>.content{position:relative}
+.listingblock code[data-lang]::before{display:none;content:attr(data-lang);position:absolute;font-size:.75em;top:.425rem;right:.5rem;line-height:1;text-transform:uppercase;color:inherit;opacity:.5}
+.listingblock:hover code[data-lang]::before{display:block}
+.listingblock.terminal pre .command::before{content:attr(data-prompt);padding-right:.5em;color:inherit;opacity:.5}
+.listingblock.terminal pre .command:not([data-prompt])::before{content:"$"}
+.listingblock pre.highlightjs{padding:0}
+.listingblock pre.highlightjs>code{padding:1em;border-radius:4px}
+.listingblock pre.prettyprint{border-width:0}
+.prettyprint{background:#f7f7f8}
+pre.prettyprint .linenums{line-height:1.45;margin-left:2em}
+pre.prettyprint li{background:none;list-style-type:inherit;padding-left:0}
+pre.prettyprint li code[data-lang]::before{opacity:1}
+pre.prettyprint li:not(:first-child) code[data-lang]::before{display:none}
+table.linenotable{border-collapse:separate;border:0;margin-bottom:0;background:none}
+table.linenotable td[class]{color:inherit;vertical-align:top;padding:0;line-height:inherit;white-space:normal}
+table.linenotable td.code{padding-left:.75em}
+table.linenotable td.linenos,pre.pygments .linenos{border-right:1px solid;opacity:.35;padding-right:.5em;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}
+pre.pygments span.linenos{display:inline-block;margin-right:.75em}
+.quoteblock{margin:0 1em 1.25em 1.5em;display:table}
+.quoteblock:not(.excerpt)>.title{margin-left:-1.5em;margin-bottom:.75em}
+.quoteblock blockquote,.quoteblock p{color:rgba(0,0,0,.85);font-size:1.15rem;line-height:1.75;word-spacing:.1em;letter-spacing:0;font-style:italic;text-align:justify}
+.quoteblock blockquote{margin:0;padding:0;border:0}
+.quoteblock blockquote::before{content:"\201c";float:left;font-size:2.75em;font-weight:bold;line-height:.6em;margin-left:-.6em;color:#7a2518;text-shadow:0 1px 2px rgba(0,0,0,.1)}
+.quoteblock blockquote>.paragraph:last-child p{margin-bottom:0}
+.quoteblock .attribution{margin-top:.75em;margin-right:.5ex;text-align:right}
+.verseblock{margin:0 1em 1.25em}
+.verseblock pre{font-family:"Open Sans","DejaVu Sans",sans-serif;font-size:1.15rem;color:rgba(0,0,0,.85);font-weight:300;text-rendering:optimizeLegibility}
+.verseblock pre strong{font-weight:400}
+.verseblock .attribution{margin-top:1.25rem;margin-left:.5ex}
+.quoteblock .attribution,.verseblock .attribution{font-size:.9375em;line-height:1.45;font-style:italic}
+.quoteblock .attribution br,.verseblock .attribution br{display:none}
+.quoteblock .attribution cite,.verseblock .attribution cite{display:block;letter-spacing:-.025em;color:rgba(0,0,0,.6)}
+.quoteblock.abstract blockquote::before,.quoteblock.excerpt blockquote::before,.quoteblock .quoteblock blockquote::before{display:none}
+.quoteblock.abstract blockquote,.quoteblock.abstract p,.quoteblock.excerpt blockquote,.quoteblock.excerpt p,.quoteblock .quoteblock blockquote,.quoteblock .quoteblock p{line-height:1.6;word-spacing:0}
+.quoteblock.abstract{margin:0 1em 1.25em;display:block}
+.quoteblock.abstract>.title{margin:0 0 .375em;font-size:1.15em;text-align:center}
+.quoteblock.excerpt>blockquote,.quoteblock .quoteblock{padding:0 0 .25em 1em;border-left:.25em solid #dddddf}
+.quoteblock.excerpt,.quoteblock .quoteblock{margin-left:0}
+.quoteblock.excerpt blockquote,.quoteblock.excerpt p,.quoteblock .quoteblock blockquote,.quoteblock .quoteblock p{color:inherit;font-size:1.0625rem}
+.quoteblock.excerpt .attribution,.quoteblock .quoteblock .attribution{color:inherit;font-size:.85rem;text-align:left;margin-right:0}
+p.tableblock:last-child{margin-bottom:0}
+td.tableblock>.content{margin-bottom:1.25em;word-wrap:anywhere}
+td.tableblock>.content>:last-child{margin-bottom:-1.25em}
+table.tableblock,th.tableblock,td.tableblock{border:0 solid #dedede}
+table.grid-all>*>tr>*{border-width:1px}
+table.grid-cols>*>tr>*{border-width:0 1px}
+table.grid-rows>*>tr>*{border-width:1px 0}
+table.frame-all{border-width:1px}
+table.frame-ends{border-width:1px 0}
+table.frame-sides{border-width:0 1px}
+table.frame-none>colgroup+*>:first-child>*,table.frame-sides>colgroup+*>:first-child>*{border-top-width:0}
+table.frame-none>:last-child>:last-child>*,table.frame-sides>:last-child>:last-child>*{border-bottom-width:0}
+table.frame-none>*>tr>:first-child,table.frame-ends>*>tr>:first-child{border-left-width:0}
+table.frame-none>*>tr>:last-child,table.frame-ends>*>tr>:last-child{border-right-width:0}
+table.stripes-all>*>tr,table.stripes-odd>*>tr:nth-of-type(odd),table.stripes-even>*>tr:nth-of-type(even),table.stripes-hover>*>tr:hover{background:#f8f8f7}
+th.halign-left,td.halign-left{text-align:left}
+th.halign-right,td.halign-right{text-align:right}
+th.halign-center,td.halign-center{text-align:center}
+th.valign-top,td.valign-top{vertical-align:top}
+th.valign-bottom,td.valign-bottom{vertical-align:bottom}
+th.valign-middle,td.valign-middle{vertical-align:middle}
+table thead th,table tfoot th{font-weight:bold}
+tbody tr th{background:#f7f8f7}
+tbody tr th,tbody tr th p,tfoot tr th,tfoot tr th p{color:rgba(0,0,0,.8);font-weight:bold}
+p.tableblock>code:only-child{background:none;padding:0}
+p.tableblock{font-size:1em}
+ol{margin-left:1.75em}
+ul li ol{margin-left:1.5em}
+dl dd{margin-left:1.125em}
+dl dd:last-child,dl dd:last-child>:last-child{margin-bottom:0}
+li p,ul dd,ol dd,.olist .olist,.ulist .ulist,.ulist .olist,.olist .ulist{margin-bottom:.625em}
+ul.checklist,ul.none,ol.none,ul.no-bullet,ol.no-bullet,ol.unnumbered,ul.unstyled,ol.unstyled{list-style-type:none}
+ul.no-bullet,ol.no-bullet,ol.unnumbered{margin-left:.625em}
+ul.unstyled,ol.unstyled{margin-left:0}
+li>p:empty:only-child::before{content:"";display:inline-block}
+ul.checklist>li>p:first-child{margin-left:-1em}
+ul.checklist>li>p:first-child>.fa-square-o:first-child,ul.checklist>li>p:first-child>.fa-check-square-o:first-child{width:1.25em;font-size:.8em;position:relative;bottom:.125em}
+ul.checklist>li>p:first-child>input[type=checkbox]:first-child{margin-right:.25em}
+ul.inline{display:flex;flex-flow:row wrap;list-style:none;margin:0 0 .625em -1.25em}
+ul.inline>li{margin-left:1.25em}
+.unstyled dl dt{font-weight:400;font-style:normal}
+ol.arabic{list-style-type:decimal}
+ol.decimal{list-style-type:decimal-leading-zero}
+ol.loweralpha{list-style-type:lower-alpha}
+ol.upperalpha{list-style-type:upper-alpha}
+ol.lowerroman{list-style-type:lower-roman}
+ol.upperroman{list-style-type:upper-roman}
+ol.lowergreek{list-style-type:lower-greek}
+.hdlist>table,.colist>table{border:0;background:none}
+.hdlist>table>tbody>tr,.colist>table>tbody>tr{background:none}
+td.hdlist1,td.hdlist2{vertical-align:top;padding:0 .625em}
+td.hdlist1{font-weight:bold;padding-bottom:1.25em}
+td.hdlist2{word-wrap:anywhere}
+.literalblock+.colist,.listingblock+.colist{margin-top:-.5em}
+.colist td:not([class]):first-child{padding:.4em .75em 0;line-height:1;vertical-align:top}
+.colist td:not([class]):first-child img{max-width:none}
+.colist td:not([class]):last-child{padding:.25em 0}
+.thumb,.th{line-height:0;display:inline-block;border:4px solid #fff;box-shadow:0 0 0 1px #ddd}
+.imageblock.left{margin:.25em .625em 1.25em 0}
+.imageblock.right{margin:.25em 0 1.25em .625em}
+.imageblock>.title{margin-bottom:0}
+.imageblock.thumb,.imageblock.th{border-width:6px}
+.imageblock.thumb>.title,.imageblock.th>.title{padding:0 .125em}
+.image.left,.image.right{margin-top:.25em;margin-bottom:.25em;display:inline-block;line-height:0}
+.image.left{margin-right:.625em}
+.image.right{margin-left:.625em}
+a.image{text-decoration:none;display:inline-block}
+a.image object{pointer-events:none}
+sup.footnote,sup.footnoteref{font-size:.875em;position:static;vertical-align:super}
+sup.footnote a,sup.footnoteref a{text-decoration:none}
+sup.footnote a:active,sup.footnoteref a:active{text-decoration:underline}
+#footnotes{padding-top:.75em;padding-bottom:.75em;margin-bottom:.625em}
+#footnotes hr{width:20%;min-width:6.25em;margin:-.25em 0 .75em;border-width:1px 0 0}
+#footnotes .footnote{padding:0 .375em 0 .225em;line-height:1.3334;font-size:.875em;margin-left:1.2em;margin-bottom:.2em}
+#footnotes .footnote a:first-of-type{font-weight:bold;text-decoration:none;margin-left:-1.05em}
+#footnotes .footnote:last-of-type{margin-bottom:0}
+#content #footnotes{margin-top:-.625em;margin-bottom:0;padding:.75em 0}
+div.unbreakable{page-break-inside:avoid}
+.big{font-size:larger}
+.small{font-size:smaller}
+.underline{text-decoration:underline}
+.overline{text-decoration:overline}
+.line-through{text-decoration:line-through}
+.aqua{color:#00bfbf}
+.aqua-background{background:#00fafa}
+.black{color:#000}
+.black-background{background:#000}
+.blue{color:#0000bf}
+.blue-background{background:#0000fa}
+.fuchsia{color:#bf00bf}
+.fuchsia-background{background:#fa00fa}
+.gray{color:#606060}
+.gray-background{background:#7d7d7d}
+.green{color:#006000}
+.green-background{background:#007d00}
+.lime{color:#00bf00}
+.lime-background{background:#00fa00}
+.maroon{color:#600000}
+.maroon-background{background:#7d0000}
+.navy{color:#000060}
+.navy-background{background:#00007d}
+.olive{color:#606000}
+.olive-background{background:#7d7d00}
+.purple{color:#600060}
+.purple-background{background:#7d007d}
+.red{color:#bf0000}
+.red-background{background:#fa0000}
+.silver{color:#909090}
+.silver-background{background:#bcbcbc}
+.teal{color:#006060}
+.teal-background{background:#007d7d}
+.white{color:#bfbfbf}
+.white-background{background:#fafafa}
+.yellow{color:#bfbf00}
+.yellow-background{background:#fafa00}
+span.icon>.fa{cursor:default}
+a span.icon>.fa{cursor:inherit}
+.admonitionblock td.icon [class^="fa icon-"]{font-size:2.5em;text-shadow:1px 1px 2px rgba(0,0,0,.5);cursor:default}
+.admonitionblock td.icon .icon-note::before{content:"\f05a";color:#19407c}
+.admonitionblock td.icon .icon-tip::before{content:"\f0eb";text-shadow:1px 1px 2px rgba(155,155,0,.8);color:#111}
+.admonitionblock td.icon .icon-warning::before{content:"\f071";color:#bf6900}
+.admonitionblock td.icon .icon-caution::before{content:"\f06d";color:#bf3400}
+.admonitionblock td.icon .icon-important::before{content:"\f06a";color:#bf0000}
+.conum[data-value]{display:inline-block;color:#fff!important;background:rgba(0,0,0,.8);border-radius:50%;text-align:center;font-size:.75em;width:1.67em;height:1.67em;line-height:1.67em;font-family:"Open Sans","DejaVu Sans",sans-serif;font-style:normal;font-weight:bold}
+.conum[data-value] *{color:#fff!important}
+.conum[data-value]+b{display:none}
+.conum[data-value]::after{content:attr(data-value)}
+pre .conum[data-value]{position:relative;top:-.125em}
+b.conum *{color:inherit!important}
+.conum:not([data-value]):empty{display:none}
+dt,th.tableblock,td.content,div.footnote{text-rendering:optimizeLegibility}
+h1,h2,p,td.content,span.alt,summary{letter-spacing:-.01em}
+p strong,td.content strong,div.footnote strong{letter-spacing:-.005em}
+p,blockquote,dt,td.content,span.alt,summary{font-size:1.0625rem}
+p{margin-bottom:1.25rem}
+.sidebarblock p,.sidebarblock dt,.sidebarblock td.content,p.tableblock{font-size:1em}
+.exampleblock>.content{background:#fffef7;border-color:#e0e0dc;box-shadow:0 1px 4px #e0e0dc}
+.print-only{display:none!important}
+@page{margin:1.25cm .75cm}
+@media print{*{box-shadow:none!important;text-shadow:none!important}
+html{font-size:80%}
+a{color:inherit!important;text-decoration:underline!important}
+a.bare,a[href^="#"],a[href^="mailto:"]{text-decoration:none!important}
+a[href^="http:"]:not(.bare)::after,a[href^="https:"]:not(.bare)::after{content:"(" attr(href) ")";display:inline-block;font-size:.875em;padding-left:.25em}
+abbr[title]{border-bottom:1px dotted}
+abbr[title]::after{content:" (" attr(title) ")"}
+pre,blockquote,tr,img,object,svg{page-break-inside:avoid}
+thead{display:table-header-group}
+svg{max-width:100%}
+p,blockquote,dt,td.content{font-size:1em;orphans:3;widows:3}
+h2,h3,#toctitle,.sidebarblock>.content>.title{page-break-after:avoid}
+#header,#content,#footnotes,#footer{max-width:none}
+#toc,.sidebarblock,.exampleblock>.content{background:none!important}
+#toc{border-bottom:1px solid #dddddf!important;padding-bottom:0!important}
+body.book #header{text-align:center}
+body.book #header>h1:first-child{border:0!important;margin:2.5em 0 1em}
+body.book #header .details{border:0!important;display:block;padding:0!important}
+body.book #header .details span:first-child{margin-left:0!important}
+body.book #header .details br{display:block}
+body.book #header .details br+span::before{content:none!important}
+body.book #toc{border:0!important;text-align:left!important;padding:0!important;margin:0!important}
+body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-break-before:always}
+.listingblock code[data-lang]::before{display:block}
+#footer{padding:0 .9375em}
+.hide-on-print{display:none!important}
+.print-only{display:block!important}
+.hide-for-print{display:none!important}
+.show-for-print{display:inherit!important}}
+@media amzn-kf8,print{#header>h1:first-child{margin-top:1.25rem}
+.sect1{padding:0!important}
+.sect1+.sect1{border:0}
+#footer{background:none}
+#footer-text{color:rgba(0,0,0,.6);font-size:.9em}}
+@media amzn-kf8{#header,#content,#footnotes,#footer{padding:0}}
+</style>
+</head>
+<body class="article">
+<div id="header">
+<h1>Introduction to Metadata</h1>
+<div class="details">
+<span id="author" class="author">Unresolved directive in 1052-metadata-guidelines-for-geospatial-data-resources-part-1.asciidoc - include::includes/attributes.adoc[]</span><br>
+</div>
+</div>
+<div id="content">
+<div class="sect2">
+<h3 id="_july_2018">July 2018</h3>
+<div class="paragraph">
+<p>Return
+to&#160;<a href="https://www.agi.org.uk/gemini/40-gemini/1037-uk-gemini-standard-and-inspire-implementing-rules">GEMINI
+2.3 home page</a></p>
+</div>
+<div class="paragraph">
+<p><a href="https://www.agi.org.uk/40-gemini/1052-metadata-guidelines-for-geospatial-data-resources-part-1#Intro">1.
+Introduction</a></p>
+</div>
+<div class="paragraph">
+<p><a href="https://www.agi.org.uk/40-gemini/1052-metadata-guidelines-for-geospatial-data-resources-part-1#fundamentals">2.
+Fundamentals of Metadata</a></p>
+</div>
+<div class="paragraph">
+<p><a href="https://www.agi.org.uk/40-gemini/1052-metadata-guidelines-for-geospatial-data-resources-part-1#2.1">2.1
+The nature of metadata</a></p>
+</div>
+<div class="paragraph">
+<p><a href="https://www.agi.org.uk/40-gemini/1052-metadata-guidelines-for-geospatial-data-resources-part-1#2.2">2.2
+Metadata services</a></p>
+</div>
+<div class="paragraph">
+<p><a href="https://www.agi.org.uk/40-gemini/1052-metadata-guidelines-for-geospatial-data-resources-part-1#2.3">2.3
+Metadata as a business process</a></p>
+</div>
+<div class="paragraph">
+<p><a href="https://www.agi.org.uk/40-gemini/1052-metadata-guidelines-for-geospatial-data-resources-part-1#2.4">2.4
+Metadata roles</a></p>
+</div>
+<div class="paragraph">
+<p><a href="https://www.agi.org.uk/40-gemini/1052-metadata-guidelines-for-geospatial-data-resources-part-1#2.5">2.5
+Metadata standards</a></p>
+</div>
+<div class="paragraph">
+<p><a href="https://www.agi.org.uk/40-gemini/1052-metadata-guidelines-for-geospatial-data-resources-part-1#principles">3.
+General principles of Metadata</a></p>
+</div>
+<div class="paragraph">
+<p><a href="https://www.agi.org.uk/40-gemini/1052-metadata-guidelines-for-geospatial-data-resources-part-1#3.1">3.1
+Introduction</a></p>
+</div>
+<div class="paragraph">
+<p><a href="https://www.agi.org.uk/40-gemini/1052-metadata-guidelines-for-geospatial-data-resources-part-1#3.2">3.2
+Free text</a></p>
+</div>
+<div class="paragraph">
+<p><a href="https://www.agi.org.uk/40-gemini/1052-metadata-guidelines-for-geospatial-data-resources-part-1#3.3">3.3
+Obligation</a></p>
+</div>
+<div class="paragraph">
+<p><a href="https://www.agi.org.uk/40-gemini/1052-metadata-guidelines-for-geospatial-data-resources-part-1#3.4">3.4
+Element domains</a></p>
+</div>
+<div class="paragraph">
+<p><a href="https://www.agi.org.uk/40-gemini/1052-metadata-guidelines-for-geospatial-data-resources-part-1#3.5">3.5
+Spatial references</a></p>
+</div>
+<div class="paragraph">
+<p><a href="https://www.agi.org.uk/40-gemini/1052-metadata-guidelines-for-geospatial-data-resources-part-1#3.6">3.6
+Date fields</a></p>
+</div>
+<div class="paragraph">
+<p><a href="https://www.agi.org.uk/40-gemini/1052-metadata-guidelines-for-geospatial-data-resources-part-1#scope">4.
+Data resources in Scope</a></p>
+</div>
+<div class="paragraph">
+<p><a href="https://www.agi.org.uk/40-gemini/1052-metadata-guidelines-for-geospatial-data-resources-part-1#4.1">4.1
+What is stated in UK GEMINI2</a></p>
+</div>
+<div class="paragraph">
+<p><a href="https://www.agi.org.uk/40-gemini/1052-metadata-guidelines-for-geospatial-data-resources-part-1#4.2">4.2
+Characteristics of data resources in scope</a></p>
+</div>
+<div class="paragraph">
+<p><a href="https://www.agi.org.uk/40-gemini/1052-metadata-guidelines-for-geospatial-data-resources-part-1#4.3">4.3
+Applicability of UK GEMINI2</a></p>
+</div>
+<div class="paragraph">
+<p><a href="https://www.agi.org.uk/40-gemini/1052-metadata-guidelines-for-geospatial-data-resources-part-1#4.4">4.4
+Levels of data resources for documentation</a></p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_preface">Preface</h3>
+<div class="paragraph">
+<p>These guidelines cover the basics of metadata for geospatial data
+resources and services. They are intended for general use in the UK
+geographic information environment and serve as a preamble to the more
+detailed and specific
+guidelines&#160;<a href="https://www.agi.org.uk/gemini/40-gemini/1049-metadata-guidelines-for-geospatial-data-resources-part-2">Metadata
+Guidelines for Geospatial Data Resources - Part 2</a>. They are primarily
+concerned with geospatial data (i.e. that which references data to a
+location on the surface of the Earth), and which has a limited
+geographic extent (i.e. is restricted to a defined territory). Services
+which provide access to such data are also in scope. The Guidelines have
+been developed within the context of the capture and maintenance of
+metadata for INSPIRE using the UK’s interpretation of the INSPIRE
+implementing rules, referred to as UK GEMINI2. However, they are
+sufficiently broadly based to be applicable in a wider context of
+geospatial metadata creation and management.</p>
+</div>
+<div class="paragraph">
+<p>The Guidelines are aimed at data managers and creators of metadata,
+providers of metadata services and general data users. They include some
+guidance on quality management such that they could be used in the
+context of a national metadata service. A UK discovery metadata service
+forms part of data.gov.uk. As well as the human usable portal, this has
+a machine readable OGC “Catalogue Services for the Web” interface
+(<a href="http://csw.data.gov.uk/geonetwork/srv/en/csw?service=CSW&amp;version=2.0.2&amp;request=GetCapabilities">OGC
+Capabilities document link</a>).</p>
+</div>
+<div class="paragraph">
+<p>The Guidelines have been revised during 2018 in the light of other
+developments, including revisions to UK GEMINI2. Any comments on these
+Guidelines or on UK GEMINI2 should be sent
+to&#160;<a href="mailto:gemini@agi.org.uk">gemini@agi.org.uk</a>.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_1_introduction"><span id="Intro">#</span>#1.&#160; Introduction</h3>
+<div class="paragraph">
+<p>These guidelines for the creation, maintenance and quality management of
+metadata for geospatial data resources, including the services which
+provide access to the resources, provide a general introduction to the
+principles and concepts of metadata. They are aimed at data managers and
+creators of metadata, providers of metadata services and general data
+users.</p>
+</div>
+<div class="paragraph">
+<p>The data resources may be datasets, dataset series, services delivering
+geographic data, or any other information resource with a geospatial
+content. This includes datasets that relate to a limited geographic
+area. The data resources may be graphical or textual (tabular or free
+text), hardcopy or digital. Geospatial data is data containing a
+positional or locational element relative to the Earth. Many data
+resources that at first sight do not appear to be geospatial
+nevertheless do have a geospatial component, in that they apply to a
+limited geographic area, for example statistics for a local authority
+area. Geospatial data contains spatial references which may take the
+form of coordinates, for example in latitude and longitude, or
+references to geographic place names, for example street data.</p>
+</div>
+<div class="paragraph">
+<p>Metadata is data about data. It provides additional information about
+the data resource, to enable it to be better understood and used to good
+effect.</p>
+</div>
+<div class="paragraph">
+<p>In an organisation, metadata is required for both internal and external
+purposes. It can add significantly to the value of an organisation’s
+data holdings, and failure to create it at the appropriate time can lead
+to greater hidden costs later. Lack of knowledge about available data
+can lead to costly duplication of effort.</p>
+</div>
+<div class="paragraph">
+<p>Within an organisation, metadata is required to organise and maintain
+the internal investment in data. As staff change, institutional
+knowledge leaves the organisation. Undocumented data can lose its value.
+Subsequent staff may have little understanding of the contents and use
+of the data and may find that they cannot trust results generated using
+this data.</p>
+</div>
+<div class="paragraph">
+<p>Externally, metadata is required to provide information about an
+organisation’s data holdings and data access services. Data resources
+are a major national asset, and information of what data resources exist
+within different organisations, particularly in the public sector, is
+required to improve efficiencies and reduce data duplication. Data
+catalogues and data discovery services enable potential users to find,
+evaluate and use that data, thereby increasing its value. In addition,
+data received from an external source requires further information,
+supplied by metadata, to process and interpret it.</p>
+</div>
+<div class="paragraph">
+<p>The requirements for metadata for internal and external purposes are
+different. Metadata for external purposes will be at a general level,
+providing basic information about the data resources. Having this in a
+standardised form enables metadata services to be set up for widespread
+use. Standardisation of this aspect is thus important, and most metadata
+standards are designed for this purpose. Metadata for internal purposes
+will be much more detailed. Internal standards for metadata will
+generally be extensions of those required for external purposes, and
+often will contain items particular to the organisation or business
+sector. Whilst the details of these Guidelines relate to external
+metadata, and in particular the UK GEMINI2 metadata set designed for
+discovery metadata services, the principles are equally applicable to
+internal metadata.</p>
+</div>
+<div class="paragraph">
+<p>A glossary of terms is provided
+in&#160;<a href="https://www.agi.org.uk/40-gemini/1056-glossary">here</a>.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_2_fundamentals_of_metadata"><span id="fundamentals">#</span>#2.&#160; Fundamentals of metadata</h3>
+<div class="sect3">
+<h4 id="_2_1_the_nature_of_metadata"><strong><em><span id="2" class="1">#</span>#2.1 The nature of metadata</em></strong></h4>
+<div class="paragraph">
+<p>There are a range of uses for metadata, for discovery, for evaluation
+and for use:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>discovery</strong>: the user aims to find out what resources are available
+and whether these are able to satisfy their requirements. This is
+typically what a search engine can process, using basic search criteria
+to identify the available resources corresponding to the user
+requirements, and providing to the user basic metadata (name, content
+description, geographic area of applicability etc.) about the candidate
+resources.</p>
+</li>
+<li>
+<p><strong>evaluation</strong>: the user needs to go deeper in the metadata (e.g.
+looking at the quality of the information) to ascertain whether a
+candidate resource is fit for the intended purpose.</p>
+</li>
+<li>
+<p><strong>use</strong>: the user has selected a candidate resource, but needs to access
+it and to configure a system or software to process it.</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_2_2_metadata_services"><strong><em><span id="2" class="2">#</span>#2.2 Metadata services</em></strong></h4>
+<div class="paragraph">
+<p>Metadata services provide one of the fundamental parts of a Spatial Data
+Infrastructure (SDI). They are used within organisations as part of the
+information management facilities, and on a national basis for discovery
+purposes. Essentially, they work on the basis of a user defining
+parameters such as Topic Category and Extent, to carry out a search to
+discover data resources that might be suitable and return information
+about their source, content and availability.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_2_3_metadata_as_a_business_process"><strong><em><span id="2" class="3">#</span>#2.3 Metadata as a business process</em></strong></h4>
+<div class="paragraph">
+<p>A simple process model is presented at Figure 1 and shows the flow from
+metadata creation through to metadata query with quality related
+processes built-in. It can represent the processes within one
+organisation or split between separate organisations. The flow is
+idealised and could relate to any discovery-level metadata service.</p>
+</div>
+<div class="paragraph">
+<p>Although metadata creation and maintenance are shown as separate
+operations, it cannot be over-emphasised that they will be far more
+successful if they are fully integrated into the other business
+processes of an organisation. Thus, when a dataset or other form of data
+resource is produced, it should be routinely documented as metadata as
+part of the production or distribution process. Further, when the data
+resource is updated or subject to some form of change, the metadata
+should also be updated.</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="https://www.agi.org.uk/images/xslt/Model_metadata_creation.jpg" alt="Simple Process model for metadata creation" width="1114" height="483"></span></p>
+</div>
+<div class="paragraph">
+<p>If the main purpose of creating metadata is to document and enable
+discovery of an organisation’s own data resources and the exposure of
+all or part of that metadata to some external service is secondary, then
+there will be far greater chance of support and resources for metadata
+in the business.</p>
+</div>
+<div class="paragraph">
+<p>However, if metadata is seen as an additional activity to support some
+external service, it is likely to be ignored or forgotten. When it is
+finally picked up, it may well be assigned to someone who has no
+knowledge of the data resource and no interest in the quality of the
+metadata.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_2_4_metadata_roles"><strong><em><span id="2" class="4">#</span>#2.4 Metadata roles</em></strong></h4>
+<div class="paragraph">
+<p>Three generic roles in the metadata process can be recognised, these are
+illustrated above:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Metadata creator</strong>&#160;– responsible for creating and maintaining the
+metadata and for its quality. Although the metadata creator is usually
+the data producer or distributor, this is not always so.</p>
+</li>
+<li>
+<p><strong>Service provider&#160;</strong>– runs the metadata service, and may be part of the
+same organisation as the metadata creator or quite separate. A broad
+view of the role is taken here which may be made up of several actual
+roles in the real world - for example:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>a contractor hosting the service and providing IT support who is
+contracted to</p>
+</li>
+<li>
+<p>a service owner who is ultimately responsible for the quality of the
+service and has service level agreements (SLAs) with the contractor and
+metadata creators.</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p><strong>Service user&#160;</strong>- the consumer of the service who selects the search
+criteria matching their requirements, performs the searches and finds
+data resources meeting their requirements or, at least, meriting further
+investigation.</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_2_5_metadata_standards"><strong><em><span id="2" class="5">#</span>#2.5 Metadata standards</em></strong></h4>
+<div class="paragraph">
+<p>There are many metadata standards in existence. These have been produced
+at different times by different bodies for different purposes. The main
+ones that are relevant to geospatial data resources are:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>ISO 19115</strong></p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>This describes all aspects of geospatial metadata and provides a
+comprehensive set of metadata elements. It is designed for electronic
+metadata services, and the elements are designed to be searchable
+wherever possible. It is widely used as the basis for geospatial
+metadata services. However, because of the large number of metadata
+elements and the complexity of its data model, it is difficult to
+implement.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>INSPIRE</strong></p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>The INSPIRE metadata Implementing Rules defines the minimum set of
+metadata elements necessary to comply with the INSPIRE Directive. In
+essence it is a profile of ISO 19115 for discovery purposes. It allows a
+variety of possible implementations.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>UK&#160;GEMINI</strong></p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>The UK Geospatial Metadata Interoperability Initiative (GEMINI) was
+produced originally through a collaboration between the Association for
+Geographic Information (AGI), the e-Government Unit (eGU) and the UK
+Data Archive. In a subsequent revision, it was made compatible with the
+core elements of ISO 19115. In its current version it is conformant with
+the INSPIRE Implementing Rules and Technical Guidance for metadata, and
+designed to meet the requirements of INSPIRE in a UK context. This
+latest revision has been sponsored by Defra and managed by AGI. UK
+GEMINI remains an AGI publication.</p>
+</div>
+<div class="paragraph">
+<p>In common with INSPIRE, UK GEMINI remains an implementation of ISO
+19115:2005, not the more recent version ISO 19115-1:2014.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Dublin&#160;Core</strong></p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>This was originally developed by librarians for cataloguing information
+resources. It uses free-text fields, which makes automatic searching
+difficult. Consequently, it not ideally suited for discovery purposes
+using electronic data services. It is severely limited in its ability to
+handle the geospatial aspects of data, and also in how it handles the
+geographic extent of non-geographic data, e.g. data that applies to one
+country or region rather than another.</p>
+</div>
+<div class="paragraph">
+<p>However, Dublin Core provides the basic vocabulary used in W3C’s Data
+Catalogue Vocabulary (DCAT), on which the European Commission has based
+their GeoDCAT Application Profile.</p>
+</div>
+<div class="paragraph">
+<p>At present, GEMINI makes no direct use of DCAT or GeoDCAT, but it does
+share some of the Dublin Core vocabulary.</p>
+</div>
+<div class="paragraph">
+<p>Formal references for these standards and implementing rules are given
+in
+the&#160;<a href="https://www.agi.org.uk/40-gemini/1047-metadata-guidelines-for-geospatial-data-resources-part-3">Bibliography</a>.</p>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_3_general_principles_of_metadata"><span id="principles">#</span>#3.&#160; General principles of metadata</h3>
+<div class="sect3">
+<h4 id="_3_1_introduction"><strong><em><span id="3" class="1">#</span>#3.1 Introduction</em></strong></h4>
+<div class="paragraph">
+<p>This section describes some general high-level rules that apply to the
+creation of metadata. Whilst primarily applying to UK GEMINI2, they are
+also relevant to other metadata specifications.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_3_2_free_text"><strong><em><span id="3" class="2">#</span>#3.2 Free text</em></strong></h4>
+<div class="paragraph">
+<p>The aim of a discovery metadata such as specified in UK GEMINI2 is to
+define metadata in a form that provides easily understood information
+for potential users of the data resource, and is searchable in a
+computerised discovery metadata service such as
+the&#160;<a href="http://inspire-geoportal.ec.europa.eu/">INSPIRE Geoportal</a>. It is
+difficult to carry out searches on free text, since the same thing can
+be written in different ways, for example “OS”, “Ordnance Survey”, “The
+Ordnance Survey of Great Britain”, “OSGB”. Hence, free text entries are
+discouraged where the metadata is searchable. Where only a limited
+number of options is available, code lists are specified. For some
+metadata elements, such as Topic, these may not correspond exactly to
+the theme of the dataset, and the nearest option should be chosen. Where
+code lists are used, input and output facilities in a metadata service
+should identify the corresponding element value.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_3_3_obligation"><strong><em><span id="3" class="3">#</span>#3.3 Obligation</em></strong></h4>
+<div class="paragraph">
+<p>As with other data specifications, elements in UK GEMINI2 are given as
+mandatory, conditional or optional. Mandatory elements must be
+completed, and most software tools do not allow the metadata to be
+published if any mandatory elements are missing. Conditional elements
+have a condition associated with them, and should be supplied when that
+condition is fulfilled. Such conditions usually define the applicability
+of the element. Optional elements need not always be completed. This can
+be for several reasons, for example if the element is not relevant or
+its value is not known. In practice, optional elements are conditional,
+and there is a set of circumstances in which a value should be given,
+roughly corresponding to “is it relevant?” and “is its value known?”
+Optional elements should not be ignored.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_3_4_element_domains"><strong><em><span id="3" class="4">#</span>#3.4 Element domains</em></strong></h4>
+<div class="paragraph">
+<p>Each metadata element has a range of allowable values, called its
+domain. These may be values in a given range (e.g. positive integers) or
+a set of code values chosen from a list. Specifying the domain helps
+with both the initial creation of data and quality checking [For further
+details on quality checking,
+see&#160;<a href="https://www.agi.org.uk/40-gemini/1047-metadata-guidelines-for-geospatial-data-resources-part-3">Part
+3&#160;</a>of these Guidelines]. In some cases, default values may be used, for
+example for elements relating to the metadata itself.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_3_5_spatial_references"><strong><em><span id="3" class="5">#</span>#3.5 Spatial references</em></strong></h4>
+<div class="paragraph">
+<p>By definition, geographic data contains some form of spatial reference.
+The spatial reference identifies the position of the object of interest
+in the real world. Spatial references can be given in a number of forms,
+not just as Grid References. They can take the form of the name or
+identifier of a geographic location which can be described in a
+gazetteer. Examples are property addresses, postcodes and census areas.
+These spatial references are a key means of searching the data by
+location, not only within the data resource, but also positioning the
+data resource in the world (e.g. data for Scotland). A consistent set of
+spatial references enables spatial searches to be made for datasets in a
+metadata service.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_3_6_date_fields"><strong><em><span id="3" class="6">#</span>#3.6 Date fields</em></strong></h4>
+<div class="paragraph">
+<p>Metadata can contain a multitude of dates identifying the different
+stages in the life cycle of the data. Key dates are included in
+metadata. To enable searches to be carried out (e.g. date relating to
+the period 1990 to 1999), these dates need to be recorded in
+standardised form. Unfortunately, different standards are used in
+different places. Here it is recommended that the extended format
+defined in&#160;<a href="https://www.iso.org/iso-8601-date-and-time-format.html">ISO
+8601</a>&#160;(YYYY-MM-DD) is used.</p>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_4_data_resources_in_scope"><span id="scope">#</span>#4.&#160; Data resources in scope</h3>
+<div class="sect3">
+<h4 id="_4_1_what_is_stated_in_uk_gemini2"><strong><em><span id="4" class="1">#</span>#4.1 What is stated in&#160;__UK GEMINI2</em></strong></h4>
+<div class="paragraph">
+<p>The purpose of this section is to provide guidance on</p>
+</div>
+<div class="paragraph">
+<p>(i) what types of geospatial data can be documented using UK
+GEMINI2,</p>
+</div>
+<div class="paragraph">
+<p>(ii) the applicability of UK GEMINI2 and</p>
+</div>
+<div class="paragraph">
+<p>(iii) how to find an appropriate level for the individual
+documentation of data resources.</p>
+</div>
+<div class="paragraph">
+<p>UK GEMINI2 “specifies a set of metadata elements for describing
+geographic data resources” but provides no other information about what
+types of data or services are in or out of scope.</p>
+</div>
+<div class="paragraph">
+<p>In practice it can be difficult to decide what data or service resources
+are in scope and how they should be documented. For example, what
+constitutes a suitable body of data for individual documentation? Should
+it be an individual map or the whole map series?</p>
+</div>
+<div class="paragraph">
+<p>There is no simple answer to these questions; it is likely to be a
+compromise. However, some general guidance can be given.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_4_2_characteristics_of_data_resources_in_scope"><strong><em><span id="4" class="2">#</span>#4.2 Characteristics of data resources in scope</em></strong></h4>
+<div class="paragraph">
+<p>The general nature of geospatial data and access services is described
+in the Introduction. As is emphasised there, many data resources that at
+first sight do not appear to be geospatial nevertheless have a
+geospatial component. They are geographically constrained in some way,
+in that the data only refers to certain areas or locations on the
+surface of the Earth, whether on land or sea. The way that these
+locations are referenced can take many forms such as coordinates (e.g.
+latitude and longitude, National Grid), or geographic place names (e.g.
+street, locality, town, administrative area).</p>
+</div>
+<div class="paragraph">
+<p>Although it is common to think of geospatial data as being synonymous
+with maps, this is far from the case. Geospatial data can equally well
+be textual - whether tabular or free text – or images taken from the air
+or from the ground. The data can be as hardcopy or in digital or even
+video form.</p>
+</div>
+<div class="paragraph">
+<p>All these types can be documented using UK GEMINI2.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_4_3_applicability_of_uk_gemini2"><strong><em><span id="4" class="3">#</span>#4.3 Applicability of&#160;__UK GEMINI2</em></strong></h4>
+<div class="paragraph">
+<p>The primary purpose of UK GEMINI2 is to provide the requirements for
+documenting data resources within the United Kingdom that conforms with
+the INSPIRE Metadata Implementing Rules.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_4_4_levels_of_data_resources_for_documentation"><strong><em><span id="4" class="4">#</span>#4.4 Levels of data resources for documentation</em></strong></h4>
+<div class="paragraph">
+<p>There are no absolute rules for deciding on an appropriate level for the
+individual documentation of a data resource. The overriding
+consideration is that the data resource has been documented with
+sufficient granularity to yield a useful result if discovered using a
+metadata service. Too coarse a granularity will result in too
+generalised a result, too fine a granularity is likely to overwhelm the
+user (and the metadata creator!). The granularity can relate to
+geographical extent, temporal extent or subject.</p>
+</div>
+<div class="paragraph">
+<p>There are some questions that can be posed which may help the metadata
+creator to find an answer.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>How is the data resource used and how is it made available? Is it a
+product, dataset, document that may be used and combined with other
+datasets or is it an integral part of a larger data resource?</p>
+</li>
+<li>
+<p>Has the data resource been captured using a single data specification?
+Are there other data resources captured using the same data
+specification?</p>
+</li>
+<li>
+<p>Is the data resource part of a time series? Is the data resource
+covering the same extent periodically updated to the same specification?</p>
+</li>
+<li>
+<p>Does the data resource relate to, or reference, a continuous area or
+contiguous areas, or does it reference specific locations?</p>
+</li>
+<li>
+<p>Does the data resource relate to one or many subjects, topics or
+themes?</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>An approach to resolving these questions is found in the&#160;table below.</p>
+</div>
+<div class="paragraph">
+<p>The key points are:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Finding the appropriate level will be a compromise between what
+appears to be fit for purpose for the user and the granularity which can
+be supported by the metadata creator.</p>
+</li>
+<li>
+<p>If the metadata creator has to aggregate what is documented for
+practical reasons then they should ensure that the resource is
+adequately documented in terms of Extent, Dataset reference date and
+Topic category. There should also an Additional Information Source
+included so that the service user can understand the finer granularity
+lying behind the single entry.</p>
+</li>
+</ul>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 34%;">
+<col style="width: 33%;">
+<col style="width: 33%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top"><strong>Nature of data resource</strong></th>
+<th class="tableblock halign-left valign-top"><strong>How to document</strong></th>
+<th class="tableblock halign-left valign-top"><strong>Examples</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><strong>Stand-alone product or identifiable dataset or document</strong></p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>not part of a series produced to the same specification; and</p>
+</li>
+<li>
+<p>not part of a time series.</p>
+</li>
+</ol>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>Individually with one metadata record.</p>
+</div>
+<div class="paragraph">
+<p><strong>Notes:</strong></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>If the data resource references a number of separate locations then at
+least ensure that this is reflected in a multiple entry for Extent.</p>
+</li>
+<li>
+<p>If the data resource covers a number of topics or subjects then ensure
+that each of these is reflected, using multiple entries for Topic
+category and Keyword.</p>
+</li>
+</ul>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="ulist">
+<ul>
+<li>
+<p>Stand-alone soil map of the New Forest.</p>
+</li>
+<li>
+<p>One-off report on a Site of Special Scientific Interest.</p>
+</li>
+<li>
+<p>Historical index of streets in Cambridge.</p>
+</li>
+<li>
+<p>One-off table of statistics for Oxfordshire.</p>
+</li>
+</ul>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><strong>Products or identifiable datasets or documents forming a series with a
+common specification</strong>;</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>referencing one location or contiguous area; and</p>
+</li>
+<li>
+<p>may be part of a time series.</p>
+</li>
+</ol>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>Together with one metadata record.</p>
+</div>
+<div class="paragraph">
+<p><strong>Notes:</strong></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>If the time series is not regular with periodic updates, consider
+documenting by individual dates or durations referring to particular
+periods of update.</p>
+</li>
+<li>
+<p>If the data resource covers a number of topics or subjects then ensure
+that each of these is reflected, using multiple entries for Topic
+category and Keyword.</p>
+</li>
+</ul>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="ulist">
+<ul>
+<li>
+<p>Unrevised geological map series of all of Scotland.</p>
+</li>
+<li>
+<p>Topographic map series covering all of GB updated periodically.</p>
+</li>
+<li>
+<p>Series of statistical reports on the crime by ward in Surrey for 1973.</p>
+</li>
+<li>
+<p>Street gazetteer of Hampshire.</p>
+</li>
+</ul>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><strong>Products or identifiable datasets or documents forming a series with a
+common specification</strong>;</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>referencing more than one discrete location or contiguous area; and</p>
+</li>
+<li>
+<p>may be part of a time series.</p>
+</li>
+</ol>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>Each location or area individually with a metadata record.</p>
+</div>
+<div class="paragraph">
+<p><strong>Notes:</strong></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>If the time series is not regular with periodic updates, consider
+documenting by individual dates or durations referring to a particular
+period of update.</p>
+</li>
+<li>
+<p>If the data resource covers a number of topics or subjects then ensure
+that each of these is reflected, using multiple entries for Topic
+category and Keyword.</p>
+</li>
+<li>
+<p>If it is not feasible to individually document each location or
+contiguous area, e.g. borehole records or Sites of Special Scientific
+Interest, then at least ensure that is reflected in a multiple entry for
+Extent. Also include Additional Information Source.</p>
+</li>
+</ul>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="ulist">
+<ul>
+<li>
+<p>Geological map series of different parts of Great Britain – document
+each part separately.</p>
+</li>
+<li>
+<p>Topographic maps of National Parks – document each Park separately.</p>
+</li>
+<li>
+<p>Aerial photography of parts of Devon, Cornwall and Somerset taken in
+1957 and not re-flown to same specification – document each part
+separately.</p>
+</li>
+<li>
+<p>Statistical tables for metropolitan areas in UK – document separately
+if feasible.</p>
+</li>
+</ul>
+</div></div></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p><em>&#160;Last updated: July 2018</em></p>
+</div>
+<div class="paragraph">
+<p><a href="http://creativecommons.org/licenses/by/4.0/"><span class="image"><img src="https://i.creativecommons.org/l/by/4.0/88x31.png" alt="Creative Commons Licence"></span></a><br>
+This work is licensed under
+a&#160;<a href="http://creativecommons.org/licenses/by/4.0/">Creative Commons
+Attribution 4.0 International License</a></p>
+</div>
+</div>
+</div>
+</div>
+<div id="footer">
+<div id="footer-text">
+Last updated 2022-04-01 10:20:44 UTC
+</div>
+</div>
+</body>
+</html>
