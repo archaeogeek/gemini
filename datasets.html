@@ -9654,9 +9654,1482 @@ metadata), as shown below.</p>
 <details>
 <summary class="title">Details</summary>
 <div class="content">
-
+<div class="paragraph">
+<p>|Errors observed |<strong>No level description</strong><br>
+ISO 19115 requires that a 'level description' is given for any quality
+statement that is not describing the 'dataset' or 'series' level.
+INSPIRE and GEMINI use the quality statement for both lineage and
+conformity. This means that any 'service' record must provide a
+gmd:DQ_Scope/gmd:levelDescription element, as shown above.<br>
+A similar rule applies to <a href="#47">hierarchyLevelName</a>, which must be
+provided for any record that is not describing a dataset.</p>
+</div>
 </div>
 </details>
+<h1 id="_spatial_representation_type" class="sect0"><a class="anchor" href="#_spatial_representation_type"></a><a class="link" href="#_spatial_representation_type">Spatial representation type</a></h1>
+<table id="50" class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">UK GEMINI id</th>
+<th class="tableblock halign-left valign-top">50</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Definition</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The method used to spatially represent geographic
+information</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Purpose and meaning</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The type in which the spatial data is represented
+may be of importance when evaluating the fit for purpose of the dataset.
+The code list value of this element is intended for describing this
+information.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Obligation</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Mandatory</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Occurrence</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Multiple</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Data type</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Class (CodeList)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Domain</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>MD_SpatialRepresentationTypeCode from ISO 19115. Codes to be used are:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>vector</p>
+</li>
+<li>
+<p>grid</p>
+</li>
+<li>
+<p>tin</p>
+</li>
+<li>
+<p>textTable</p>
+</li>
+</ol>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Guidance</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>tin stands for triangulated irregular network. TIN is a digital data
+structure used in a geographic information system (GIS) for the
+representation of a surface</p>
+</li>
+<li>
+<p>textTable should be used for datasets with an indirect spatial
+reference</p>
+</li>
+<li>
+<p>grid should be used for images and coverage data</p>
+</li>
+</ol>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Comment</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">This element is regarded by the INSPIRE metadata technical
+guidance as interoperability metadata for datasets and dataset series</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Examples</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">vector</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Revision date</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">May 2018</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>Corresponding element in other standards&#8230;&#8203;</p>
+</div>
+<details>
+<summary class="title">Details</summary>
+<div class="content">
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 33.3333%;">
+<col style="width: 33.3333%;">
+<col style="width: 33.3334%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Standard</th>
+<th class="tableblock halign-left valign-top">Name</th>
+<th class="tableblock halign-left valign-top">Comparison</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">INSPIRE Metadata</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Spatial representation type
+(metadata/2.0/req/isdss/spatial-representation-type)</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ISO 19115:2003</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">MD_DataIdentification.spatialRepresentationType<br>
+references: B.5.26 MD_SpatialRepresentationTypeCode CodeList</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">CodeList
+is a superset of values used by INSPIRE</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ISO 19139:2007</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">/gmd:MD_Metadata/gmd:identificationInfo/gmd:MD_DataIdentification/gmd:spatialRepresentationType/gmd:MD_SpatialRepresentationTypeCode</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+</tbody>
+</table>
+</div>
+</details>
+<div class="paragraph">
+<p>Change history&#8230;&#8203;</p>
+</div>
+<details>
+<summary class="title">Details</summary>
+<div class="content">
+<div class="ulist">
+<ul>
+<li>
+<p>In original GEMINI, but removed in 2</p>
+</li>
+<li>
+<p>Reintroduced in GEMINI 2.3</p>
+</li>
+</ul>
+</div>
+</div>
+</details>
+<div class="paragraph">
+<p>Encoding guidelines&#8230;&#8203;</p>
+</div>
+<details>
+<summary class="title">Details</summary>
+<div class="content">
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Guidelines</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Only the codeListValue is required, the codeList and the
+free text content are optional and informative only</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Example</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="literalblock">
+<div class="content">
+<pre>&lt;gmd:identificationInfo&gt;
+      &lt;gmd:MD_DataIdentification id="CEH-barrcj2015"&gt;
+        ...
+         &lt;gmd:resourceConstraints&gt;
+            ...
+         &lt;/gmd:resourceConstraints&gt;
+         &lt;gmd:spatialRepresentationType&gt;
+            &lt;gmd:MD_SpatialRepresentationTypeCode 
+            codeList='https://schemas.isotc211.org/schemas/19139/resources/codelist/gmxCodelists.xml#MD_SpatialRepresentationTypeCode' 
+            codeListValue='textTable' /&gt;
+         &lt;/gmd:spatialRepresentationType&gt;
+         &lt;gmd:language&gt;
+            ...
+         &lt;/gmd:language&gt;
+        ...
+      &lt;/gmd:MD_DataIdentification&gt;</pre>
+</div>
+</div></div></td>
+</tr>
+</tbody>
+</table>
+</div>
+</details>
+<div class="paragraph">
+<p>Metadata errors observed&#8230;&#8203;</p>
+</div>
+<details>
+<summary class="title">Details</summary>
+<div class="content">
+<div class="paragraph">
+<p>No error information available</p>
+</div>
+</div>
+</details>
+<h1 id="_character_encoding" class="sect0"><a class="anchor" href="#_character_encoding"></a><a class="link" href="#_character_encoding">Character encoding</a></h1>
+<table id="51" class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">UK GEMINI id</th>
+<th class="tableblock halign-left valign-top">51</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Definition</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The character encoding used in the dataset</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Purpose and meaning</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">To enable data in non-standard character encodings
+to be handled</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Obligation</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Conditional (mandatory if an encoding is used that is not
+based on UTF-8, otherwise optional)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Occurrence</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Multiple</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Data type</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Class (CodeList)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Domain</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">MD_CharacterSetCode from ISO 19115</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Guidance</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">If more than one charater encoding is used within the dataset
+or dataset series, all used character encodings Including UTF-8, shall
+be given.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Comment</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">This element is regarded by the INSPIRE metadata technical
+guidance as interoperability metadata for datasets and dataset series</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Examples</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Revision date</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">May 2018</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>Corresponding element in other standards&#8230;&#8203;</p>
+</div>
+<details>
+<summary class="title">Details</summary>
+<div class="content">
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 33.3333%;">
+<col style="width: 33.3333%;">
+<col style="width: 33.3334%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Standard</th>
+<th class="tableblock halign-left valign-top">Name</th>
+<th class="tableblock halign-left valign-top">Comparison</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">INSPIRE Metadata</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Character encoding
+(metadata/2.0/req/isdss/character-encoding)</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ISO 19115:2003</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">MD_DataIdentification.characterSet<br>
+references: B.5.10 MD_CharacterSetCode CodeList</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Equivalent</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ISO 19139:2007</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">/gmd:MD_Metadata/gmd:identificationInfo/gmd:MD_DataIdentification/gmd:characterSet/gmd:MD_CharacterSetCode</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Equivalent</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</details>
+<div class="paragraph">
+<p>Change history&#8230;&#8203;</p>
+</div>
+<details>
+<summary class="title">Details</summary>
+<div class="content">
+<div class="paragraph">
+<p>New element in GEMINI 2.3</p>
+</div>
+</div>
+</details>
+<div class="paragraph">
+<p>Encoding guidelines&#8230;&#8203;</p>
+</div>
+<details>
+<summary class="title">Details</summary>
+<div class="content">
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Guidelines</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Only the codeListValue is required, the codeList and the
+free text content are optional and informative only</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Example</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="literalblock">
+<div class="content">
+<pre>&lt;gmd:identificationInfo&gt;
+      &lt;gmd:MD_DataIdentification id="UKHO-12mfihlimit"&gt;
+         &lt;gmd:citation&gt;
+            ...
+         &lt;/gmd:citation&gt;
+        ...
+         &lt;gmd:language&gt;
+            ...
+         &lt;/gmd:language&gt;
+         &lt;gmd:characterSet&gt;
+            &lt;gmd:MD_CharacterSetCode 
+              codeList='https://schemas.isotc211.org/schemas/19139/resources/codelist/gmxCodelists.xml#MD_CharacterSetCode' 
+              codeListValue='8859part1'&gt;ISO/IEC 8859-1 (also known as Latin 1)&lt;/gmd:MD_CharacterSetCode&gt;
+         &lt;/gmd:characterSet&gt;
+         &lt;gmd:topicCategory&gt;
+            ...
+         &lt;/gmd:topicCategory&gt;
+         &lt;gmd:extent&gt;
+            ...
+         &lt;/gmd:extent&gt;
+            ...
+      &lt;/gmd:MD_DataIdentification&gt;
+   &lt;/gmd:identificationInfo&gt;</pre>
+</div>
+</div></div></td>
+</tr>
+</tbody>
+</table>
+</div>
+</details>
+<div class="paragraph">
+<p>Metadata errors observed&#8230;&#8203;</p>
+</div>
+<details>
+<summary class="title">Details</summary>
+<div class="content">
+<div class="paragraph">
+<p>No error information available</p>
+</div>
+</div>
+</details>
+<h1 id="_data_quality" class="sect0"><a class="anchor" href="#_data_quality"></a><a class="link" href="#_data_quality">Data quality</a></h1>
+<table id="52" class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">UK GEMINI id</th>
+<th class="tableblock halign-left valign-top">52</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Definition</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Quantitative aspects of data quality</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Purpose and meaning</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">To allow quantitative description of the
+completeness, consistency, accuracy, and correctness of the data</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Obligation</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Conditional: Topological consistency report is mandatory if
+the dataset includes types from the INSPIRE Generic Network Model and
+does not assure centerline topology (connectivity of centrelines) for
+the network, otherwise optional</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Occurrence</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Multiple</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Data type</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Class, subtypes of DQ_Element</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Domain</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>DQ_Element from ISO 19115</p>
+</div>
+<div class="paragraph">
+<p>DQ_Element is an abstract complex type and has to be expressed by a
+corresponding DQ_xxx subelement concerning the particular data quality
+issue e.g. DQ_ConceptualConsistency. All these types have the same
+sub-attributes, such as nameOfMeasure, dateTime, result. It is important
+to choose the correct subelement, to clearly indicate the type of
+quality statement being made. Only the result sub-element (value, value
+type) is mandatory. All DQ_Element subtypes have the same sub-elements.</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<caption class="title">Table 1. Table 1 Data Quality sub-elements</caption>
+<colgroup>
+<col style="width: 25%;">
+<col style="width: 25%;">
+<col style="width: 25%;">
+<col style="width: 25%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Data Quality sub-element name</th>
+<th class="tableblock halign-left valign-top">result</th>
+<th class="tableblock halign-left valign-top">dateTime</th>
+<th class="tableblock halign-left valign-top">nameOfMeasure</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Definition</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">value (or set of values) obtained from applying a data
+quality measure or the outcome of evaluating the obtained value (or set
+of values) against a specified acceptable conformance quality level</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">date or range of dates on which a data quality measure was applied</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">name of the test applied to the data</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Obligation</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">mandatory</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">optional</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">optional</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Occurence</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">single</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">single</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">single</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Data type</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">DQ_QuantitativeResult</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">DateTime</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">CharacterString</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Domain</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">see table two below</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">see table three below</p></td>
+</tr>
+</tbody>
+</table>
+<table class="tableblock frame-all grid-all stretch">
+<caption class="title">Table 2. Table 2: DQ_QuantitativeResult</caption>
+<colgroup>
+<col style="width: 25%;">
+<col style="width: 25%;">
+<col style="width: 25%;">
+<col style="width: 25%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Data Quantitative Result sub-element name</th>
+<th class="tableblock halign-left valign-top">valueUnit</th>
+<th class="tableblock halign-left valign-top">value</th>
+<th class="tableblock halign-left valign-top">valueType</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Definition</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">the units in which the result is reported</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">the quantitative
+result</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">the data type of the result</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Obligation</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">mandatory</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">mandatory</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">mandatory</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Occurence</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">single</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">multiple</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">single</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Data type</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">UnitOfMeasure</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Record</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">RecordType</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Domain</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">see table three below</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">see table three below</p></td>
+</tr>
+</tbody>
+</table>
+<table class="tableblock frame-all grid-all" style="width: 99%;">
+<caption class="title">Table 3. Table 3: Details for various types of quality measure</caption>
+<colgroup>
+<col style="width: 20%;">
+<col style="width: 16%;">
+<col style="width: 16%;">
+<col style="width: 16%;">
+<col style="width: 16%;">
+<col style="width: 16%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Name</th>
+<th class="tableblock halign-left valign-top">DQ_Element subtype</th>
+<th class="tableblock halign-left valign-top">Definition</th>
+<th class="tableblock halign-left valign-top">nameOfMeasure</th>
+<th class="tableblock halign-left valign-top">Value type</th>
+<th class="tableblock halign-left valign-top">Example INSPIRE themes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">As given in the
+<a href="https://inspire.ec.europa.eu/Themes/Data%20Specifications/2892">INSPIRE
+Data Specifications</a></p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">See the relevant specification for more details
+of each measure</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Completeness - Commission</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">DQ_CompletenessCommission</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">excess data
+present in the dataset, as described by the scope</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Rate of excess items</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Real</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">AU, AD, TN, HY, PS, EL, LC, SU, BU, LU, US</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Number of duplicate feature instances</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Integer</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">TN</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Completeness - Omission</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">DQ_CompletenessOmission</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">data absent from the
+dataset, as described by the scope</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Rate of missing items</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Real</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">GN, AU,
+AD, CP, TN, HY, PS, EL, LC, OI, (not GE), SU, BY, SO, LU, US, PF, AF, OF</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Conceptual consistency</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">DQ_ConceptualConsistency</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">adherence to rules of
+the conceptual schema</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Non-compliance rate with respect to the rules of
+the conceptual schema</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Real</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">EL</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Number of items not compliant with the rules of the conceptual
+schema</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Integer</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">AU, TN</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Conceptual schema non-compliance</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Boolean</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">LC</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Domain consistency</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">DQ_DomainConsistency</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">adherence of values to the
+value domains</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Number of items not in conformance with their value
+domain</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Integer</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">AU</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Value domain non-conformance rate</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Real</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">EL</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Value domain conformance rate</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Real</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">HY</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Value domain non-conformance</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Boolean</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">LC</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Topological consistency</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">DQ_TopologicalConsistency</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Correctness of the
+explicitly encoded topological characteristics of the dataset<br>
+Note: Only use this if the topological consistency can be quantified,
+otherwise provide a descriptive result with a DQ_ConformanceResult
+element; see GEMINI Conformity element</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Number of faulty point-curve
+connections</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Integer</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">AU, TN, HY</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Number of missing connections due to undershoots</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Integer</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">AU,
+TN, HY</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Rate of missing connections due to undershoots</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Real</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">EL</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Number of missing connections due to overshoots</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Integer</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">TN, HY</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Rate of missing connections due to overshoots</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Real</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">EL</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Number of missing connections due to crossing of bridge/road</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Integer</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">HY</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Number of invalid overlaps of surfaces</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Integer</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">HY</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Slivers</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Integer</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">SU</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Number of invalid slivers</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Integer</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Number of invalid self-intersect errors</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Integer</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">TN, HY, LC</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Rate of invalid self-intersect errors</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Real</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">EL</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Number of invalid self-overlap errors</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Integer</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">TN, HY</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Rate of invalid self-overlap errors</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Rate</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">EL</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Number of watercourse links below threshold length</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Integer</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">HY</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Number of closed watercourse links</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Integer</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">HY</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Number of multi-part watercourse links</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Integer</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">HY</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Format consistency</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">DQ_FormatConsistency</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Degree to which data is
+stored in accordance with the physical structure of the dataset</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Physical structure conflict rate</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">EL</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Physical structure conflicts</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Boolean</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">LC</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Absolute or external accuracy</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">DQ_AbsoluteExternalPositionalAccuracy</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">closeness of reported coordinate values to values accepted as or being
+true</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Mean value of positional uncertainties</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Measure</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Positional accuracy</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Measure</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">SU</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Root mean square error of planimetry</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Measure</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">EL, LC</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Root mean square error</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Measure</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">EL</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Gridded positional accuracy</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">DQ_GriddedDataPositionalAccuracy</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Closeness of gridded data position values to values accepted as or
+being true</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Root mean square error of planimetry</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Measure</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">EL</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Relative positional accuracy</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">DQ_RelativeInternalPositionalAccuracy</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">closeness of the relative positions of features in the scope to their
+respective relative positions accepted as or being true</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Relative
+horizontal error</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Measure</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Root mean square error of planimetry</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Real</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">LC</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Temporal validity</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">DQ_TemporalValidity</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Temporal accuracy</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Boolean</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">SU</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Thematic accuracy - classification</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">DQ_ThematicClassificationCorrectness</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Comparison of the classes
+assigned to features or their attributes to a universe of discourse</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Misclassification rate</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Real</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">TN, LC</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Thematic accuracy</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Real</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">SU</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Misclassification matrix</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Matrix of integers</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">LC</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Quantitative attribute accuracy</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">DQ_QuantitativeAttributeAccuracy</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Accuracy of quantitative attributes</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Attribute value uncertainty at 95%
+significance level</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Real</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">HY</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Scatter plot</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Graphical</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">LC</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">non-quantitative attribute correctness</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">DQ_NonQuantitiveAttributeAccuracy</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">correctness of non-quantitative
+attributes</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Rate of incorrect attribute values</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Real</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Number of incorrect attribute values</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Integer</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>Other attributes of ISO 19115 DQ_Element may be included, e.g.:</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<caption class="title">Table 4. Table 4 Optional data quality sub-elements</caption>
+<colgroup>
+<col style="width: 34%;">
+<col style="width: 33%;">
+<col style="width: 33%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top"></th>
+<th class="tableblock halign-left valign-top">evaluationMethodType</th>
+<th class="tableblock halign-left valign-top">evaluationMethodDescription</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Definition</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">type of method used to evaluate quality of the dataset</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">description of the evaluation method</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Obligation</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">optional</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">optional</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Occurence</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">single</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">single</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Data type</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">DQ_EvaluationMethodTypeCode</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">free text</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Domain</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">For example, in the INSPIRE Metadata Technical Guidelines,
+recommendation 2.3 says “It is recommended to provide a short
+description of the evaluation method used for topological consistency
+check”.</p></td>
+</tr>
+</tbody>
+</table></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Guidance</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Comment</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">This element is regarded by the INSPIRE metadata technical
+guidance as interoperability metadata for datasets and dataset series</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Examples</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Revision date</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">May 2018</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>Corresponding element in other standards&#8230;&#8203;</p>
+</div>
+<details>
+<summary class="title">Details</summary>
+<div class="content">
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 33.3333%;">
+<col style="width: 33.3333%;">
+<col style="width: 33.3334%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Standard</th>
+<th class="tableblock halign-left valign-top">Name</th>
+<th class="tableblock halign-left valign-top">Comparison</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">INSPIRE Metadata</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Topological consistency<br>
+either:
+metadata/2.0/req/isdss/topological-consistency-quantitative-results<br>
+or: metadata/2.0/req/isdss/topological-consistency-descriptive-results<br>
+Other types are specified in the data specifications</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ISO 19115:2003</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">DQ_DataQuality.report&#8594;<em>DQ_Element</em></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Equivalent</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ISO 19139:2007</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">/gmd:MD_Metadata/gmd:dataQualityInfo/gmd:DQ_DataQuality/gmd:report/gmd:DQ_<strong><strong></strong></strong>**</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Equivalent</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</details>
+<div class="paragraph">
+<p>Change history&#8230;&#8203;</p>
+</div>
+<details>
+<summary class="title">Details</summary>
+<div class="content">
+<div class="paragraph">
+<p>New element in GEMINI 2.3</p>
+</div>
+</div>
+</details>
+<div class="paragraph">
+<p>Encoding guidelines&#8230;&#8203;</p>
+</div>
+<details>
+<summary class="title">Details</summary>
+<div class="content">
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Guidelines</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>There shall be exactly one gmd:dataQualityInfo/gmd:DQ_DataQuality
+element scoped to the entire described data set or data set series. So
+if the scope of the quality measure is the entire dataset or series,
+then the result shall be in the same DQ_DataQuality element as the
+Conformity and Lineage elements</p>
+</div>
+<div class="paragraph">
+<p>Other quality measures, e.g. for specific feature types, shall be
+separate DQ_DataQuality elements, with the relevant Quality scope</p>
+</div>
+<div class="paragraph">
+<p>Quantitative results shall be reported using the relevant
+gmd:report/gmd:DQ_XXXXX element with a gmd:DQ_QuantitativeResult element
+as the value of its mandatory gmd:result property.</p>
+</div>
+<div class="paragraph">
+<p>The gmd:valueUnit and gmd:value/gco:Record child elements of
+gmd:DQ_QuantitativeResult shall be used for giving a numerical or
+otherwise quantitative value.</p>
+</div>
+<div class="paragraph">
+<p>The value type of the result shall be declared using the xsi:type
+attribute of the gco:Record element. Note that many of the INSPIRE Data
+Specifications give a value type of “Real, percentage, ratio”; GEMINI
+recommends using real numbers in all these cases, which should be
+declared as xs:double.</p>
+</div>
+<div class="paragraph">
+<p>As well as the mandatory elements, it is also recommended to supply a
+name of the measure, a short description of the evaluation method, and a
+date for the evaluation of the consistency check</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Example</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="literalblock">
+<div class="content">
+<pre>&lt;gmd:dataQualityInfo&gt;
+    &lt;gmd:DQ_DataQuality&gt;
+        &lt;gmd:scope&gt;
+            &lt;gmd:DQ_Scope&gt;
+                &lt;gmd:level&gt;
+            &lt;gmd:MD_ScopeCode codeListValue='dataset' 
+              codeList='https://schemas.isotc211.org/schemas/19139/resources/codelist/gmxCodelists.xml#MD_ScopeCode'&gt;dataset&lt;/gmd:MD_ScopeCode&gt;
+                &lt;/gmd:level&gt;
+            &lt;/gmd:DQ_Scope&gt;
+        &lt;/gmd:scope&gt;
+        &lt;gmd:report&gt;
+            &lt;gmd:DQ_CompletenessCommission&gt;
+                &lt;gmd:nameOfMeasure&gt;
+                    &lt;gco:CharacterString&gt;Rate of excess items&lt;/gco:CharacterString&gt;
+                &lt;/gmd:nameOfMeasure&gt;
+                &lt;gmd:dateTime&gt;
+                    &lt;gco:DateTime&gt;2017-04-01T01:00:00&lt;/gco:DateTime&gt;
+                &lt;/gmd:dateTime&gt;
+                &lt;gmd:result&gt;
+                    &lt;gmd:DQ_QuantitativeResult&gt;
+                        &lt;gmd:valueUnit gco:nilReason="inapplicable"/&gt;
+                        &lt;gmd:value&gt;
+                            &lt;gco:Record
+                                xmlns:xs="http://www.w3.org/2001/XMLSchema"
+                                xsi:type="xs:double"&gt;0.01&lt;/gco:Record&gt;
+                        &lt;/gmd:value&gt;
+                    &lt;/gmd:DQ_QuantitativeResult&gt;
+                &lt;/gmd:result&gt;
+            &lt;/gmd:DQ_CompletenessCommission&gt;
+        &lt;/gmd:report&gt;
+        &lt;gmd:report&gt;
+            &lt;gmd:DQ_AbsoluteExternalPositionalAccuracy&gt;
+                &lt;gmd:nameOfMeasure&gt;&lt;gco:CharacterString&gt;Root mean square error&lt;/gco:CharacterString&gt;&lt;/gmd:nameOfMeasure&gt;
+                &lt;gmd:dateTime&gt;&lt;gco:DateTime&gt;2017-04-01T02:00:00&lt;/gco:DateTime&gt;&lt;/gmd:dateTime&gt;
+                &lt;gmd:result&gt;&lt;gmd:DQ_QuantitativeResult&gt;
+                    &lt;gmd:valueUnit&gt;
+                        &lt;gml:BaseUnit gml:id="ID001"&gt;
+                            &lt;gml:identifier codeSpace="SI"&gt;meters&lt;/gml:identifier&gt;
+                            &lt;gml:unitsSystem xlink:href="http://www.bipm.org/en/si/"/&gt;
+                        &lt;/gml:BaseUnit&gt;
+                    &lt;/gmd:valueUnit&gt;
+                    &lt;gmd:value&gt;
+                     &lt;gco:Record
+                        xmlns:xs="http://www.w3.org/2001/XMLSchema"
+                        xsi:type="xs:real"&gt;0.1&lt;/gco:Record&gt;&lt;/gmd:value&gt;
+                &lt;/gmd:DQ_QuantitativeResult&gt;&lt;/gmd:result&gt;
+            &lt;/gmd:DQ_AbsoluteExternalPositionalAccuracy&gt;
+        &lt;/gmd:report&gt;
+    &lt;/gmd:DQ_DataQuality&gt;
+&lt;/gmd:dataQualityInfo&gt;</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Example two - Topological consistency</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>&lt;gmd:report&gt;
+    &lt;gmd:DQ_TopologicalConsistency&gt;
+       &lt;gmd:result&gt;
+          &lt;gmd:DQ_QuantitativeResult&gt;
+             &lt;!--The mandatory elements are valueUnit and value/Record with xsi:type  --&gt;
+             &lt;gmd:valueUnit xlink:href="http://www.opengis.net/def/uom/OGC/1.0/unity"/&gt;
+             &lt;gmd:value&gt;
+                 &lt;gco:Record 
+                   xmlns:xs="http://www.w3.org/2001/XMLSchema"
+                   xsi:type="xs:integer"&gt;12&lt;/gco:Record&gt;
+             &lt;/gmd:value&gt;
+          &lt;/gmd:DQ_QuantitativeResult&gt;
+       &lt;/gmd:result&gt;
+    &lt;/gmd:DQ_TopologicalConsistency&gt;
+&lt;/gmd:report&gt;</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Example three ~ Topological consistency, showing a quantitative
+topological consistency report with recommended elements included</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre> &lt;gmd:report&gt;
+   &lt;gmd:DQ_TopologicalConsistency&gt;
+      &lt;gmd:nameOfMeasure&gt;
+         &lt;gco:CharacterString&gt;
+         Number of faulty point-curve connections
+         &lt;/gco:CharacterString&gt;
+      &lt;/gmd:nameOfMeasure&gt;
+      &lt;gmd:evaluationMethodType&gt;
+         &lt;gmd:DQ_EvaluationMethodTypeCode 
+           codeList='https://schemas.isotc211.org/schemas/19139/resources/codelist/gmxCodelists.xml#DQ_EvaluationMethodTypeCode' 
+           codeListValue='indirect' /&gt;
+      &lt;/gmd:evaluationMethodType&gt;
+      &lt;gmd:evaluationMethodDescription&gt;
+         &lt;gco:CharacterString&gt;
+           A point-curve connection exists where different curves touch... 
+         &lt;/gco:CharacterString&gt;
+      &lt;/gmd:evaluationMethodDescription&gt;
+      &lt;gmd:dateTime&gt;2017-01-21T19:21:30&lt;/gmd:dateTime&gt;
+      &lt;gmd:result&gt;
+         &lt;gmd:DQ_QuantitativeResult&gt;
+            &lt;!--The mandatory elements are valueUnit and value/Record with xsi:type  --&gt;
+            &lt;gmd:valueUnit xlink:href="http://www.opengis.net/def/uom/OGC/1.0/unity"/&gt;
+            &lt;gmd:value&gt;
+               &lt;gco:Record 
+                 xmlns:xs="http://www.w3.org/2001/XMLSchema"
+                 xsi:type="xs:integer"&gt;12&lt;/gco:Record&gt;
+            &lt;/gmd:value&gt;
+         &lt;/gmd:DQ_QuantitativeResult&gt;
+      &lt;/gmd:result&gt;
+   &lt;/gmd:DQ_TopologicalConsistency&gt;
+&lt;/gmd:report&gt;</pre>
+</div>
+</div></div></td>
+</tr>
+</tbody>
+</table>
+</div>
+</details>
+<div class="paragraph">
+<p>Metadata errors observed&#8230;&#8203;</p>
+</div>
+<details>
+<summary class="title">Details</summary>
+<div class="content">
+<div class="paragraph">
+<p>No error information available</p>
+</div>
+</div>
+</details>
+<h1 id="_maintenance_information" class="sect0"><a class="anchor" href="#_maintenance_information"></a><a class="link" href="#_maintenance_information">Maintenance information</a></h1>
+<table id="53" class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">UK GEMINI id</th>
+<th class="tableblock halign-left valign-top">53</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Definition</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Information about the scope and frequency of updating</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Purpose and meaning</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Obligation</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Optional</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Occurrence</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Single</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Data type</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">MD_MaintenanceInformation</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Domain</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>ISO 19115 MD_MaintenanceInformation</p>
+</div>
+<div class="paragraph">
+<p>At least maintenanceAndUpdateFrequency should be used, in addition it is
+recommended to supply updateScope/MD_ScopeCode and maintenanceNote, but
+only one of each</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<caption class="title">Table 5. Table 1 Maintenance information sub-elements</caption>
+<colgroup>
+<col style="width: 25%;">
+<col style="width: 25%;">
+<col style="width: 25%;">
+<col style="width: 25%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Sub element name</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">maintenance and update frequency</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">update scope</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">maintenance note</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Definition</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">frequency with which changes and additions are made to the
+resource after the initial resource is completed</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">scope of data to which
+maintenance is applied</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">information regarding specific requirements for
+maintaining the resource</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Obligation</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Mandatory</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Optional</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Optional</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Occurence</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">single</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">single</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">single</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Domain</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Maintenance frequency code (ISO 19115)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Scope code (ISO 19115)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">free text</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>Maintenance frequency code has values such as <em>continual, weekly,
+monthly, annually, notPlanned, unknown</em></p>
+</div>
+<div class="paragraph">
+<p>Scope code has values such as <em>dataset, series, feature, tile</em></p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Guidance</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Comment</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Recommended for all INSPIRE themes<br>
+See the relevant INSPIRE data specifications, section 8.3.1 for further
+theme specific information</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Examples</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Revision date</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">April 2020</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>Corresponding element in other standards&#8230;&#8203;</p>
+</div>
+<details>
+<summary class="title">Details</summary>
+<div class="content">
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 33.3333%;">
+<col style="width: 33.3333%;">
+<col style="width: 33.3334%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Standard</th>
+<th class="tableblock halign-left valign-top">Name</th>
+<th class="tableblock halign-left valign-top">Comparison</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">INSPIRE Metadata</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Maintenance information</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">identical</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ISO 19115:2003</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">MD_DataIdentification.resourceMaintenance</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">19115 allows
+more than one resourceMaintenance</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ISO 19139:2007</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">/gmd:MD_Metadata/gmd:identificationInfo[1]/gmd:MD_DataIdentification/gmd:resourceMaintenance/</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">19139 allows more than one resourceMaintenance</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</details>
+<div class="paragraph">
+<p>Change history&#8230;&#8203;</p>
+</div>
+<details>
+<summary class="title">Details</summary>
+<div class="content">
+<div class="paragraph">
+<p>New element in GEMINI 2.3</p>
+</div>
+</div>
+</details>
+<div class="paragraph">
+<p>Encoding guidelines&#8230;&#8203;</p>
+</div>
+<details>
+<summary class="title">Details</summary>
+<div class="content">
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Guidelines</th>
+<th class="tableblock halign-left valign-top">No specific rules for this metadata element</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Example</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="literalblock">
+<div class="content">
+<pre>&lt;gmd:resourceMaintenance&gt;
+            &lt;gmd:MD_MaintenanceInformation&gt;
+               &lt;!-- At least maintenanceAndUpdateFrequency should be used --&gt;
+               &lt;gmd:maintenanceAndUpdateFrequency&gt;
+                  &lt;gmd:MD_MaintenanceFrequencyCode 
+                     codeList='https://schemas.isotc211.org/schemas/19139/resources/codelist/gmxCodelists.xml#MD_MaintenanceFrequencyCode' 
+                     codeListValue='annually'&gt;annually&lt;/gmd:MD_MaintenanceFrequencyCode&gt;
+               &lt;/gmd:maintenanceAndUpdateFrequency&gt;
+               &lt;!-- The following elements are recommended--&gt;
+               &lt;gmd:updateScope&gt;
+            &lt;gmd:MD_ScopeCode codeListValue='dataset' 
+              codeList='https://schemas.isotc211.org/schemas/19139/resources/codelist/gmxCodelists.xml#MD_ScopeCode'&gt;dataset&lt;/gmd:MD_ScopeCode&gt;
+               &lt;/gmd:updateScope&gt;
+               &lt;gmd:maintenanceNote&gt;
+                  &lt;gco:CharacterString&gt;[Information regarding specific requirements for maintaining the resource]&lt;/gco:CharacterString&gt;
+               &lt;/gmd:maintenanceNote&gt;
+            &lt;/gmd:MD_MaintenanceInformation&gt;
+         &lt;/gmd:resourceMaintenance&gt;</pre>
+</div>
+</div></div></td>
+</tr>
+</tbody>
+</table>
+</div>
+</details>
+<div class="paragraph">
+<p>Metadata errors observed&#8230;&#8203;</p>
+</div>
+<details>
+<summary class="title">Details</summary>
+<div class="content">
+<div class="paragraph">
+<p>No error information available</p>
+</div>
+</div>
+</details>
+<div class="paragraph">
+<p>Go to <a href="#_uk_gemini_2_3_2020_06_29_dataset_or_series">top of page</a></p>
+</div>
 </div>
 <script type="text/x-mathjax-config">
 MathJax.Hub.Config({

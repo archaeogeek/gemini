@@ -8547,9 +8547,21 @@ metadata), as shown below.</p>
 <details>
 <summary class="title">Details</summary>
 <div class="content">
-
+<div class="paragraph">
+<p>|Errors observed |<strong>No level description</strong><br>
+ISO 19115 requires that a 'level description' is given for any quality
+statement that is not describing the 'dataset' or 'series' level.
+INSPIRE and GEMINI use the quality statement for both lineage and
+conformity. This means that any 'service' record must provide a
+gmd:DQ_Scope/gmd:levelDescription element, as shown above.<br>
+A similar rule applies to <a href="#47">hierarchyLevelName</a>, which must be
+provided for any record that is not describing a dataset.</p>
+</div>
 </div>
 </details>
+<div class="paragraph">
+<p>Go to <a href="#_uk_gemini_2_3_2020_06_29_service">top of page</a></p>
+</div>
 </div>
 <script type="text/x-mathjax-config">
 MathJax.Hub.Config({
