@@ -7,14 +7,13 @@
 :docinfosubs: attributes
 :safe-mode-unsafe:
 :iconfont-remote!:
-:stylesheet: ../assets/asciidoctor.css
+:stylesheet: ../assets/gemini.css
 :scriptsdir: {assetdir}
 :linkcss:
 :data-uri:
 :iconfont-name: font-awesome.min
 :imagesdir: media
 :icons: font
-:nofooter:
 :sectnumlevels: 3
 :sectlinks:
 :sectanchors:
